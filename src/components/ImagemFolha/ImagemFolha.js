@@ -1,9 +1,11 @@
 import "./ImagemFolha.css";
 
 function ImagemFolha (props) {
+  const imagemUrl = 'ImagemTeste/' + props.src + '-' + props.size + '.png';
+
   return (
-  <div className='container'>
-    <img className={props.class} src={'ImagemTeste/' + props.src + '-' + props.size + '.png'} alt=""></img>
+  <div className={'container-' + props.class}>
+    <img className={props.class} src={imagemUrl} alt=""></img>
 
   </div>
   
