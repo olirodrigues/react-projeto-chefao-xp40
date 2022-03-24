@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 import './estiloheader.css'
-import LogoMee from '../../assets/logomee.png'
+import LogoMee from '../../assets/logoMee.svg'
 
 
 function Header(){
