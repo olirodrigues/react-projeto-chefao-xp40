@@ -1,0 +1,19 @@
+p {
+  font-family: 'Hind', sans-serif;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #555555;
+  display: inline;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.preto {
+  color: #343434;
+}
+
+.cinzaClaro {
+  color: #8A8A8A;
+}
