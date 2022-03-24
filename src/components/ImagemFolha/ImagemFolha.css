@@ -1,0 +1,33 @@
+.container {
+  border-radius: 50% 0 50% 0;
+  background-color: #FDFDFD;
+  height: 470px;
+  width: 470px;
+  border: solid 15px #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circulo {
+  border-radius: 50%;
+  max-width: 150px;
+  height: 150px;
+}
+
+.circulo:hover {
+  max-width: 200px;
+  height: 200px;
+}
+
+.borda {
+  border-radius: 50% 0 50% 0;
+  max-width: 470px;
+  height: 470px;
+}
+
+.sem-borda {
+  border-radius: 50% 0 50% 0;
+  max-width: 500px;
+  height: 500px;
+}
