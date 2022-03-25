@@ -1,0 +1,44 @@
+.container-circulo {
+  border-radius: 50% 0 50% 0;
+  background-color: #FDFDFD;
+  height: 230px;
+  width: 230px;
+  border: solid 10px #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circulo {
+  border-radius: 50%;
+  max-width: 150px;
+  height: 150px;
+}
+
+.circulo:hover {
+  max-width: 200px;
+  height: 200px;
+}
+
+.container-borda {
+  border-radius: 50% 0 50% 0;
+  background-color: #FDFDFD;
+  height: 230px;
+  width: 230px;
+  border: solid 10px #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.borda {
+  border-radius: 50% 0 50% 0;
+  max-width: 230px;
+  height: 230px;
+}
+
+.sem-borda {
+  border-radius: 50% 0 50% 0;
+  max-width: 500px;
+  height: 500px;
+}

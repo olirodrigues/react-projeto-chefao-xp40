@@ -1,0 +1,56 @@
+p {
+  font-family: 'Hind', sans-serif;
+  font-size: 16px;
+  line-height: 19.2px;
+  display: inline;
+  font-weight: 300;
+  color: #555555;
+}
+
+h1 {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 40.15px;
+  line-height: 47.36px;
+  display: inline;
+  font-weight: 400;
+}
+
+.h1-hind {
+  font-family: 'Hind', sans-serif;
+  font-size: 24px;
+  line-height: 38.42px;
+}
+
+.h1-contato {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.preto {
+  color: #252525;
+}
+
+.cinza {
+  color: #555555;
+}
+
+.cinza-escuro {
+color: #343434;
+}
+
+.cinza-claro {
+  color: #8A8A8A;
+}
+
+
+.verde-claro {
+  color: #69BF8E;
+}
+
+.verde-escuro {
+  color: #215044;
+}

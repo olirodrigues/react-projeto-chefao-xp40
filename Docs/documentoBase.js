@@ -1,8 +1,9 @@
-const panta = [
+const planta = [
   {
     id: 1,
     nome: 'Cacto Candelabro',
     descricao: 'Esta é uma planta que aparece com frequência nas capas das revistas de decoração, ornamentando os mais sofisticados ambientes. Também é figurinha carimbada nos perfis do Instagram dedicados às houseplants, as plantas de interior, que são a febre do momento. O cacto candelabro possui aquela aparência clássica das plantas desérticas retratadas nos desenhos animados. Nativo da África do Sul Fica muito bem em jardins de pedras, isolado ou com outras suculentas e cactáceas. Deve-se ter cuidado com crianças pequenas e animais de estimação pois além de espinhos esta planta tem a seiva tóxica.',
+    categoria: 'cactos',
     cuidados_descricao: 'Devem ser cultivados a pleno sol, em solo fértil e muito bem drenável. Não tolera encharcamentos ou sombra, apodrecendo com facilidade nestas condições. O candelabro é uma planta muito tolerante à estiagem e ao frio.',
     cuidados_sol: 'Meia sombra e Sol Pleno',
     cuidados_agua: '2x por semana',
