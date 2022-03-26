@@ -51,3 +51,23 @@ body,
   display: flex;
   flex-direction: column;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e0e0e0;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b4b4b4;
+}
+
+@supports (scrollbar-color: #e0e0e0 #b4b4b4) {
+  * {
+    scrollbar-width: thin;
+  }
+}
