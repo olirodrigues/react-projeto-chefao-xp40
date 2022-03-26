@@ -1,10 +1,9 @@
-
 function Plantas() {
-    return (
-      <div >
-        <h1>Pg Plantas</h1>
-      </div>
-    );
-  }
-  
-  export default Plantas;
+  return (
+    <div id='main-content'>
+      <h1>Pg Plantas</h1>
+    </div>
+  );
+}
+
+export default Plantas;
