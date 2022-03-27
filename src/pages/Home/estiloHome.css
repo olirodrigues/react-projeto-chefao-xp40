@@ -15,13 +15,46 @@
 }
 
 .container .imagem {
-  height: 100%;
   width: 100%;
 }
 
 .container .imagem img {
-  height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: bottom left;
+}
+
+@media (width <= 1024px) {
+  #main-content-full {
+    margin: 0;
+  }
+  .container {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .container > .texto {
+    margin: 72px;
+    min-width: 40%;
+    max-width: 505px;
+  }
+  .container .imagem {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container .imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+  }
+}
+
+@media (width <= 375px) {
+  .container > .texto {
+    margin: 32px;
+    min-width: 40%;
+    max-width: 346px;
+  }
 }
