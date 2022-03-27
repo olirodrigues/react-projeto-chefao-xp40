@@ -1,0 +1,27 @@
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .texto {
+  min-width: 40%;
+  max-width: 346px;
+}
+
+.container .texto .botao {
+  margin-top: 32px;
+}
+
+.container .imagem {
+  height: 100%;
+  width: 100%;
+}
+
+.container .imagem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom left;
+}

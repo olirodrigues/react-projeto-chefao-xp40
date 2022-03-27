@@ -8,13 +8,17 @@
   outline: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 html,
 body,
 #root {
   height: 100%;
 }
 
-#bory-content {
+#body-content {
   height: 100vh;
   display: grid;
 
@@ -25,28 +29,35 @@ body,
     "main"
     "footer";
 }
-#bory-content > header,
-#bory-content > footer {
+#body-content > header,
+#body-content > footer {
   margin: 0 64px;
 }
 
-#bory-content > header {
+#body-content > header {
   grid-area: header;
   margin-top: 22px;
 }
 
-#bory-content > main {
+#body-content > main {
   grid-area: main;
   overflow: auto;
 }
 
-#bory-content > footer {
+#body-content > footer {
   grid-area: footer;
   margin-bottom: 16px;
 }
 
 #main-content {
   margin-inline: 64px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-content-full {
+  margin-left: 64px;
   height: 100%;
   display: flex;
   flex-direction: column;

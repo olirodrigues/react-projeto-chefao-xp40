@@ -2,7 +2,7 @@ import Rotas from "./routes";
 
 function App() {
   return (
-    <div id='bory-content'>
+    <div id="body-content">
       <Rotas />
     </div>
   );
