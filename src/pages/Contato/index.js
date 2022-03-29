@@ -1,4 +1,5 @@
 
+
 import Form from '../../components/Form'
 import './estiloContato.css'
 import Texto from '../../components/Texto/Texto';
@@ -15,3 +16,4 @@ function Contato() {
 }
 
 export default Contato;
+
