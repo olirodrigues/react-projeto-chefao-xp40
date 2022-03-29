@@ -1,0 +1,15 @@
+.container-carrossel {
+  display: flex;
+  gap: 19px;
+}
+
+.container-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 80px;
+}
+
+.container-grid > ImagemFolha {
+  width: 100%;
+}
