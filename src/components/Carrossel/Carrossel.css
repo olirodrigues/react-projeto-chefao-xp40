@@ -1,4 +1,4 @@
-.container-carrossel {
+.container-carrossel-grid {
   display: flex;
   gap: 19px;
 }
@@ -10,6 +10,32 @@
   max-width: 80px;
 }
 
-.container-grid > ImagemFolha {
+.container-grid > img,
+.container-carrossel img {
   width: 100%;
+}
+
+@media (width <= 1024px) {
+  .container-carrossel-grid {
+    gap: 32px;
+  }
+}
+
+@media (width <= 375px) {
+  .container-carrossel-grid {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-carrossel {
+    max-height: 250px;
+  }
+
+  .container-grid {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    max-width: 100%;
+    max-height: 30px;
+  }
 }

@@ -40,8 +40,8 @@ function Carrossel() {
   );
 
   return (
-    <div className="container-carrossel">
-      <div>
+    <div className="container-carrossel-grid">
+      <div className="container-carrossel">
         <ImagemFolha
           key={fotoCarrossel}
           src={fotoCarrossel}
