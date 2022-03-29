@@ -1,5 +1,5 @@
-form{
-    margin-left: 64px;
+.formContainer{
+    margin-left: 200px;
     display:flex;
     flex-direction: column;
     width: 309px;
@@ -15,4 +15,7 @@ input{
     border-left: none;
     border-right: none;
     margin-bottom: 2em;
+}
+.btn-enviar{
+    margin-left: 230px;
 }

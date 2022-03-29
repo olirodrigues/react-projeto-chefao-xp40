@@ -1,6 +1,7 @@
 import {FaRegEnvelope, FaRegUser, FaMobileAlt, FaRegCommentAlt} from 'react-icons/fa'
 import './estiloForm.css'
 import {useState} from 'react'
+import Botao from '../Botao/Botao'
 
 function Form(){
     const [nome, setNome] = useState('')
@@ -9,7 +10,7 @@ function Form(){
     const [mensagem, setMensagem] = useState('') 
 
     return(
-        <form>
+        <div className='formContainer'>
             <label>
                 <FaRegUser size={15}/>
                 Nome
@@ -32,9 +33,12 @@ function Form(){
             <input onChange={(e)=>setMensagem(e.target.value)} placeholder='Escreva aqui sua mensagem' type="text"/>
             <br></br>
             <br></br>
-            <button>Precisa criar o componente</button>
-        </form>
-
+            <div className='btn-enviar'>
+                <Botao class="btn-verde" color="branco semi-bold">
+                    Enviar
+                </Botao>
+            </div>
+        </div>
     )
 }
 
