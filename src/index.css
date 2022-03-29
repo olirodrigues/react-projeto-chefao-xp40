@@ -63,6 +63,12 @@ body,
   flex-direction: column;
 }
 
+@media (width <= 375px) {
+  #main-content {
+    margin-inline: 32px;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;

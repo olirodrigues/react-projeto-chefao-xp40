@@ -1,9 +1,9 @@
 .container-circulo {
   border-radius: 50% 0 50% 0;
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
   height: 230px;
   width: 230px;
-  border: solid 10px #FFFFFF;
+  border: solid 10px #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,10 +22,10 @@
 
 .container-borda {
   border-radius: 50% 0 50% 0;
-  background-color: #FDFDFD;
-  height: 230px;
-  width: 230px;
-  border: solid 10px #FFFFFF;
+  background-color: #fdfdfd;
+  max-height: 230px;
+  max-width: 230px;
+  border: solid 10px #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,11 +34,17 @@
 .borda {
   border-radius: 50% 0 50% 0;
   max-width: 230px;
-  height: 230px;
+  max-height: 230px;
 }
 
 .sem-borda {
   border-radius: 50% 0 50% 0;
   max-width: 500px;
-  height: 500px;
+}
+
+@media (width <= 375px) {
+  .sem-borda {
+    max-width: 250px;
+    width: 100%;
+  }
 }
