@@ -1,6 +1,23 @@
-.textoContato{
+.texto-contato{
     margin-left: 64px;
     width: 300px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+.container-contato{
+    display: flex;
+    flex-direction: row;
+}
+.main-contato{
+    width: 50%;
+}
+.planta-contato{
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.links-externos{
+    position: relative;
+    margin-top: -300px;
+    margin-left: 200px;
 }

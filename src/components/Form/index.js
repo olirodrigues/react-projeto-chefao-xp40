@@ -10,7 +10,7 @@ function Form(){
     const [mensagem, setMensagem] = useState('') 
 
     return(
-        <div className='formContainer'>
+        <div className='form-container'>
             <label>
                 <FaRegUser size={15}/>
                 Nome
@@ -31,8 +31,6 @@ function Form(){
                 Mensagem
             </label>
             <input onChange={(e)=>setMensagem(e.target.value)} placeholder='Escreva aqui sua mensagem' type="text"/>
-            <br></br>
-            <br></br>
             <div className='btn-enviar'>
                 <Botao class="btn-verde" color="branco semi-bold">
                     Enviar
