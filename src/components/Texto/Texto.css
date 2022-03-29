@@ -1,18 +1,29 @@
+h1,
+h2,
 p {
-  font-family: "Hind", sans-serif;
-  font-size: 16px;
-  line-height: 19.2px;
-  display: inline;
-  font-weight: 300;
   color: #555555;
+  display: inline;
 }
 
 h1 {
   font-family: "Abhaya Libre", serif;
   font-size: 40.15px;
   line-height: 47.36px;
-  display: inline;
   font-weight: 400;
+}
+
+h2 {
+  font-family: "Hind", sans-serif;
+  font-size: 18px;
+  line-height: 21.23px;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Hind", sans-serif;
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 300;
 }
 
 .h1-hind {
@@ -24,6 +35,11 @@ h1 {
 .h1-contato {
   font-size: 16px;
   line-height: 24px;
+}
+
+.h2-blog {
+  font-size: 24px;
+  line-height: 28.31px;
 }
 
 .bold {
@@ -60,4 +76,58 @@ h1 {
 
 .verde-escuro {
   color: #215044;
+}
+
+@media (width <= 1024px) {
+  h1 {
+    font-size: 48px;
+    line-height: 56.63px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 28.31px;
+  }
+
+  .h1-hind {
+    font-size: 32px;
+    line-height: 44.8px;
+  }
+
+  .p-contato {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (width <= 375px) {
+  h1 {
+    font-size: 24px;
+    line-height: 28.31px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  .h1-hind {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+
+  .h1-contato {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .h2-blog {
+    font-size: 18px;
+    line-height: 21.23px;
+  }
+
+  .p-contato {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
