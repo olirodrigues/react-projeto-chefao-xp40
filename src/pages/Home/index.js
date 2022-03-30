@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div id="main-content-full" className="sem-margin-right">
-      <div className="container">
+      <div className="container-home">
         <div className="texto">
           <div>
             <div>

@@ -1,0 +1,14 @@
+.container-plantas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.container-fotos {
+  display: flex;
+  gap: 96px;
+  align-items: center;
+  justify-content: center;
+}
