@@ -1,0 +1,6 @@
+.container-img-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}

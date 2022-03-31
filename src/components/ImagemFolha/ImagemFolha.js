@@ -1,9 +1,5 @@
 import "./ImagemFolha.css";
 
-//<img class="sem-borda"
-//   srcset="/imagem/PC0101-80.png 80w, /imagem/PC0101-500.png 500w, /imagem/PC0101-250.png 250w,/imagem/PC0101-30.png 30w"
-//   size="(max-width=500px)" alt="">
-
 function ImagemFolha({
   src,
   sizes,
@@ -12,9 +8,14 @@ function ImagemFolha({
   maxTabletSize,
   maxMobileSize,
   maxDesktopSize,
+  categoria,
 }) {
   const imagemUrl = sizes
-    .map((size) => `/imagem/${src}-${size}.png ${size}w`)
+    .map(
+      (size) =>
+        `https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${src}x${size}.png ${size}w`,
+      // `https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${src}x${size}.png ${size}w`,
+    )
     .join(", ");
 
   return (

@@ -1,14 +1,47 @@
-import GridImgBlogDesktop from "../../components/GridImgBlogDesktop";
+
+import { useEffect, useState } from "react";
+import BlogPost from "../../components/Blog/BlogPost";
+import { getBlogPost } from "../../services/routes/blog";
+import "./estiloBlog.css";
+import Texto from "../../components/Texto/Texto";
+import SetaVoltar from "../../components/SetaVoltar";
 
 
 function Blog() {
+  const [blogPosts, setBlogPosts] = useState([]);
+
+  const getPosts = async () => {
+    const response = await getBlogPost();
+    setBlogPosts(response);
+  };
+
+  useEffect(() => {
+    getPosts();
+  }, []);
+
   return (
-      <div>
-        <GridImgBlogDesktop src1="https://gabezrodz.github.io/imagens-chefao-xp40/blog/BD0101.png"
-        src2="https://gabezrodz.github.io/imagens-chefao-xp40/blog/BD0101.png"
-        src3="https://gabezrodz.github.io/imagens-chefao-xp40/blog/BD0101.png"
-        src4="https://gabezrodz.github.io/imagens-chefao-xp40/blog/BD0101.png"/>
+
+
+    <div id="main-content">
+      <div className="container-blog">
+        <Texto tipo="titulo1" class="verde-escuro">
+          Blog
+        </Texto>
+        <div className="container-posts">
+          {blogPosts.map((post) => {
+            return (
+              <BlogPost
+                key={Math.random()}
+                titulo={post.post_titulo}
+                resumo={post.post_resumo}
+                fotos={post.fotos_gerai}
+              />
+            );
+          })}
         </div>
+      </div>
+    </div>
+
   );
 }
 
