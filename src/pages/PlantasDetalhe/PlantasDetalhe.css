@@ -1,0 +1,5 @@
+.container-plantasDetalhe {
+  display: flex;
+  align-items: center;
+  gap: 58px;
+}
