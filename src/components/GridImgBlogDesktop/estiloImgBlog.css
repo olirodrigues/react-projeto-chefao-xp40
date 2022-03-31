@@ -1,0 +1,31 @@
+.container-grid{
+    display: grid;
+    width: 40%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 120px;
+}
+.item-grid{
+    position: relative;
+}
+.item-grid .img-grid{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;;
+} 
+.h-1{
+    grid-row: span 3;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.h-2{
+    grid-row: span 2;
+    margin-bottom: 15px;
+}
+.h-3{
+    grid-row: span 2;
+}
+.h-4{
+    grid-row: span 1;
+    margin-right: 15px;
+}

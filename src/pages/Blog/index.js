@@ -1,9 +1,11 @@
+import GridImgBlogDesktop from "../../components/GridImgBlogDesktop";
+
 
 function Blog() {
   return (
-    <div id='main-content'>
-      <h1>Blog</h1>
-    </div>
+      <div>
+        <h1> Olá mundo cruel</h1>
+        </div>
   );
 }
 
