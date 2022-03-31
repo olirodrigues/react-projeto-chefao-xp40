@@ -8,14 +8,10 @@ function ImagemFolha({
   maxTabletSize,
   maxMobileSize,
   maxDesktopSize,
-  categoria,
+  url,
 }) {
   const imagemUrl = sizes
-    .map(
-      (size) =>
-        `https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${src}x${size}.png ${size}w`,
-      // `https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${src}x${size}.png ${size}w`,
-    )
+    .map((size) => `${url}/${src}x${size}.png ${size}w`)
     .join(", ");
 
   return (

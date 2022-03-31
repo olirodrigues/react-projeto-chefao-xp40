@@ -29,6 +29,7 @@ const Categorias = (props) => {
               maxDesktopSize="200px"
               maxTabletSize="150px"
               maxMobileSize="100px"
+              url="https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/"
             />
             <Botao class="btn-verde" color="branco bold">
               {props.nome}

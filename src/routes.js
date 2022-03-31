@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Plantas from "./pages/Plantas";
-import PlantasDetalhe from "./pages/PlantasDetalhe";
+import PlantasDetalhe from "./pages/PlantasDetalhe/PlantasDetalhe";
 import Blog from "./pages/Blog";
 import Sobrenos from "./pages/Sobrenos";
 import Contato from "./pages/Contato";
@@ -17,7 +17,7 @@ const Rotas = () => {
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/plantas" element={<Plantas />}></Route>
           <Route
-            path="/plantas/:categoria/:id"
+            path="/plantas/:categorias/:id"
             element={<PlantasDetalhe />}
           ></Route>
           <Route exact path="/blog" element={<Blog />}></Route>
