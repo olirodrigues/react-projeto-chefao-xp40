@@ -41,8 +41,8 @@ function Home() {
         </div>
         <div className="imagem">
           <img
-            srcSet="/imagens/imagem1-1024.png 1024w, /imagens/imagem1-375 375w.jpg"
-            sizes=""
+            srcSet="https://gabezrodz.github.io/imagens-chefao-xp40/home/home-padrao.png 1020w, https://gabezrodz.github.io/imagens-chefao-xp40/home/home-mobile.png 375w"
+            sizes="(width <= 375px) 375px, 1020px"
             alt=""
           />
         </div>
