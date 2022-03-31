@@ -14,7 +14,7 @@ function Contato() {
         <Form />
       </div>
       <div>
-        <img className='planta-contato' src={PlantaContato}/>
+        <img className='planta-contato' src={PlantaContato} alt='imagem de planta com links de redes sociais'/>
         <div className='links-externos'>
           <LinksContato/>
         </div>
