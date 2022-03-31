@@ -1,0 +1,18 @@
+.container-blog {
+  margin-top: 32px;
+}
+
+.container-posts {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (width < 600px) {
+  .container-posts {
+    flex-direction: column;
+    justify-content: flex-start;
+   
+  }
+}
