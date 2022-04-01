@@ -3,3 +3,11 @@
   border-bottom: 1px solid #d3d3d3;
   justify-content: space-between;
 }
+
+.titulos-abas {
+  cursor: pointer;
+}
+
+.titulo-foco {
+  border-bottom: 3px solid #69bf8e;
+}

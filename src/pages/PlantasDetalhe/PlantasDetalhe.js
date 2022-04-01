@@ -74,29 +74,30 @@ function PlantasDetalhe() {
 
   return (
     <div id="main-content">
-      <div className="container-plantasDetalhe">
-        <div className="container-todos-cuidados">
-          <div className="container-textos">
-            <div className="titulo-plantasdetalhes">
-              <SetaVoltar />
-              <Texto tipo="titulo1" class="verde-escuro">
-                {plantas.nome}
-              </Texto>
-            </div>
-            <Abas
-              nomeAbas={["Sobre", "Cuidados", "Informações"]}
-              conteudoAbas={[abaSobre, abaCuidados, abaInformacoes]}
-            />
-          </div>
-          <div>
-            <Cuidados
-              iluminacao={plantas.cuidados_iluminacao}
-              agua={plantas.cuidados_agua}
-              pet={plantas.cuidados_pet}
-            />
-          </div>
+      <div className="container-plantasdetalhes">
+        <div className="titulo-plantasdetalhes">
+          <SetaVoltar />
+          <Texto tipo="titulo1" class="verde-escuro">
+            {plantas.nome}
+          </Texto>
         </div>
-        <Carrossel categoria={params.categorias} fotos={plantas.fotos} />
+
+        <div className="textos-platasdetalhes">
+          <Abas
+            nomeAbas={["Sobre", "Cuidados", "Informações"]}
+            conteudoAbas={[abaSobre, abaCuidados, abaInformacoes]}
+          />
+
+          <Cuidados
+            iluminacao={plantas.cuidados_iluminacao}
+            agua={plantas.cuidados_agua}
+            pet={plantas.cuidados_pet}
+          />
+        </div>
+
+        <div className="carrossel-plantasdetalhes">
+          <Carrossel categoria={params.categorias} fotos={plantas.fotos} />
+        </div>
       </div>
     </div>
   );

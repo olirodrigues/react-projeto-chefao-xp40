@@ -6,13 +6,13 @@ function Abas({ nomeAbas, conteudoAbas }) {
   const [tabFoco, setTabFocus] = useState(0);
 
   console.log(tabFoco);
-
+  // {tabFoco === index ? "v" : "x"}
   return (
     <div className="container-abas">
       <nav>
         {nomeAbas.map((titulo, index) => (
           <div
-            className="titulos-abas"
+            className={`titulos-abas${tabFoco === index ? " titulo-foco" : ""}`}
             key={titulo}
             onClick={() => setTabFocus(index)}
           >
@@ -23,7 +23,7 @@ function Abas({ nomeAbas, conteudoAbas }) {
         ))}
       </nav>
 
-      <div>{conteudoAbas[tabFoco]}</div>
+      <div className="conteudo-abas">{conteudoAbas[tabFoco]}</div>
     </div>
   );
 }
