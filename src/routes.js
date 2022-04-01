@@ -7,11 +7,16 @@ import Blog from "./pages/Blog";
 import Sobrenos from "./pages/Sobrenos";
 import Contato from "./pages/Contato";
 import Footer from "./components/Footer/Footer";
+import { useMediaQuery } from "react-responsive";
+import MenuMobile from "./components/MenuMobile/MenuMobile";
 
 const Rotas = () => {
+  const tablet = useMediaQuery({
+    query: "(max-width:1024px)",
+  });
   return (
     <Router>
-      <Header />
+      {!tablet ? <Header /> : <MenuMobile />}
       <main>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
