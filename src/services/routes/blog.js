@@ -17,3 +17,5 @@ export const getBlogPostId = async (postId) => {
     console.error(`Ocorreu um erro ${error}`);
   }
 };
+
+export const getFotosBlogId = "https://gabezrodz.github.io/imagens-chefao-xp40/blog/"
