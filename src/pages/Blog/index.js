@@ -1,11 +1,9 @@
-
 import { useEffect, useState } from "react";
 import BlogPost from "../../components/Blog/BlogPost";
 import { getBlogPost } from "../../services/routes/blog";
 import "./estiloBlog.css";
 import Texto from "../../components/Texto/Texto";
 import SetaVoltar from "../../components/SetaVoltar";
-
 
 function Blog() {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -20,13 +18,13 @@ function Blog() {
   }, []);
 
   return (
-
-
     <div id="main-content">
       <div className="container-blog">
-        <Texto tipo="titulo1" class="verde-escuro">
-          Blog
-        </Texto>
+        <div className="titulo-blog">
+          <Texto tipo="titulo1" class="verde-escuro ">
+            Blog
+          </Texto>
+        </div>
         <div className="container-posts">
           {blogPosts.map((post) => {
             return (
@@ -41,7 +39,6 @@ function Blog() {
         </div>
       </div>
     </div>
-
   );
 }
 

@@ -1,5 +1,5 @@
 .container-menu-mobile {
-  margin: 110px;
+  margin:80px;
 }
 
 .container-menu-mobile .logoMee {
@@ -32,8 +32,8 @@
 .icone-hamburger {
   position: absolute;
   z-index: 4;
-  left: 12%;
-  top: 4%;
+  left: 8%;
+  top: 4.5%;
   transition: 350ms;
 }
 
