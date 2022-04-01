@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import "./estiloheader.css";
-import LogoMee from "../../assets/logoMee.svg";
+import LogoMee from "../../assets/svg/logoMee/logoMee.svg";
 
 function Header() {
   return (

@@ -1,9 +1,5 @@
 function Sobrenos() {
-  return (
-    <div id='main-content'>
-      <h1>Pg Sobrenos</h1>
-    </div>
-  );
+  return <div id="main-content"></div>;
 }
 
 export default Sobrenos;
