@@ -2,35 +2,15 @@ import { useState } from "react";
 import "./Carrossel.css";
 import ImagemFolha from "../ImagemFolha/ImagemFolha";
 
-function Carrossel() {
-  const plantas = {
-    foto: {
-      id: 1,
-
-      desktop_1: "PC0101x500",
-      desktop_2: "PC0102x500",
-      desktop_3: "PC0103x500",
-      desktop_icon_1: "PC0101x80",
-      desktop_icon_2: "PC0102x80",
-      desktop_icon_3: "PC0103x80",
-      celular_1: "PC0101x250",
-      celular_2: "PC0102x250",
-      celular_3: "PC0103x250",
-      celular_icon_1: "PC0101x30",
-      celular_icon_2: "PC0102x30",
-      celular_icon_3: "PC0103x30",
-      cel_categorias_plantas: "PC0101x150",
-    },
-  };
-
-  const fotosSizes = Object.values(plantas.foto)
+function Carrossel(props) {
+  const fotosSizes = Object.values(props.fotos)
     .filter((fotos) => typeof fotos === "string")
     .map((fotos) => fotos.split("x"))
-    .reduce((picsWithResolutions, [fotos, resolution]) => {
+    .reduce((picsWithResolutions, [fotos, sizes]) => {
       if (!picsWithResolutions[fotos]) {
         picsWithResolutions[fotos] = [];
       }
-      picsWithResolutions[fotos].push(resolution);
+      picsWithResolutions[fotos].push(sizes);
 
       return picsWithResolutions;
     }, {});
@@ -50,21 +30,26 @@ function Carrossel() {
           maxMobileSize="250px"
           maxTabletSize="500px"
           maxDesktopSize="500px"
+          categoria={props.categoria}
+          url={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${props.categoria}`}
         />
       </div>
 
       <div className="container-grid">
-        {Object.entries(fotosSizes).map(([fotos, resolutions]) => {
+        {Object.entries(fotosSizes).map(([fotos, sizes]) => {
           return (
             <ImagemFolha
               key={fotos}
               src={fotos}
-              sizes={resolutions}
-              className="sem-borda"
+              sizes={sizes}
+              className={`sem-borda ${
+                fotoCarrossel === fotos ? "" : "foto-carrossel-sem-foco"
+              }`}
               maxMobileSize="30px"
               maxTabletSize="80px"
               maxDesktopSize="80px"
               onClick={() => setFotoCarrossel(fotos)}
+              url={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${props.categoria}`}
             />
           );
         })}

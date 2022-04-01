@@ -1,0 +1,74 @@
+.container-plantasdetalhes {
+  margin-top: 32px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  column-gap: 58px;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 50px auto;
+  grid-template-areas:
+    "titulo carrossel"
+    "textos carrossel";
+}
+
+.titulo-plantasdetalhes {
+  grid-area: titulo;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  left: -30px;
+}
+
+.textos-platasdetalhes {
+  grid-area: textos;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.carrossel-plantasdetalhes {
+  grid-area: carrossel;
+  margin: auto;
+}
+
+@media (width <= 1024px) {
+  #main-content {
+    margin-inline: 117px;
+  }
+
+  .container-plantasdetalhes {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content auto;
+    gap: 100px;
+    grid-template-areas:
+      "titulo"
+      "carrossel"
+      "textos";
+  }
+
+  .titulo-plantasdetalhes {
+    margin-top: 72px;
+  }
+
+  .textos-platasdetalhes {
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  .container-abas {
+    max-width: 424px;
+    min-width: 60%;
+  }
+
+  .carrossel-plantasdetalhes {
+    margin-inline: auto;
+  }
+
+  .container-cuidados {
+    justify-content: center;
+    height: 100%;
+    margin-block: auto;
+  }
+}
