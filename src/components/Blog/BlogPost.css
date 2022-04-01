@@ -26,3 +26,10 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (width <= 1022px){
+  .card-container {
+    margin-top: 50px;
+  }
+
+}
