@@ -1,5 +1,23 @@
+#main-content {
+  justify-content: center;
+}
+
 .container-plantasDetalhe {
   display: flex;
-  align-items: center;
   gap: 58px;
+}
+
+.container-textos > .titulo-plantasdetalhes {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  left: -30px;
+}
+
+.container-todos-cuidados {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

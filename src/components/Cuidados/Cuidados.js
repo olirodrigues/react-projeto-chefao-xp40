@@ -6,16 +6,16 @@ import IconeGota from "../IconeGota";
 
 function Cuidados({ iluminacao, agua, pet }) {
   return (
-    <div>
-      <div>
+    <div className="container-cuidados">
+      <div className="texto-cuidados">
         <IconeSol />
         <Texto tipo="paragrafo">{iluminacao}</Texto>
       </div>
-      <div>
+      <div className="texto-cuidados">
         <IconeGota />
         <Texto tipo="paragrafo">{agua}</Texto>
       </div>
-      <div>
+      <div className="texto-cuidados">
         <IconePata />
         <Texto tipo="paragrafo">{pet}</Texto>
       </div>

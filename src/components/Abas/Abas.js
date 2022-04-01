@@ -8,10 +8,14 @@ function Abas({ nomeAbas, conteudoAbas }) {
   console.log(tabFoco);
 
   return (
-    <div>
+    <div className="container-abas">
       <nav>
         {nomeAbas.map((titulo, index) => (
-          <div key={titulo} onClick={() => setTabFocus(index)}>
+          <div
+            className="titulos-abas"
+            key={titulo}
+            onClick={() => setTabFocus(index)}
+          >
             <Texto tipo="titulo2" class="preto">
               {titulo}
             </Texto>

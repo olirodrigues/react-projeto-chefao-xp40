@@ -1,12 +1,11 @@
-import {BsArrowLeftCircle} from 'react-icons/bs'
-import './estiloSeta.css'
+import { BsArrowLeftCircle } from "react-icons/bs";
+import "./estiloSeta.css";
 
-
-function SetaVoltar(){
-    return(
-    <div>
-        <BsArrowLeftCircle className='icone-seta'/>
+function SetaVoltar() {
+  return (
+    <div className="icone-seta">
+      <BsArrowLeftCircle />
     </div>
-    )
+  );
 }
-export default SetaVoltar
+export default SetaVoltar;

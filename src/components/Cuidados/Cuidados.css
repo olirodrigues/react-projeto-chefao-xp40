@@ -1,0 +1,11 @@
+.container-cuidados {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.texto-cuidados.texto-cuidados {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}

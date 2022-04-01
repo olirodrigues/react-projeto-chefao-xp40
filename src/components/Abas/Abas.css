@@ -1,0 +1,5 @@
+.container-abas > nav {
+  margin-block: 20px 10px;
+  border-bottom: 1px solid #d3d3d3;
+  justify-content: space-between;
+}

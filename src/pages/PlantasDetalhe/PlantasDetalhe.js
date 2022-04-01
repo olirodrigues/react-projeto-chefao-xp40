@@ -3,6 +3,7 @@ import Abas from "../../components/Abas/Abas";
 import Carrossel from "../../components/Carrossel/Carrossel";
 import Texto from "../../components/Texto/Texto";
 import Cuidados from "../../components/Cuidados/Cuidados";
+import SetaVoltar from "../../components/SetaVoltar";
 
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -74,20 +75,26 @@ function PlantasDetalhe() {
   return (
     <div id="main-content">
       <div className="container-plantasDetalhe">
-        <div>
-          <Texto tipo="titulo1" class="verde-escuro">
-            {plantas.nome}
-          </Texto>
-          <Abas
-            nomeAbas={["Sobre", "Cuidados", "Informações"]}
-            conteudoAbas={[abaSobre, abaCuidados, abaInformacoes]}
-          />
-
-          <Cuidados
-            iluminacao={plantas.cuidados_iluminacao}
-            agua={plantas.cuidados_agua}
-            pet={plantas.cuidados_pet}
-          />
+        <div className="container-todos-cuidados">
+          <div className="container-textos">
+            <div className="titulo-plantasdetalhes">
+              <SetaVoltar />
+              <Texto tipo="titulo1" class="verde-escuro">
+                {plantas.nome}
+              </Texto>
+            </div>
+            <Abas
+              nomeAbas={["Sobre", "Cuidados", "Informações"]}
+              conteudoAbas={[abaSobre, abaCuidados, abaInformacoes]}
+            />
+          </div>
+          <div>
+            <Cuidados
+              iluminacao={plantas.cuidados_iluminacao}
+              agua={plantas.cuidados_agua}
+              pet={plantas.cuidados_pet}
+            />
+          </div>
         </div>
         <Carrossel categoria={params.categorias} fotos={plantas.fotos} />
       </div>
