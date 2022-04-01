@@ -21,7 +21,7 @@ const MenuMobile = (props) => {
         alt="Logo da empresa com nome MEE"
       />
       <div>
-        <div className={ativo ? "overlay" : ""} />
+        <div className={ativo ? "overlay" : ""}  onClick={alternaExibicaoModal}/>
         <div
           className={
             ativo
