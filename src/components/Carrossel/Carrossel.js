@@ -42,7 +42,9 @@ function Carrossel(props) {
               key={fotos}
               src={fotos}
               sizes={sizes}
-              className="sem-borda"
+              className={`sem-borda ${
+                fotoCarrossel === fotos ? "" : "foto-carrossel-sem-foco"
+              }`}
               maxMobileSize="30px"
               maxTabletSize="80px"
               maxDesktopSize="80px"

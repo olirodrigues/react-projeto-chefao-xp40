@@ -10,6 +10,10 @@
   max-width: 80px;
 }
 
+.foto-carrossel-sem-foco {
+  opacity: 40%;
+}
+
 .container-grid > img,
 .container-carrossel img {
   width: 100%;
