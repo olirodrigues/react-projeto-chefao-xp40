@@ -1,6 +1,7 @@
 import "./BlogPost.css";
 import Botao from "../Botao/Botao";
 import Texto from "../Texto/Texto";
+import { Link } from "react-router-dom";
 
 
 const BlogPost = (props) => {
@@ -24,11 +25,12 @@ const BlogPost = (props) => {
           </Texto>
         </div>
       </div>
-
       <div>
+        <Link to={`/blog/${props.id}`}>
         <Botao class="outline" color="cinza bold">
           Ler artigo
         </Botao>
+        </Link>
       </div>
     </div>
   );
