@@ -3,7 +3,7 @@ import './estiloImgBlog.css'
 
 function GridImgBlogDesktop(props){
     return(
-    <div className='container-grid'>
+    <div className='container-grid_posts'>
         <div className='item-grid h-1'>
             <img src={props.src1} className='img-grid i-1' alt='imagem do blog de plantas'/>
         </div>
