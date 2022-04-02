@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./MenuMobile.css";
 import HamburgerSvg from "../../assets/svg/hamburger/hamburger.svg";
-import SetaVoltar from "../../assets/svg/seta/seta.svg";
+import SetaVoltar from "../../assets/svg/setas/setaComCirculo.svg";
 import Texto from "../Texto/Texto";
 import { Link } from "react-router-dom";
 import LogoMee from "../../assets/svg/logoMee/logoMee.svg";
@@ -21,7 +21,7 @@ const MenuMobile = (props) => {
         alt="Logo da empresa com nome MEE"
       />
       <div>
-        <div className={ativo ? "overlay" : ""} />
+        <div className={ativo ? "overlay" : ""}  onClick={alternaExibicaoModal}/>
         <div
           className={
             ativo

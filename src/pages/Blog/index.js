@@ -33,6 +33,7 @@ function Blog() {
                 titulo={post.post_titulo}
                 resumo={post.post_resumo}
                 fotos={post.fotos_gerai}
+                id={post.id}
               />
             );
           })}

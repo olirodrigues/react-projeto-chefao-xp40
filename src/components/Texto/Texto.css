@@ -7,8 +7,8 @@ p {
 
 h1 {
   font-family: "Abhaya Libre", serif;
-  font-size: 40.15px;
-  line-height: 47.36px;
+  font-size: 40px;
+  line-height: 47px;
   font-weight: 400;
 }
 
@@ -23,13 +23,14 @@ p {
   font-family: "Hind", sans-serif;
   font-size: 16px;
   line-height: 19.2px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .h1-hind {
   font-family: "Hind", sans-serif;
   font-size: 24px;
   line-height: 38.42px;
+  font-weight: 300;
 }
 
 .h1-contato {
@@ -40,6 +41,10 @@ p {
 .h2-blog {
   font-size: 24px;
   line-height: 28.31px;
+}
+
+.p-contato {
+  font-size: 14px;
 }
 
 .bold {
@@ -81,7 +86,7 @@ p {
 @media (width <= 1024px) {
   h1 {
     font-size: 48px;
-    line-height: 56.63px;
+    line-height: 57px;
   }
 
   h2 {
@@ -99,7 +104,11 @@ p {
     line-height: 30px;
   }
 
-  .mobile-menu:active{
+  .mobile-menu {
+    font-size: 20px;
+  }
+
+  .mobile-menu:active {
     font-weight: 600;
     color: #69bf8e;
   }
@@ -135,5 +144,9 @@ p {
   .p-contato {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .mobile-menu {
+    font-size: 16px;
   }
 }
