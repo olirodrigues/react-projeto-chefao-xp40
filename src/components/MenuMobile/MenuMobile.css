@@ -1,5 +1,5 @@
 .container-menu-mobile {
-  margin:80px;
+  margin: 80px;
 }
 
 .container-menu-mobile .logoMee {
@@ -59,6 +59,12 @@
   padding: 17.5px 0;
 }
 
+.link_ativo p {
+  border-bottom: solid 2px #72bf8e;
+  font-weight: 600;
+  color:#72bf8e
+}
+
 .overlay {
   position: absolute;
   width: 100%;
@@ -93,11 +99,10 @@
   }
 }
 @media (width <= 375px) {
-
   .container-menu-mobile {
     margin: 30px;
   }
-  
+
   .menu.menu__aberto {
     width: 180px;
     border-radius: 0 16px 16px 0;
@@ -121,7 +126,7 @@
     position: absolute;
     top: 2%;
     left: 42%;
-    width:65px;
+    width: 65px;
     height: 45px;
   }
 }
