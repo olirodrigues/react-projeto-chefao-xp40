@@ -1,5 +1,5 @@
 .container-menu-mobile {
-  margin:80px;
+  margin: 80px;
 }
 
 .container-menu-mobile .logoMee {
@@ -25,8 +25,17 @@
 }
 
 .menu.menu__fechado {
-  display: none;
-  width: 0px;
+  display: none 350ms;
+  width: 350px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0 32px 32px 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 3;
+  animation: closing 350ms ease-out forwards;
 }
 
 .icone-hamburger {
@@ -59,7 +68,7 @@
   padding: 17.5px 0;
 }
 
-.overlay {
+.overlay_ativo {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -68,7 +77,26 @@
   top: 0%;
   left: 0%;
   backdrop-filter: blur(2px);
-  animation: overlay 350ms ease-out forwards;
+  animation: overlayOpen 350ms ease-out forwards;
+}
+
+.overlay_inativo {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.521);
+  z-index: 2;
+  top: 0%;
+  left: 0%;
+  backdrop-filter: blur(2px);
+  animation: overlayClose 350ms ease-out forwards;
+}
+
+
+
+
+.link_ativo p {
+  border-bottom: 2px solid #72bf8e;
 }
 
 @keyframes opening {
@@ -83,7 +111,20 @@
   }
 }
 
-@keyframes overlay {
+@keyframes closing {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+    transform: translateX(-3rem);
+  }
+}
+
+@keyframes overlayOpen {
   from {
     opacity: 0;
   }
@@ -92,12 +133,22 @@
     opacity: 1;
   }
 }
-@media (width <= 375px) {
 
+@keyframes overlayClose {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@media (width <= 375px) {
   .container-menu-mobile {
     margin: 30px;
   }
-  
+
   .menu.menu__aberto {
     width: 180px;
     border-radius: 0 16px 16px 0;
@@ -121,7 +172,7 @@
     position: absolute;
     top: 2%;
     left: 42%;
-    width:65px;
+    width: 65px;
     height: 45px;
   }
 }

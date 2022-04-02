@@ -3,7 +3,7 @@ import "./MenuMobile.css";
 import HamburgerSvg from "../../assets/svg/hamburger/hamburger.svg";
 import SetaVoltar from "../../assets/svg/setas/setaComCirculo.svg";
 import Texto from "../Texto/Texto";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import LogoMee from "../../assets/svg/logoMee/logoMee.svg";
 
 const MenuMobile = (props) => {
@@ -21,7 +21,7 @@ const MenuMobile = (props) => {
         alt="Logo da empresa com nome MEE"
       />
       <div>
-        <div className={ativo ? "overlay" : ""}  onClick={alternaExibicaoModal}/>
+        <div className={ativo ? "overlay_ativo" : "overlay_inativo"}  onClick={alternaExibicaoModal}/>
         <div
           className={
             ativo
@@ -40,32 +40,32 @@ const MenuMobile = (props) => {
           <div className="list">
             <ul className="listItems">
               <li>
-                <Link onClick={alternaExibicaoModal} to="/plantas">
+                <NavLink className={({isActive}) => (isActive ? "link_ativo" : "") } onClick={alternaExibicaoModal} to="/plantas">
                   <Texto tipo="paragrafo" class="cinza mobile-menu">
                     Plantas
                   </Texto>
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link onClick={alternaExibicaoModal} to="/sobrenos">
+                <NavLink className={({isActive}) => (isActive ? "link_ativo" : "") } onClick={alternaExibicaoModal} to="/sobrenos">
                   <Texto tipo="paragrafo" class="cinza mobile-menu">
                     Sobre Nós
                   </Texto>
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link onClick={alternaExibicaoModal} to="/blog">
+                <NavLink className={({isActive}) => (isActive ? "link_ativo" : "") } onClick={alternaExibicaoModal} to="/blog">
                   <Texto tipo="paragrafo" class="cinza mobile-menu">
                     Blog
                   </Texto>
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link onClick={alternaExibicaoModal} to="/contato">
+                <NavLink className={({isActive}) => (isActive ? "link_ativo" : "") } onClick={alternaExibicaoModal} to="/contato">
                   <Texto tipo="paragrafo" class="cinza mobile-menu">
                     Contato
                   </Texto>
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
