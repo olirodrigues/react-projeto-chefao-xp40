@@ -7,7 +7,26 @@
     justify-content: space-around;
 }
 .linkContato{
-    color: white;
+    background-color: white;
+    border-radius: 50px;
+    color: black;
     width: 30px;
     height: 30px;    
+}
+@media (max-width: 1020px){
+    .fundoLinkContato{
+        display: flex;
+        background-color: rgba(188, 190, 196, 0.3);
+        width: 100px;
+        height: 15px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .linkContato{
+        background-color: white;
+        border-radius: 50px;
+        color: black;
+        width: 10px;
+        height: 10px;    
+    }
 }

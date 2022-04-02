@@ -19,3 +19,26 @@ input{
 .btn-enviar{
     margin-left: 200px;
 }
+@media (max-width: 1020px){
+    .form-container{
+        margin-left: 50px;
+        display:flex;
+        flex-direction: column;
+        width: 200px;
+        height: 300px;
+    }
+    label{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    input{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 2em;
+    }
+    .btn-enviar{
+        margin-left: 120px;
+    } 
+}

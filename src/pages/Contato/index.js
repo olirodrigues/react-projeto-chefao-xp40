@@ -1,8 +1,10 @@
 import Form from "../../components/Form";
 import "./estiloContato.css";
 import Texto from "../../components/Texto/Texto";
-import PlantaContato from "../../assets/plantaContato.png";
+import PlantaContato1 from "../../assets/plantaContato1.png";
 import LinksContato from "../../components/LinksContato";
+import PlantaContato2 from "../../assets/plantaContato2.png";
+import PlantaContato3 from "../../assets/plantaContato3.png";
 
 function Contato() {
   return (
@@ -17,10 +19,20 @@ function Contato() {
         </article>
         <Form />
       </div>
-      <div>
+      <div className="container-planta">
+      <img
+          className="planta-contato2"
+          src={PlantaContato2}
+          alt="imagem de planta com links de redes sociais"
+        />
         <img
-          className="planta-contato"
-          src={PlantaContato}
+          className="planta-contato1"
+          src={PlantaContato1}
+          alt="imagem de planta com links de redes sociais"
+        />
+                <img
+          className="planta-contato3"
+          src={PlantaContato3}
           alt="imagem de planta com links de redes sociais"
         />
         <div className="links-externos">
