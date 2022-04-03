@@ -47,7 +47,7 @@ const MenuMobile = (props) => {
                 </NavLink>
               </li>
               <li>
-                <NavLink className={({isActive}) => (isActive ? "link_ativo" : "") } onClick={alternaExibicaoModal} to="/sobrenos">
+                <NavLink className={({isActive}) => (isActive ? "link_ativo" : "") } onClick={alternaExibicaoModal} to="/sobrenos/1">
                   <Texto tipo="paragrafo" class="cinza mobile-menu">
                     Sobre Nós
                   </Texto>
