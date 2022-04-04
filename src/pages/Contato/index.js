@@ -1,8 +1,8 @@
 import Form from "../../components/Form";
 import "./estiloContato.css";
 import Texto from "../../components/Texto/Texto";
-import PlantaContato from "../../assets/plantaContato.png";
 import LinksContato from "../../components/LinksContato";
+
 
 function Contato() {
   return (
@@ -17,10 +17,20 @@ function Contato() {
         </article>
         <Form />
       </div>
-      <div>
+      <div className="container-planta">
+      <img
+          className="planta-contato2"
+          src='https://raw.githubusercontent.com/gabezrodz/imagens-chefao-xp40/main/contato/CT01.png'
+          alt="imagem de planta com links de redes sociais"
+        />
         <img
-          className="planta-contato"
-          src={PlantaContato}
+          className="planta-contato1"
+          src='https://raw.githubusercontent.com/gabezrodz/imagens-chefao-xp40/main/contato/CT02.png'
+          alt="imagem de planta com links de redes sociais"
+        />
+                <img
+          className="planta-contato3"
+          src='https://raw.githubusercontent.com/gabezrodz/imagens-chefao-xp40/main/contato/CT03.png'
           alt="imagem de planta com links de redes sociais"
         />
         <div className="links-externos">

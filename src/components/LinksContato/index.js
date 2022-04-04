@@ -1,12 +1,12 @@
 import './linksContato.css'
-import {FaInstagram} from 'react-icons/fa'
+import {FaInstagram, FaRegEnvelope, FaPinterestP} from 'react-icons/fa'
 
 function LinksContato(){
     return(
     <div className='fundoLinkContato'>
         <FaInstagram className='linkContato'/>
-        <FaInstagram className='linkContato'/>
-        <FaInstagram className='linkContato'/>
+        <FaPinterestP className='linkContato'/>
+        <FaRegEnvelope className='linkContato'/>
     </div>
     )
 }
