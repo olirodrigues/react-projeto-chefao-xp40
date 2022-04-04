@@ -45,11 +45,11 @@ function BlogId() {
     return (
       <div className="container-post">
         <div className="container-post_textos">
-          <div>
-            <h1>{post.titulo}</h1>
+          <div className="textos-titulo">
+            <Texto tipo="titulo2" class="h2-blog preto">{post.titulo}</Texto>
           </div>
-          <div>
-            <p>{post.texto}</p>
+          <div className="textos-paragrafo">
+            <Texto tipo="paragrafo" class="cinza-escuro">{post.texto}</Texto>
           </div>
         </div>
         <div className="container-post_grid">

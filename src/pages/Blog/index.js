@@ -3,7 +3,7 @@ import BlogPost from "../../components/Blog/BlogPost";
 import { getBlogPost } from "../../services/routes/blog";
 import "./estiloBlog.css";
 import Texto from "../../components/Texto/Texto";
-import SetaVoltar from "../../components/SetaVoltar";
+
 
 function Blog() {
   const [blogPosts, setBlogPosts] = useState([]);
