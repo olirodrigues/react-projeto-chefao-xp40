@@ -47,8 +47,6 @@ function Sobrenos() {
     getDadosSobreNos(params.id);
   }, [params.id]);
 
-
-
   const imagensSobre = () => {
     if (celular) {
       return (
@@ -103,7 +101,7 @@ function Sobrenos() {
                 </Texto>
               </NavLink>
             </div>
-            {params.id == 1 ? (
+            {params.id === 1 ? (
               <div>
                 <Texto tipo="paragrafo" class="cinza">
                   A mee é uma empresa que se preocupa com o bem-estar das
@@ -147,7 +145,7 @@ function Sobrenos() {
             )}
           </div>
           <div
-            className={params.id == 1 ? "grid-sobre__nos" : "grid-sobre__mee"}
+            className={params.id === 1 ? "grid-sobre__nos" : "grid-sobre__mee"}
           >
             {imagensSobre()}
           </div>
