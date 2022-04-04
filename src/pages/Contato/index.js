@@ -22,17 +22,17 @@ function Contato() {
       <div className="container-planta">
       <img
           className="planta-contato2"
-          src={PlantaContato2}
+          src='https://raw.githubusercontent.com/gabezrodz/imagens-chefao-xp40/main/contato/CT01.png'
           alt="imagem de planta com links de redes sociais"
         />
         <img
           className="planta-contato1"
-          src={PlantaContato1}
+          src='https://raw.githubusercontent.com/gabezrodz/imagens-chefao-xp40/main/contato/CT02.png'
           alt="imagem de planta com links de redes sociais"
         />
                 <img
           className="planta-contato3"
-          src={PlantaContato3}
+          src='https://raw.githubusercontent.com/gabezrodz/imagens-chefao-xp40/main/contato/CT03.png'
           alt="imagem de planta com links de redes sociais"
         />
         <div className="links-externos">

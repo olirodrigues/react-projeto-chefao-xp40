@@ -52,12 +52,12 @@
     }
     .planta-contato2{
         display: flex;
-        border-top-left-radius: 40px;
+        border-top-left-radius: 90px;
         margin-bottom: 10px;
     }
     .planta-contato3{
         display: flex;
-        border-bottom-right-radius: 40px;
+        border-bottom-right-radius: 90px;
     }
     .links-externos{
             position: absolute;
