@@ -9,5 +9,25 @@
 }
 
 .titulo-foco {
-  border-bottom: 3px solid #69bf8e;
+  position: relative;
+}
+
+.titulo-foco::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.5px;
+  left: 0;
+  bottom: 0;
+  background-color: #69bf8e;
+  animation: aba-selecionada 500ms;
+}
+
+@keyframes aba-selecionada {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
