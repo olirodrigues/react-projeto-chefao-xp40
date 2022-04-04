@@ -1,8 +1,8 @@
 .container-circulo {
   border-radius: 50% 0 50% 0;
   background-color: #f4f4f4;
-  max-height: 250px;
-  max-width: 250px;
+  height: 250px;
+  width: 250px;
   border: solid 10px #ffffff;
   display: flex;
   align-items: center;
@@ -10,13 +10,12 @@
 }
 
 .container-circulo img {
-  max-height: 70%;
+  border-radius: 50%;
+  max-height: 100%;
 }
 
 .circulo {
-  border-radius: 50%;
   max-width: 150px;
-  max-height: 150px;
 }
 
 .circulo:hover {
@@ -47,6 +46,15 @@
 }
 
 @media (width <= 375px) {
+  .container-circulo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .container-circulo img {
+    max-height: 100px;
+  }
+
   .sem-borda {
     max-width: 250px;
     width: 100%;

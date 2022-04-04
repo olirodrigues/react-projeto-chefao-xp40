@@ -16,15 +16,15 @@
   .container-posts {
     margin-top: 150px;
   }
+ 
 }
 
 @media (width < 600px) {
-  .titulo-blog {
-    margin-left: -80px;
-  }
   .container-posts {
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 0px;
+    gap: 15px;
+    margin: 0 50px 50px;
   }
 }

@@ -4,11 +4,12 @@ import Header from "./components/Header";
 import Plantas from "./pages/Plantas";
 import PlantasDetalhe from "./pages/PlantasDetalhe/PlantasDetalhe";
 import Blog from "./pages/Blog";
-import Sobrenos from "./pages/Sobrenos";
+import SobreNos from "./pages/Sobrenos/SobreNos";
 import Contato from "./pages/Contato";
 import Footer from "./components/Footer/Footer";
 import { useMediaQuery } from "react-responsive";
 import MenuMobile from "./components/MenuMobile/MenuMobile";
+import BlogId from "./pages/BlogId";
 
 const Rotas = () => {
   const tablet = useMediaQuery({
@@ -26,7 +27,8 @@ const Rotas = () => {
             element={<PlantasDetalhe />}
           ></Route>
           <Route exact path="/blog" element={<Blog />}></Route>
-          <Route path="/sobrenos" element={<Sobrenos />}></Route>
+          <Route exact path="/blog/:id" element={<BlogId />}></Route>
+          <Route path="/sobrenos/:id" element={<SobreNos />}></Route>
           <Route path="/contato" element={<Contato />}></Route>
         </Routes>
       </main>
