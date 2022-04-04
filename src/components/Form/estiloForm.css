@@ -15,6 +15,7 @@ input{
     border-left: none;
     border-right: none;
     margin-bottom: 2em;
+    color: lightgray;
 }
 .btn-enviar{
     margin-left: 200px;
@@ -41,4 +42,13 @@ input{
     .btn-enviar{
         margin-left: 120px;
     } 
+}
+@media (width < 600px){
+    .form-container{
+        margin-left: 30px;
+        display:flex;
+        flex-direction: column;
+        width: 300px;
+        height: 300px;
+    }
 }
