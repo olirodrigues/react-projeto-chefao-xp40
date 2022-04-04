@@ -25,9 +25,9 @@
 
 @keyframes aba-selecionada {
   0% {
-    width: 0;
+    transform: scale(0, 1);
   }
   100% {
-    width: 100%;
+    transform: scale(1, 1);
   }
 }
