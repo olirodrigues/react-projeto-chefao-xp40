@@ -31,7 +31,7 @@ function PlantasDetalhe() {
 
   useEffect(() => {
     getDadosPlantaId(params.categorias, params.id);
-  }, []);
+  }, [params.categorias, params.id]);
 
   if (plantas == null) {
     return <div id="main-content">Errou</div>;
