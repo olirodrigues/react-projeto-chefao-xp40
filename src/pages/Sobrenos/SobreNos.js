@@ -83,7 +83,7 @@ function Sobrenos() {
         </Texto>
         <div className="container-conteudo">
           <div className="container-textos">
-            <div className="container-abas">
+            <div className="container-abas__sobre">
               <NavLink
                 to="/sobrenos/1"
                 className={({ isActive }) => (isActive ? "aba-ativa" : "")}
