@@ -3,16 +3,16 @@ button {
   flex-direction: row;
   align-items: flex-start;
   padding: 10px 16px;
-  font-size: 20px;
   cursor: pointer;
 }
 
 .btn-verde {
   background: #69bf8e;
-  border: 1.11765px solid #69bf8e;
+  border: 0;
   box-sizing: border-box;
   box-shadow: 3px 3px 6px rgba(147, 220, 176, 0.7);
   border-radius: 8px;
+  transition: 0.25s ease-in-out;
 }
 
 .outline {
@@ -20,4 +20,30 @@ button {
   border: 1.11765px solid #69bf8e;
   box-sizing: border-box;
   border-radius: 8px;
+  transition: 0.25s ease-in-out;
+}
+
+.btn-verde:hover {
+  background: #4fa373;
+}
+
+.btn-verde:disabled {
+  background-color: #c4c4c4;
+}
+
+.outline:hover {
+  background-color: #69bf8e;
+}
+
+.outline:hover > p {
+  color: #ffffff;
+}
+
+.btn-verde:disabled {
+  background-color: transparent;
+  border: 1.11765px solid #c4c4c4;
+}
+
+.btn-verde:disabled > p {
+  color: #c4c4c4;
 }
