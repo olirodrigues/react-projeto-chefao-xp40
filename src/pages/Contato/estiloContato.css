@@ -16,7 +16,7 @@
 }
 .planta-contato1{
     width: 100%;
-    height: 140%;
+    height: 100%;
     object-fit: cover;
     object-position: bottom left;
 }
@@ -31,7 +31,7 @@
         top: 50%;
         left: 70%;
 }
-@media (max-width: 1020px){
+@media (max-width: 1024px){
     .texto-contato{
         margin-left: 64px;
         width: 300px;
@@ -65,4 +65,15 @@
             left: 80%;
     } 
 
+}
+@media (width < 600px){
+    .container-planta{
+        display: none;
+    } 
+    .texto-contato{
+    margin-left: 30px;
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 }

@@ -8,7 +8,12 @@ function Contato() {
   return (
     <div className="container-contato">
       <div className="main-contato">
-        <article className="texto-contato">
+        <article className="texto-contato">        
+        <Texto Texto tipo="titulo1" class="verde-escuro ">
+            Contato
+          </Texto>
+          <br/>
+          <br/>
           <Texto tipo="titulo1" class="h1-contato">
             Seria ótimo se nossas plantinhas falassem. Mas nós podemos aprender
             e entender todos os sinais elas que nos dão. Mande sua dúvida que
