@@ -26,7 +26,7 @@ function Carrossel(props) {
           key={fotoCarrossel}
           src={fotoCarrossel}
           sizes={Object.entries(fotosSizes)[0][1]}
-          className="sem-borda"
+          className="sem-borda img-carrossel"
           maxMobileSize="250px"
           maxTabletSize="500px"
           maxDesktopSize="500px"
@@ -43,7 +43,9 @@ function Carrossel(props) {
               src={fotos}
               sizes={sizes}
               className={`sem-borda ${
-                fotoCarrossel === fotos ? "" : "foto-carrossel-sem-foco"
+                fotoCarrossel === fotos
+                  ? "foto-carrossel-com-foco"
+                  : "foto-carrossel-sem-foco"
               }`}
               maxMobileSize="30px"
               maxTabletSize="80px"
