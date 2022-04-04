@@ -11,7 +11,7 @@ function Header() {
         <Link className='headerLink' to='/plantas'>
           Plantas
         </Link>
-        <Link className='headerLink' to='/sobrenos'>
+        <Link className='headerLink' to='/sobrenos/1'>
           Sobre nós
         </Link>
         <Link className='headerLink' to='/blog'>

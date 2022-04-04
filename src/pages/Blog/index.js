@@ -3,7 +3,7 @@ import BlogPost from "../../components/Blog/BlogPost";
 import { getBlogPost } from "../../services/routes/blog";
 import "./estiloBlog.css";
 import Texto from "../../components/Texto/Texto";
-import SetaVoltar from "../../components/SetaVoltar";
+
 
 function Blog() {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -33,6 +33,7 @@ function Blog() {
                 titulo={post.post_titulo}
                 resumo={post.post_resumo}
                 fotos={post.fotos_gerai}
+                id={post.id}
               />
             );
           })}

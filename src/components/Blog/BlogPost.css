@@ -4,6 +4,7 @@
   align-items: flex-start;
   gap: 32px;
   max-width: 250px;
+  animation: fade 500ms ease-out forwards;
 }
 
 .titulo-post {
@@ -27,9 +28,39 @@
   justify-content: center;
 }
 
-@media (width <= 1022px){
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (width <= 1022px) {
   .card-container {
     margin-top: 50px;
   }
+}
 
+@media (width <= 375px) {
+  .card-container {
+    text-align: center;
+    align-items: center;
+    animation: fadeMobile 500ms ease-out;
+  }
+
+  .card-container button P {
+    width: 120px;
+  }
+
+  @keyframes fadeMobile {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 }

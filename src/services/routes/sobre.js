@@ -9,3 +9,4 @@ export const getSobrePostId = async (postId) => {
     }
   };
   
+  export const getFotosSobre= "https://gabezrodz.github.io/imagens-chefao-xp40/sobre/"
