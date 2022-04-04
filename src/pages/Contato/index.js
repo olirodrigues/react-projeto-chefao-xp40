@@ -1,10 +1,8 @@
 import Form from "../../components/Form";
 import "./estiloContato.css";
 import Texto from "../../components/Texto/Texto";
-import PlantaContato1 from "../../assets/plantaContato1.png";
 import LinksContato from "../../components/LinksContato";
-import PlantaContato2 from "../../assets/plantaContato2.png";
-import PlantaContato3 from "../../assets/plantaContato3.png";
+
 
 function Contato() {
   return (
