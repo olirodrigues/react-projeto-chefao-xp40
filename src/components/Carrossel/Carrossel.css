@@ -28,14 +28,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .container-carrossel > .slide {
   position: absolute;
+  /* width: 500px;
+  height: 500px; */
 }
 
-.container-carrossel > .slide > img {
-  transition: transform 500ms;
+.container-carrossel > .slide {
+  transition: 500ms;
 }
 
 .container-carrossel > .select {
@@ -45,19 +48,19 @@
   z-index: 10;
 }
 
-.container-carrossel > .anterior img,
-.container-carrossel > .proximo img {
-  filter: blur(20px);
+.container-carrossel > .anterior,
+.container-carrossel > .proximo {
+  filter: blur(20px) brightness(0.8) contrast(0.9);
 }
 
-.container-carrossel > .anterior img {
-  position: relative;
-  transform: perspective(500px) translate3d(-128px, 0px, -100px);
+.container-carrossel > .anterior {
+  /* position: relative; */
+  transform: perspective(500px) translate3d(-25%, 0px, -100px);
 }
 
-.container-carrossel > .proximo img {
-  position: relative;
-  transform: perspective(500px) translate3d(128px, 0px, -100px);
+.container-carrossel > .proximo {
+  /* position: relative; */
+  transform: perspective(500px) translate3d(25%, 0px, -100px);
 }
 
 @keyframes opacity-out {
@@ -110,12 +113,9 @@
     z-index: 10;
   }
 
-  .container-carrossel > .anterior img {
-    position: relative;
-    transform: perspective(500px) translate3d(-80px, 0px, -30px);
-  }
-
-  .container-carrossel > .proximo img {
-    transform: perspective(500px) translate3d(80px, 0px, -30px);
+  .container-carrossel > .anterior,
+  .container-carrossel > .proximo {
+    /* position: relative; */
+    transform: perspective(250px) translate3d(25%, 0px, -100px);
   }
 }

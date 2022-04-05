@@ -70,7 +70,7 @@ function Carrossel(props) {
               maxMobileSize="250px"
               maxTabletSize="500px"
               maxDesktopSize="500px"
-              url={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${props.categoria}`}
+              urlImagens={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${props.categoria}`}
             />
           );
         })}
