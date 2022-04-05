@@ -27,6 +27,7 @@ const Rotas = () => {
             path="/plantas/:categorias"
             element={<PlantasCategorias />}
           ></Route>
+
           <Route
             path="/plantas/:categorias/:id"
             element={<PlantasDetalhe />}

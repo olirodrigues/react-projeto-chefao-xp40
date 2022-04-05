@@ -54,6 +54,7 @@ function Plantas() {
               nome={planta.nome}
               fotos={planta.fotos}
               key={planta.nome}
+              url="https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/"
             />
           ))}
         </div>
