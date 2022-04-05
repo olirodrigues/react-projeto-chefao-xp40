@@ -23,6 +23,7 @@ function Plantas() {
           id: res.id,
           nome: res.nome,
           fotos: fotosArray,
+          categoria: res.nome.normalize().toLowerCase(),
         };
       }),
     );
@@ -35,6 +36,7 @@ function Plantas() {
   if (plantas == null) {
     return <div id="main-content"></div>;
   }
+
   return (
     <div id="main-content">
       <div className="container-plantas">
@@ -54,7 +56,8 @@ function Plantas() {
               nome={planta.nome}
               fotos={planta.fotos}
               key={planta.nome}
-              url="https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/"
+              urlImagens="https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/"
+              url={`/plantas/${planta.categoria}`}
             />
           ))}
         </div>

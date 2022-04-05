@@ -8,10 +8,10 @@ function ImagemFolha({
   maxTabletSize,
   maxMobileSize,
   maxDesktopSize,
-  url,
+  urlImagens,
 }) {
   const imagemUrl = sizes
-    .map((size) => `${url}/${src}x${size}.png ${size}w`)
+    .map((size) => `${urlImagens}/${src}x${size}.png ${size}w`)
     .join(", ");
 
   return (

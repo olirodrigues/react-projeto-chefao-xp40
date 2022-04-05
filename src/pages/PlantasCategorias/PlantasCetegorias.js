@@ -48,7 +48,8 @@ function PlantasCategorias() {
             id={planta.id}
             fotos={planta.fotos}
             nome={planta.nome}
-            url={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${planta.categoria}`}
+            urlImagens={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${planta.categoria}`}
+            url={`/plantas/${planta.categoria}/${planta.id}`}
           />
         ))}
       </div>

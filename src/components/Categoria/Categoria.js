@@ -1,6 +1,7 @@
 import Botao from "../Botao/Botao";
 import ImagemFolha from "../ImagemFolha/ImagemFolha";
 import "./Categoria.css";
+import { Link } from "react-router-dom";
 
 const Categorias = (props) => {
   const fotosDasPlantas = props.fotos
@@ -29,11 +30,13 @@ const Categorias = (props) => {
               maxDesktopSize="200px"
               maxTabletSize="150px"
               maxMobileSize="100px"
-              url={props.url}
+              urlImagens={props.urlImagens}
             />
-            <Botao class="btn-verde" color="branco bold">
-              {props.nome}
-            </Botao>
+            <Link to={props.url}>
+              <Botao class="btn-verde" color="branco bold">
+                {props.nome}
+              </Botao>
+            </Link>
           </div>
         );
       })}
