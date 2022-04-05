@@ -31,7 +31,7 @@ function Carrossel(props) {
           maxTabletSize="500px"
           maxDesktopSize="500px"
           categoria={props.categoria}
-          url={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${props.categoria}`}
+          urlImagens={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${props.categoria}`}
         />
       </div>
 
@@ -51,7 +51,7 @@ function Carrossel(props) {
               maxTabletSize="80px"
               maxDesktopSize="80px"
               onClick={() => setFotoCarrossel(fotos)}
-              url={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${props.categoria}`}
+              urlImagens={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${props.categoria}`}
             />
           );
         })}
