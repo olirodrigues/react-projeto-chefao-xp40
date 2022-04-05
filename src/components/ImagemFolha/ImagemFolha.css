@@ -62,8 +62,12 @@
     max-height: 100px;
   }
 
+  .container-sem-borda {
+    min-height: 30px;
+  }
+
   .sem-borda {
     max-width: 250px;
-    width: 100%;
+    height: 100%;
   }
 }
