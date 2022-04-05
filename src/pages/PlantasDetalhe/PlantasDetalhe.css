@@ -48,10 +48,6 @@
       "textos";
   }
 
-  .titulo-plantasdetalhes {
-    margin-top: 72px;
-  }
-
   .textos-platasdetalhes {
     flex-direction: row;
     gap: 100px;
@@ -70,5 +66,24 @@
     justify-content: center;
     height: 100%;
     margin-block: auto;
+  }
+}
+
+@media (width <=375px) {
+  .textos-platasdetalhes {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .container-plantasdetalhes {
+    gap: 36px;
+  }
+
+  .titulo-plantasdetalhes {
+    left: 0;
+  }
+
+  .textos-platasdetalhes img {
+    height: 36px;
   }
 }

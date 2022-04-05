@@ -3,7 +3,7 @@ import Abas from "../../components/Abas/Abas";
 import Carrossel from "../../components/Carrossel/Carrossel";
 import Texto from "../../components/Texto/Texto";
 import Cuidados from "../../components/Cuidados/Cuidados";
-import SetaVoltar from "../../components/SetaVoltar";
+import SetaVoltar from "../../assets/svg/setas/setaVoltarSimples.svg";
 
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -76,7 +76,7 @@ function PlantasDetalhe() {
     <div id="main-content">
       <div className="container-plantasdetalhes">
         <div className="titulo-plantasdetalhes">
-          <SetaVoltar />
+          <img src={SetaVoltar} alt="" />
           <Texto tipo="titulo1" class="verde-escuro">
             {plantas.nome}
           </Texto>
