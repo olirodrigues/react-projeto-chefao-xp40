@@ -10,6 +10,7 @@ import Footer from "./components/Footer/Footer";
 import { useMediaQuery } from "react-responsive";
 import MenuMobile from "./components/MenuMobile/MenuMobile";
 import BlogId from "./pages/BlogId";
+import PlantasCategorias from "./pages/PlantasCategorias/PlantasCetegorias";
 
 const Rotas = () => {
   const tablet = useMediaQuery({
@@ -22,6 +23,11 @@ const Rotas = () => {
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/plantas" element={<Plantas />}></Route>
+          <Route
+            path="/plantas/:categorias"
+            element={<PlantasCategorias />}
+          ></Route>
+
           <Route
             path="/plantas/:categorias/:id"
             element={<PlantasDetalhe />}
