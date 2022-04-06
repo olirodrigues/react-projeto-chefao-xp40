@@ -84,7 +84,7 @@
   }
 }
 
-@media (width <= 375px) {
+@media (width <= 480px) {
   .container-conteudo {
     gap: 30px;
   }

@@ -51,7 +51,7 @@
   }
 }
 
-@media (width <= 375px) {
+@media (width <= 480px) {
   .container-home > .texto {
     margin: 32px;
     min-width: 40%;
