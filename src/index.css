@@ -31,8 +31,9 @@ body,
     "footer";
 }
 #body-content > header,
-#body-content > footer {
-  margin: 0 64px;
+#body-content > footer,
+#main-content {
+  margin-inline: 64px;
 }
 
 #body-content > header {
@@ -42,7 +43,6 @@ body,
 
 #body-content > main {
   grid-area: main;
-  overflow: auto;
 }
 
 #body-content > footer {
@@ -51,7 +51,6 @@ body,
 }
 
 #main-content {
-  margin-inline: 64px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -64,7 +63,16 @@ body,
   flex-direction: column;
 }
 
-@media (width <= 375px) {
+@media (width <= 1024px) {
+  #body-content > header,
+  #main-content {
+    margin-inline: 88px;
+  }
+}
+
+@media (width <= 480px) {
+  #body-content > header,
+  #body-content > footer,
   #main-content {
     margin-inline: 32px;
   }
