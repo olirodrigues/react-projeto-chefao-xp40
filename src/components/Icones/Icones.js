@@ -99,7 +99,9 @@ function Icones({ icone, hover, size }) {
   };
 
   return (
-    <div className={`container-icone-${icone} ${hover} ${size}`}>
+    <div
+      className={`container-icones container-icone-${icone} ${hover} ${size}`}
+    >
       {getIcone(icone)}
     </div>
   );
