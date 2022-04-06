@@ -4,9 +4,11 @@ import "./PlantasCategorias.css";
 import { useState, useEffect } from "react";
 import { getPlantasCategorias } from "../../services/routes/plantas";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import CategoriaCactos from "../../assets/svg/categoriasPlantas/categoriaCactos.svg";
 import CategoriaSuculentas from "../../assets/svg/categoriasPlantas/categoriaSuculentas.svg";
 import CategoriaHorticulas from "../../assets/svg/categoriasPlantas/categoriaHorticulas.svg";
+import SetaVoltar from "../../assets/svg/setas/setaVoltarSimples.svg";
 
 function PlantasCategorias() {
   const [categorias, setCategorias] = useState(null);
@@ -47,7 +49,7 @@ function PlantasCategorias() {
       return (
         <div>
           <div>
-            <img src={CategoriaCactos}></img>
+            <img src={CategoriaCactos} alt=""></img>
             <Texto tipo="titulo1" class="h1-hind  verde-claro bold">
               {` `}Cactos!{` `}
             </Texto>
@@ -67,7 +69,7 @@ function PlantasCategorias() {
       return (
         <div>
           <div>
-            <img src={CategoriaSuculentas}></img>
+            <img src={CategoriaSuculentas} alt=""></img>
             <Texto tipo="titulo1" class="h1-hind  verde-claro bold">
               {` `}Suculentas!{` `}
             </Texto>
@@ -87,7 +89,7 @@ function PlantasCategorias() {
       return (
         <div>
           <div>
-            <img src={CategoriaHorticulas}></img>
+            <img src={CategoriaHorticulas} alt=""></img>
             <Texto tipo="titulo1" class="h1-hind  verde-claro bold">
               {` `}Hortículas!{` `}
             </Texto>
@@ -107,8 +109,11 @@ function PlantasCategorias() {
 
   return (
     <div id="Container">
-      <div>{textoCategorias(params.categorias)}</div>
+      <div className="">{textoCategorias(params.categorias)}</div>
       <div className="container-titulo">
+        <Link to="/plantas">
+          <img src={SetaVoltar} alt=""></img>
+        </Link>
         {categorias.map((planta) => (
           <Categorias
             key={planta.id}
