@@ -114,7 +114,7 @@ p {
   }
 }
 
-@media (width <= 420px) {
+@media (width <= 480px) {
   h1 {
     font-size: 24px;
     line-height: 28.31px;
@@ -126,7 +126,7 @@ p {
   }
 
   p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14.4px;
   }
 

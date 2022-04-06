@@ -12,6 +12,9 @@ a {
   text-decoration: none;
 }
 
+html {
+  background-color: #f9f9f7;
+}
 html,
 body,
 #root {
@@ -19,7 +22,6 @@ body,
 }
 
 #body-content {
-  background-color: #f9f9f7;
   height: 100vh;
   display: grid;
 

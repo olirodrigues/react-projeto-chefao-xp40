@@ -3,8 +3,8 @@ import Abas from "../../components/Abas/Abas";
 import Carrossel from "../../components/Carrossel/Carrossel";
 import Texto from "../../components/Texto/Texto";
 import Cuidados from "../../components/Cuidados/Cuidados";
-import SetaVoltar from "../../assets/svg/setas/setaVoltarSimples.svg";
-
+import Icones from "../../components/Icones/Icones";
+import { useMediaQuery } from "react-responsive";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getPlantasId } from "../../services/routes/plantas";
@@ -32,6 +32,10 @@ function PlantasDetalhe() {
   useEffect(() => {
     getDadosPlantaId(params.categorias, params.id);
   }, [params.categorias, params.id]);
+
+  const tablet = useMediaQuery({
+    query: "(max-width:1024px)",
+  });
 
   if (plantas == null) {
     return <div id="main-content">Errou</div>;
@@ -77,7 +81,11 @@ function PlantasDetalhe() {
       <div className="container-plantasdetalhes">
         <div className="titulo-plantasdetalhes">
           <Link to={`/plantas/${params.categorias}`}>
-            <img src={SetaVoltar} alt="" />
+            {!tablet ? (
+              <Icones icone="setaComCirculo" hover="hover-fundo-cinza" />
+            ) : (
+              <Icones icone="setaVoltarSimples" />
+            )}
           </Link>
           <Texto tipo="titulo1" class="verde-escuro">
             {plantas.nome}

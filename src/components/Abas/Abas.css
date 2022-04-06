@@ -2,6 +2,7 @@
   margin-block: 20px 10px;
   border-bottom: 1px solid #d3d3d3;
   justify-content: space-between;
+  margin-bottom: 32px;
 }
 
 .titulos-abas {
@@ -28,6 +29,17 @@
     transform: scale(0, 1);
   }
   100% {
-  
+  }
+}
+
+@media (width <= 1024) {
+  .conteudo-abas {
+    min-height: 100px;
+  }
+}
+
+@media (width <= 480px) {
+  .conteudo-abas {
+    min-height: 207px;
   }
 }
