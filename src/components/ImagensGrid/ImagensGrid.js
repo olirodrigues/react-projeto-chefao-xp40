@@ -1,7 +1,7 @@
-import './estiloImgBlog.css'
+import './ImagensGrid.css'
 
 
-function GridImgBlogDesktop(props){
+function ImagensGrid(props){
     return(
     <div className='container-grid_posts'>
         <div className='item-grid h-1'>
@@ -20,4 +20,4 @@ function GridImgBlogDesktop(props){
     </div>
     )
 }
-export default GridImgBlogDesktop
+export default ImagensGrid

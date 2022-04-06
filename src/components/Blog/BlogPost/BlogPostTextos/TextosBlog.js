@@ -1,4 +1,4 @@
-import Texto from "../../Texto/Texto";
+import Texto from "../../../Texto/Texto";
 
 const TextosBlog = ({ id }) => {
   if (id === "1") {

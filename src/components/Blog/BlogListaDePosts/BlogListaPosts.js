@@ -1,12 +1,10 @@
-import "./BlogPost.css";
-import Botao from "../Botao/Botao";
-import Texto from "../Texto/Texto";
+import "./BlogListaPosts.css";
+import Botao from "../../Botao/Botao";
+import Texto from "../../Texto/Texto";
 
 import { Link } from "react-router-dom";
 
-
-
-const BlogPost = (props) => {
+const BlogListaPosts = (props) => {
   return (
     <div className="card-container">
       <div className="card-container__imagem">
@@ -28,16 +26,14 @@ const BlogPost = (props) => {
         </div>
       </div>
       <div>
-
         <Link to={`/blog/${props.id}`}>
-
-        <Botao class="outline" color="cinza bold">
-          Ler artigo
-        </Botao>
+          <Botao class="outline" color="cinza bold">
+            Ler artigo
+          </Botao>
         </Link>
       </div>
     </div>
   );
 };
 
-export default BlogPost;
+export default BlogListaPosts;

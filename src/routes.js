@@ -9,7 +9,7 @@ import Contato from "./pages/Contato";
 import Footer from "./components/Footer/Footer";
 import { useMediaQuery } from "react-responsive";
 import MenuMobile from "./components/MenuMobile/MenuMobile";
-import BlogId from "./pages/BlogId";
+import BlogPost from "./pages/BlogPost/index";
 import PlantasCategorias from "./pages/PlantasCategorias/PlantasCetegorias";
 
 const Rotas = () => {
@@ -33,7 +33,7 @@ const Rotas = () => {
             element={<PlantasDetalhe />}
           ></Route>
           <Route exact path="/blog" element={<Blog />}></Route>
-          <Route exact path="/blog/:id" element={<BlogId />}></Route>
+          <Route exact path="/blog/:id" element={<BlogPost />}></Route>
           <Route path="/sobrenos/:id" element={<SobreNos />}></Route>
           <Route path="/contato" element={<Contato />}></Route>
         </Routes>

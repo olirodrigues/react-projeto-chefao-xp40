@@ -1,0 +1,51 @@
+.blog-seta {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  position: relative;
+  left: -45px;
+  gap: 15px;
+}
+
+.blog-seta a img {
+  width: 22px;
+}
+
+@media (width <= 1024px) {
+  .blog-seta {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .blog-seta a img {
+    width: 22px;
+  }
+}
+
+@media (width <= 480px) {
+  .blog-seta {
+    align-items: baseline;
+    gap: 8px;
+    left: 0px;
+    margin-top: 42px;
+  }
+  .blog-seta a img {
+    width: 22px;
+  }
+}
+
+@media (width <= 375px) {
+  .container-post {
+    gap: 100px;
+  }
+  .textos-titulo {
+    width: 315px;
+    margin: 0;
+  }
+
+  .textos-paragrafo {
+    width: 311px;
+    margin: 30px 0;
+  }
+}

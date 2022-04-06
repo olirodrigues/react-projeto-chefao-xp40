@@ -1,13 +1,12 @@
-import "./estiloBlogId.css";
+import "./BlogPost.css";
 import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { getBlogPostId, getFotosBlogId } from "../../services/routes/blog";
-import GridImgBlogDesktop from "../../components/GridImgBlogDesktop";
+import { getBlogPostId } from "../../services/routes/blog";
+import ConteudoBlog from "../../components/Blog/BlogPost/BlogPostConteudo/BlogPostConteudo";
 import Texto from "../../components/Texto/Texto.js";
 import SetaVoltar from "../../assets/svg/setas/setaVoltarSimples.svg";
-import TextosBlog from "../../components/Blog/TextosBlog/TextosBlog";
 
-function BlogId() {
+function BlogPost() {
   const { id } = useParams();
   const [post, setPost] = useState(null);
 
@@ -42,30 +41,9 @@ function BlogId() {
     getDadosDoPost(id);
   }, [id]);
 
-  const conetudoBlog = () => {
-    return (
-      <div className="container-post">
-        <div className="container-post_textos">
-          <div className="textos-titulo">
-            <Texto tipo="titulo2" class="h2-blog preto">
-              {post.titulo}
-            </Texto>
-          </div>
-          <div className="textos-paragrafo">
-            <TextosBlog id={id} />
-          </div>
-        </div>
-        <div className="container-post_grid">
-          <GridImgBlogDesktop
-            src1={`${getFotosBlogId}${post.fotos.desktop[0]}.png`}
-            src2={`${getFotosBlogId}${post.fotos.desktop[1]}.png`}
-            src3={`${getFotosBlogId}${post.fotos.desktop[3]}.png`}
-            src4={`${getFotosBlogId}${post.fotos.desktop[2]}.png`}
-          />
-        </div>
-      </div>
-    );
-  };
+  if (post === null) {
+    return <h1>Carregando...</h1>;
+  }
 
   return (
     <div id="main-content">
@@ -77,9 +55,9 @@ function BlogId() {
           Blog
         </Texto>
       </div>
-      {post !== null ? conetudoBlog() : "Carregando"}
+      <ConteudoBlog id={id} titulo={post.titulo} fotos={post.fotos} />
     </div>
   );
 }
 
-export default BlogId;
+export default BlogPost;
