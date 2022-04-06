@@ -79,7 +79,7 @@
   }
 }
 
-@media (width <= 420px) {
+@media (width <= 480px) {
   .container-carrossel-grid {
     flex-direction: column;
     justify-content: center;

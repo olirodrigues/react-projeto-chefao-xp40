@@ -109,7 +109,7 @@
     height: 45px;
   }
 }
-@media (width <= 375px) {
+@media (width <= 480px) {
   .icone-hamburger {
     top: 3%;
     left: 9%;

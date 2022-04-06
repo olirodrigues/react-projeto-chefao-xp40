@@ -94,7 +94,7 @@
   }
 }
 
-@media (width <= 375px) {
+@media (width <= 480px) {
   .container-post {
     gap: 100px;
   }
