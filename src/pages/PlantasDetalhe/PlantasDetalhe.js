@@ -6,7 +6,7 @@ import Cuidados from "../../components/Cuidados/Cuidados";
 import SetaVoltar from "../../assets/svg/setas/setaVoltarSimples.svg";
 
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { getPlantasId } from "../../services/routes/plantas";
 
 function PlantasDetalhe() {
@@ -76,7 +76,9 @@ function PlantasDetalhe() {
     <div id="main-content">
       <div className="container-plantasdetalhes">
         <div className="titulo-plantasdetalhes">
-          <img src={SetaVoltar} alt="" />
+          <Link to={`/plantas/${params.categorias}`}>
+            <img src={SetaVoltar} alt="" />
+          </Link>
           <Texto tipo="titulo1" class="verde-escuro">
             {plantas.nome}
           </Texto>

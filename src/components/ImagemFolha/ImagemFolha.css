@@ -52,7 +52,7 @@
     drop-shadow(15px 10px 35px rgba(182, 182, 182, 0.3));
 }
 
-@media (width <= 375px) {
+@media (width <= 420px) {
   .container-circulo {
     width: 150px;
     height: 150px;

@@ -15,42 +15,83 @@ function Carrossel(props) {
       return picsWithResolutions;
     }, {});
 
-  const [fotoCarrossel, setFotoCarrossel] = useState(
-    Object.entries(fotosSizes)[0][0],
-  );
+  const [fotoCarrossel, setFotoCarrossel] = useState(0);
+  const [current, setCurrent] = useState(0);
+  const lenght = Object.entries(fotosSizes).length;
+
+  // const nextSlide = () => {
+  //   setCurrent(current === 0 ? lenght - 1 : current - 1);
+  // };
+
+  // const plevSlide = () => {
+  //   setCurrent(current === lenght - 1 ? 0 : current + 1);
+  // };
+
+  const animacaoCarrossel = (index) => {
+    if (fotoCarrossel === 0) {
+      if (index === fotoCarrossel + 1) {
+        return "slide proximo";
+      }
+      if (index === lenght - 1) {
+        return "slide anterior";
+      }
+      return "slide select";
+    }
+    if (fotoCarrossel === 1) {
+      if (index === fotoCarrossel + 1) {
+        return "slide proximo";
+      }
+      if (index === fotoCarrossel - 1) {
+        return "slide anterior";
+      }
+      return "slide select";
+    }
+    if (fotoCarrossel === 2) {
+      if (index === 0) {
+        return "slide proximo";
+      }
+      if (index === fotoCarrossel - 1) {
+        return "slide anterior";
+      }
+      return "slide select";
+    }
+  };
 
   return (
     <div className="container-carrossel-grid">
       <div className="container-carrossel">
-        <ImagemFolha
-          key={fotoCarrossel}
-          src={fotoCarrossel}
-          sizes={Object.entries(fotosSizes)[0][1]}
-          className="sem-borda img-carrossel"
-          maxMobileSize="250px"
-          maxTabletSize="500px"
-          maxDesktopSize="500px"
-          categoria={props.categoria}
-          urlImagens={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${props.categoria}`}
-        />
-      </div>
-
-      <div className="container-grid">
-        {Object.entries(fotosSizes).map(([fotos, sizes]) => {
+        {Object.entries(fotosSizes).map(([fotos, sizes], index) => {
           return (
             <ImagemFolha
               key={fotos}
               src={fotos}
               sizes={sizes}
-              className={`sem-borda ${
-                fotoCarrossel === fotos
+              className={`sem-borda ${animacaoCarrossel(index)}`}
+              maxMobileSize="250px"
+              maxTabletSize="500px"
+              maxDesktopSize="500px"
+              urlImagens={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${props.categoria}`}
+            />
+          );
+        })}
+      </div>
+
+      <div className="container-grid">
+        {Object.entries(fotosSizes).map(([fotos, sizes], index) => {
+          return (
+            <ImagemFolha
+              key={fotos}
+              src={fotos}
+              sizes={sizes}
+              className={`sem-borda ${animacaoCarrossel(index)} ${
+                fotoCarrossel === index
                   ? "foto-carrossel-com-foco"
                   : "foto-carrossel-sem-foco"
               }`}
               maxMobileSize="30px"
               maxTabletSize="80px"
               maxDesktopSize="80px"
-              onClick={() => setFotoCarrossel(fotos)}
+              onClick={() => setFotoCarrossel(index)}
               urlImagens={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${props.categoria}`}
             />
           );
