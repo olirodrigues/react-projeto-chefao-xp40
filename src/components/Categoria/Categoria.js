@@ -10,7 +10,6 @@ const Categorias = (props) => {
     .reduce((picsWithResolutions, [pic, resolution]) => {
       if (!picsWithResolutions[pic]) {
         picsWithResolutions[pic] = [];
-        console.log(picsWithResolutions);
       }
       picsWithResolutions[pic].push(resolution);
 

@@ -85,7 +85,7 @@ function PlantasCategorias() {
         </div>
       );
     }
-    if (categoria === "horticulas") {
+    if (categoria === "horticolas") {
       return (
         <div>
           <div>

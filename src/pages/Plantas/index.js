@@ -23,7 +23,7 @@ function Plantas() {
           id: res.id,
           nome: res.nome,
           fotos: fotosArray,
-          categoria: res.nome.normalize().toLowerCase(),
+          categoria: res.nome.replace(/[í]/g, "i").replace().toLowerCase(),
         };
       }),
     );
@@ -39,6 +39,7 @@ function Plantas() {
 
   return (
     <div id="main-content">
+      {console.log(plantas[2])}
       <div className="container-plantas">
         <div className="container-titulo">
           <Texto tipo="titulo1" class="h1-hind">
