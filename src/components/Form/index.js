@@ -18,37 +18,45 @@ function Form() {
 
   return (
     <div className="form-container">
+   <div className="icone-form">
+      <FaRegUser size={15} />
       <label>
-        <FaRegUser size={15} />
         Nome
       </label>
+      </div>
       <input
         onChange={(e) => setNome(e.target.value)}
         placeholder="Seu nome"
         type="text"
       />
+     <div className="icone-form">
+      <FaRegEnvelope size={15} />
       <label>
-        <FaRegEnvelope size={15} />
-        Email
+        E-Mail
       </label>
+      </div>
       <input
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Exemplo@email.com.br"
         type="text"
       />
+      <div className="icone-form">
+      <FaMobileAlt color="#555555" size={15} />
       <label>
-        <FaMobileAlt size={15} />
         Telefone
       </label>
+      </div>
       <input
         onChange={(e) => setTelefone(e.target.value)}
         placeholder="(xx)99999-9999"
         type="text"
       />
+     <div className="icone-form">
+      <FaRegCommentAlt size={15} />
       <label>
-        <FaRegCommentAlt size={15} />
         Mensagem
       </label>
+      </div>
       <input
         onChange={(e) => setMensagem(e.target.value)}
         placeholder="Escreva aqui sua mensagem"

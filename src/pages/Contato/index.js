@@ -14,7 +14,7 @@ function Contato() {
           </Texto>
           <br/>
           <br/>
-          <Texto tipo="titulo1" class="h1-contato">
+          <Texto tipo="paragrafo" class="h1-contato">
             Seria ótimo se nossas plantinhas falassem. Mas nós podemos aprender
             e entender todos os sinais elas que nos dão. Mande sua dúvida que
             teremos prazer em responder.
