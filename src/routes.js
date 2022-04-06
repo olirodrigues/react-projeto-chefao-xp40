@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Plantas from "./pages/Plantas";
@@ -23,17 +28,14 @@ const Rotas = () => {
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/plantas" element={<Plantas />}></Route>
-          <Route
-            path="/plantas/:categorias"
-            element={<PlantasCategorias />}
+          <Route path="/plantas/:categorias" element={<PlantasCategorias />}
           ></Route>
-
-          <Route
-            path="/plantas/:categorias/:id"
-            element={<PlantasDetalhe />}
+          <Route path="/plantas/:categorias/:id" element={<PlantasDetalhe />}
           ></Route>
           <Route exact path="/blog" element={<Blog />}></Route>
           <Route exact path="/blog/:id" element={<BlogPost />}></Route>
+          <Route path="/sobrenos" element={<Navigate to="/sobrenos/1" replace />}
+          ></Route>
           <Route path="/sobrenos/:id" element={<SobreNos />}></Route>
           <Route path="/contato" element={<Contato />}></Route>
         </Routes>

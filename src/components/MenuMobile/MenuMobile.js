@@ -3,12 +3,12 @@ import "./MenuMobile.css";
 import HamburgerSvg from "../../assets/svg/hamburger/hamburger.svg";
 import SetaVoltar from "../../assets/svg/setas/setaComCirculo.svg";
 import Texto from "../Texto/Texto";
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import LogoMee from "../../assets/svg/logoMee/logoMee.svg";
 
 const MenuMobile = (props) => {
   const [ativo, setAtivo] = useState(false);
-
+  const {id} = useParams()
   const alternaExibicaoModal = () => {
     setAtivo(!ativo);
   };
@@ -47,7 +47,7 @@ const MenuMobile = (props) => {
                 </NavLink>
               </li>
               <li>
-                <NavLink className={({isActive}) => (isActive ? "link_ativo" : "") } onClick={alternaExibicaoModal} to="/sobrenos/1">
+                <NavLink className={({isActive}) => (isActive ? "link_ativo" : "") } onClick={alternaExibicaoModal} to={`/sobrenos`}>
                   <Texto tipo="paragrafo" class="cinza mobile-menu">
                     Sobre Nós
                   </Texto>
