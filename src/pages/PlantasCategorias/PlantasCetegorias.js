@@ -4,6 +4,9 @@ import "./PlantasCategorias.css";
 import { useState, useEffect } from "react";
 import { getPlantasCategorias } from "../../services/routes/plantas";
 import { useParams } from "react-router-dom";
+import CategoriaCactos from "../../assets/svg/categoriasPlantas/categoriaCactos.svg";
+import CategoriaSuculentas from "../../assets/svg/categoriasPlantas/categoriaSuculentas.svg";
+import CategoriaHorticulas from "../../assets/svg/categoriasPlantas/categoriaHorticulas.svg";
 
 function PlantasCategorias() {
   const [categorias, setCategorias] = useState(null);
@@ -39,8 +42,72 @@ function PlantasCategorias() {
     return <h2>Carregando...</h2>;
   }
 
+  const textoCategorias = (categoria) => {
+    if (categoria === "cactos") {
+      return (
+        <div>
+          <div>
+            <img src={CategoriaCactos}></img>
+            <Texto tipo="titulo1" class="h1-hind  verde-claro bold">
+              {` `}Cactos!{` `}
+            </Texto>
+            <Texto tipo="titulo1" class="h1-hind">
+              Nós temos três muito especiais.
+            </Texto>
+          </div>
+          <div>
+            <Texto tipo="titulo1" class="h1-hind">
+              Qual deles você quer saber mais?
+            </Texto>
+          </div>
+        </div>
+      );
+    }
+    if (categoria === "suculentas") {
+      return (
+        <div>
+          <div>
+            <img src={CategoriaSuculentas}></img>
+            <Texto tipo="titulo1" class="h1-hind  verde-claro bold">
+              {` `}Suculentas!{` `}
+            </Texto>
+            <Texto tipo="titulo1" class="h1-hind">
+              Nós temos três espécies lindas.
+            </Texto>
+          </div>
+          <div>
+            <Texto tipo="titulo1" class="h1-hind">
+              Qual delas você quer saber mais?
+            </Texto>
+          </div>
+        </div>
+      );
+    }
+    if (categoria === "horticulas") {
+      return (
+        <div>
+          <div>
+            <img src={CategoriaHorticulas}></img>
+            <Texto tipo="titulo1" class="h1-hind  verde-claro bold">
+              {` `}Hortículas!{` `}
+            </Texto>
+            <Texto tipo="titulo1" class="h1-hind">
+              Perfeitas para usar na culinária.
+            </Texto>
+          </div>
+          <div>
+            <Texto tipo="titulo1" class="h1-hind">
+              Qual delas você quer saber mais?
+            </Texto>
+          </div>
+        </div>
+      );
+    }
+  };
+
   return (
     <div id="Container">
+      <div>{textoCategorias(params.categorias)}</div>
       <div className="container-titulo">
         {categorias.map((planta) => (
           <Categorias
