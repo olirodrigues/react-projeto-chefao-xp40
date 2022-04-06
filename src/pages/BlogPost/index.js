@@ -1,8 +1,8 @@
 import "./BlogPost.css";
 import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { getBlogPostId } from "../../services/routes/blog";
-import ConteudoBlog from "../../components/Blog/BlogPost/BlogPostConteudo/BlogPostConteudo";
+import { getBlogPostId, getFotosBlogPostId } from "../../services/routes/blog";
+import ConteudoBlog from "../../components/Blog/BlogPost/ConteudoPost/ConteudoPost";
 import Texto from "../../components/Texto/Texto.js";
 import SetaVoltar from "../../assets/svg/setas/setaVoltarSimples.svg";
 
@@ -55,7 +55,7 @@ function BlogPost() {
           Blog
         </Texto>
       </div>
-      <ConteudoBlog id={id} titulo={post.titulo} fotos={post.fotos} />
+      <ConteudoBlog id={id} titulo={post.titulo} fotos={post.fotos} urlFotos={getFotosBlogPostId} />
     </div>
   );
 }

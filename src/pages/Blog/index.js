@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import BlogListaPosts from "../../components/Blog/BlogListaDePosts/BlogListaPosts";
+import BlogListaPosts from "../../components/Blog/ListaDePosts/BlogListaPosts";
 import { getBlogPost } from "../../services/routes/blog";
 import "./estiloBlog.css";
 import Texto from "../../components/Texto/Texto";

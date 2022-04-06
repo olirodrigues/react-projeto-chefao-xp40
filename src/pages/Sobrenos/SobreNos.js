@@ -1,5 +1,5 @@
 import "./SobreNos.css";
-import { getSobrePostId } from "../../services/routes/sobre";
+import { getSobrePostId, getFotosSobre } from "../../services/routes/sobre";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ConteudoSobre from "../../components/Sobre/ConteudoSobre/ConteudoSobre";
@@ -48,7 +48,7 @@ const Sobrenos = () => {
         <Texto tipo="titulo1" class="verde-escuro ">
           Nossa Empresa
         </Texto>
-        <ConteudoSobre id={params.id} fotos={sobre.fotos} />
+        <ConteudoSobre id={params.id} fotos={sobre.fotos} urlFotos={getFotosSobre} />
       </section>
     </div>
   );
