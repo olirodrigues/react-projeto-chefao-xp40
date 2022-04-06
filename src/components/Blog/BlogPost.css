@@ -43,7 +43,7 @@
   }
 }
 
-@media (width <= 375px) {
+@media (width <= 480px) {
   .card-container {
     text-align: center;
     align-items: center;
@@ -52,6 +52,10 @@
 
   .card-container button P {
     width: 120px;
+  }
+
+  .card-textos p {
+    font-size: 14px;
   }
 
   @keyframes fadeMobile {

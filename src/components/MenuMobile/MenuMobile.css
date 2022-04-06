@@ -62,7 +62,7 @@
 .link_ativo p {
   border-bottom: solid 2px #72bf8e;
   font-weight: 600;
-  color:#72bf8e
+  color: #72bf8e;
 }
 
 .overlay {
@@ -73,8 +73,51 @@
   z-index: 2;
   top: 0%;
   left: 0%;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
   animation: overlay 350ms ease-out forwards;
+}
+
+@media (width <= 480px) {
+  .container-menu-mobile {
+    margin: 30px;
+  }
+
+  .menu.menu__aberto {
+    width: 47%;
+    border-radius: 0 16px 16px 0;
+  }
+
+  .icone-hamburger {
+    top: 2.5%;
+    left: 9%;
+  }
+
+  .icone-hamburger img {
+    width: 45px;
+  }
+
+  .list {
+    left: 43px;
+    top: 120px;
+  }
+
+  .container-menu-mobile .logoMee {
+    position: absolute;
+    top: 2%;
+    left: 42%;
+    width: 65px;
+    height: 45px;
+  }
+}
+@media (width <= 375px) {
+  .icone-hamburger {
+    top: 3%;
+    left: 9%;
+  }
+
+  .icone-hamburger img {
+    width: 35px;
+  }
 }
 
 @keyframes opening {
@@ -96,37 +139,5 @@
 
   to {
     opacity: 1;
-  }
-}
-@media (width <= 375px) {
-  .container-menu-mobile {
-    margin: 30px;
-  }
-
-  .menu.menu__aberto {
-    width: 180px;
-    border-radius: 0 16px 16px 0;
-  }
-
-  .icone-hamburger {
-    top: 3.22%;
-    left: 9%;
-  }
-
-  .icone-hamburger img {
-    width: 35px;
-  }
-
-  .list {
-    left: 43px;
-    top: 120px;
-  }
-
-  .container-menu-mobile .logoMee {
-    position: absolute;
-    top: 2%;
-    left: 42%;
-    width: 65px;
-    height: 45px;
   }
 }
