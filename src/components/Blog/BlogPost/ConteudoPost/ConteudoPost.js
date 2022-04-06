@@ -7,6 +7,7 @@ const ConteudoBlog = ({ id, fotos, titulo, urlFotos }) => {
   return (
     <div className="container-post">
       <div className="container-post_textos">
+        
         <div className="textos-titulo">
           <Texto tipo="titulo2" class="h2-blog preto">
             {titulo}
@@ -16,9 +17,9 @@ const ConteudoBlog = ({ id, fotos, titulo, urlFotos }) => {
           <TextosBlog id={id} />
         </div>
       </div>
-      <div className="container-post_grid">
+      {/* <div className="container-post_grid">
         <GridPosts fotos={fotos} urlFotos={urlFotos} />
-      </div>
+      </div> */}
     </div>
   );
 };

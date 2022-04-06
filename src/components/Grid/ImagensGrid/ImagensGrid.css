@@ -98,13 +98,4 @@
   }
 }
 
-@media (width <= 480px) {
-  .item-grid.h-1 img {
-    width: 300px;
-    border-radius: 64px 0;
-  }
 
-  #main-content {
-    margin-inline: 28px;
-  }
-}

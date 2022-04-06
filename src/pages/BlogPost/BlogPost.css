@@ -1,4 +1,26 @@
-.blog-seta {
+.container-post-blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px auto;
+  grid-template-areas:
+    "titulo imagem"
+    "conteudo imagem";
+}
+
+.blog-titulo {
+grid-area: titulo;
+}
+
+.blog-conteudo {
+  grid-area: conteudo;
+}
+
+.blog-imagem {
+  grid-area: imagem;
+}
+
+/* teste */
+/* .blog-seta {
   display: flex;
   align-items: center;
   margin-top: 32px;
@@ -48,4 +70,4 @@
     width: 311px;
     margin: 30px 0;
   }
-}
+} */

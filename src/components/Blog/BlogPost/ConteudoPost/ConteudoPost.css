@@ -1,13 +1,12 @@
 .container-post {
   display: flex;
   margin-top: 15px;
+  gap: 75px;
 }
 .container-post_textos {
-  width: 100%;
   animation: fade 150ms ease-out forwards;
 }
 .container-post_grid {
-  width: 100%;
   margin-top: -60px;
   animation: slideLeft 1s ease-out forwards;
 }
@@ -34,9 +33,11 @@
 }
 @media (width <= 480px) {
   .container-post {
-    gap: 22px;
+    gap: 20px;
+    align-items: center;
   }
   .container-post_grid {
+    width: 100%;
     margin-bottom: 90px;
   }
 
@@ -53,19 +54,20 @@
     animation: fade 1s ease-out forwards;
   }
   .textos-titulo {
-    width: 320px;
+    width: fit-content;
     margin: 15px 0;
   }
 
   .textos-paragrafo {
+    width:100%;
     margin: 30px 0;
   }
 }
 
-@media (width <= 480px) {
+@media (width <= 375px) {
   .container-post {
-    gap: 100px;
-  }
+    gap: 20px;
+  }w
   .textos-titulo {
     width: 315px;
     margin: 0;

@@ -5,6 +5,7 @@ import { getBlogPostId, getFotosBlogPostId } from "../../services/routes/blog";
 import ConteudoBlog from "../../components/Blog/BlogPost/ConteudoPost/ConteudoPost";
 import Texto from "../../components/Texto/Texto.js";
 import SetaVoltar from "../../assets/svg/setas/setaVoltarSimples.svg";
+import GridPosts from "../../components/Grid/GridPosts/GridPosts";
 
 function BlogPost() {
   const { id } = useParams();
@@ -47,15 +48,22 @@ function BlogPost() {
 
   return (
     <div id="main-content">
-      <div className="blog-seta">
-        <Link to="/blog">
-          <img src={SetaVoltar} alt="seta para voltar" />
-        </Link>
-        <Texto tipo="titulo1" class="verde-escuro ">
-          Blog
-        </Texto>
+      <div className="container-post-blog">
+        <div className="blog-seta blog-titulo">
+          <Link to="/blog">
+            <img src={SetaVoltar} alt="seta para voltar" />
+          </Link>
+          <Texto tipo="titulo1" class="verde-escuro ">
+            Blog
+          </Texto>
+        </div>
+        <div className='blog-conteudo'>
+          <ConteudoBlog id={id} titulo={post.titulo} fotos={post.fotos} urlFotos={getFotosBlogPostId} />
+        </div>
+        <div className=" blog-imagem">
+          <GridPosts fotos={post.fotos} urlFotos={getFotosBlogPostId} />
+        </div>
       </div>
-      <ConteudoBlog id={id} titulo={post.titulo} fotos={post.fotos} urlFotos={getFotosBlogPostId} />
     </div>
   );
 }
