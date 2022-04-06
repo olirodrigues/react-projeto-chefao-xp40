@@ -1,8 +1,8 @@
 .texto-contato{
-    margin-left: 64px;
-    width: 300px;
+    width: 306px;
+    height: 96px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 .container-contato{
     display: flex;
@@ -10,15 +10,18 @@
 }
 .main-contato{
     width: 50%;
+    margin-left: 65px;
 }
 .container-planta{
     width: 50%;
 }
 .planta-contato1{
     width: 100%;
-    height: 100%;
+    height: 105%;
     object-fit: cover;
     object-position: bottom left;
+    border-radius: 94px 0px 0px 94px;
+
 }
 .planta-contato2{
     display: none;
@@ -29,44 +32,55 @@
 .links-externos{
         position: absolute;
         top: 50%;
-        left: 70%;
+        left: 65%;
 }
 @media (max-width: 1024px){
     .texto-contato{
         margin-left: 64px;
         width: 300px;
         margin-top: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 150px;
     }
     .main-contato{
-        width: 70%;
+        width: 60%;
     }
     .container-planta{
-        width: 30%;
+        width: 40%;
         display: flex;
         flex-direction: column;
     } 
     .planta-contato1{
+        width: 300px;
+        height: 380px;
         border-radius: 5px;
         margin-bottom: 10px;
     }
     .planta-contato2{
+        width: 300px;
+        height: 260px;
+        border-radius: 64px 0px 0px 0px;
         display: flex;
         border-top-left-radius: 90px;
         margin-bottom: 10px;
     }
     .planta-contato3{
+        width: 300px;
+        height: 260px;
         display: flex;
-        border-bottom-right-radius: 90px;
+        border-radius: 0px 0px 64px 0px;
     }
     .links-externos{
             position: absolute;
             top: 50%;
-            left: 80%;
+            left: 68%;
     } 
 
 }
-@media (width < 600px){
+@media (width < 420px){
+    .main-contato{
+    width: 50%;
+    margin-left: 32px;
+}
     .container-planta{
         display: none;
     } 
@@ -74,6 +88,6 @@
     margin-left: 30px;
     width: 300px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 }
