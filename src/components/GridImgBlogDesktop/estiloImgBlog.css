@@ -73,7 +73,7 @@
   }
 
   .item-grid.h-1 img {
-    width: 100%; 
+    width: 100%;
     height: 320px;
 
     border-radius: 64px 0;
@@ -101,8 +101,7 @@
   }
 }
 
-@media (max-width: 375px){
-  
+@media (width <= 375px) {
   .item-grid.h-1 img {
     width: 300px;
     height: 260px;
@@ -110,6 +109,6 @@
   }
 
   #main-content {
-    margin-inline:32px;
+    margin-inline: 28px;
   }
 }

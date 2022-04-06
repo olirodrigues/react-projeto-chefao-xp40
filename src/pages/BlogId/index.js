@@ -5,6 +5,7 @@ import { getBlogPostId, getFotosBlogId } from "../../services/routes/blog";
 import GridImgBlogDesktop from "../../components/GridImgBlogDesktop";
 import Texto from "../../components/Texto/Texto.js";
 import SetaVoltar from "../../assets/svg/setas/setaVoltarSimples.svg";
+import TextosBlog from "../../components/Blog/TextosBlog/TextosBlog";
 
 function BlogId() {
   const { id } = useParams();
@@ -46,10 +47,12 @@ function BlogId() {
       <div className="container-post">
         <div className="container-post_textos">
           <div className="textos-titulo">
-            <Texto tipo="titulo2" class="h2-blog preto">{post.titulo}</Texto>
+            <Texto tipo="titulo2" class="h2-blog preto">
+              {post.titulo}
+            </Texto>
           </div>
           <div className="textos-paragrafo">
-            <Texto tipo="paragrafo" class="cinza-escuro">{post.texto}</Texto>
+            <TextosBlog id={id} />
           </div>
         </div>
         <div className="container-post_grid">
