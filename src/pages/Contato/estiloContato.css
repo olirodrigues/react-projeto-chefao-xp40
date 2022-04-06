@@ -1,8 +1,8 @@
 .texto-contato{
-    width: 306px;
-    height: 96px;
+    margin-left: 64px;
+    width: 300px;
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 .container-contato{
     display: flex;
@@ -10,18 +10,17 @@
 }
 .main-contato{
     width: 50%;
-    margin-left: 65px;
 }
 .container-planta{
     width: 50%;
 }
 .planta-contato1{
-    width: 100%;
-    height: 105%;
-    object-fit: cover;
-    object-position: bottom left;
-    border-radius: 94px 0px 0px 94px;
-
+    position: absolute;
+    width: 680px;
+    height: 860px;
+    left: 600px;
+    top: 0px;
+    border-radius: 64px 0px 0px 64px;
 }
 .planta-contato2{
     display: none;
@@ -31,7 +30,7 @@
 }
 .links-externos{
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 65%;
 }
 @media (max-width: 1024px){
@@ -39,48 +38,41 @@
         margin-left: 64px;
         width: 300px;
         margin-top: 20px;
-        margin-bottom: 150px;
+        margin-bottom: 30px;
     }
     .main-contato{
-        width: 60%;
+        width: 70%;
     }
     .container-planta{
-        width: 40%;
+        width: 30%;
         display: flex;
         flex-direction: column;
     } 
     .planta-contato1{
-        width: 300px;
+        display: flex;
+        position: initial;
+        width: 250px;
         height: 380px;
         border-radius: 5px;
         margin-bottom: 10px;
     }
     .planta-contato2{
-        width: 300px;
-        height: 260px;
-        border-radius: 64px 0px 0px 0px;
         display: flex;
         border-top-left-radius: 90px;
         margin-bottom: 10px;
     }
     .planta-contato3{
-        width: 300px;
-        height: 260px;
         display: flex;
-        border-radius: 0px 0px 64px 0px;
+        border-bottom-right-radius: 90px;
     }
     .links-externos{
             position: absolute;
             top: 50%;
-            left: 68%;
+            left: 75%;
     } 
 
 }
-@media (width < 420px){
-    .main-contato{
-    width: 50%;
-    margin-left: 32px;
-}
+@media (width < 480px){
     .container-planta{
         display: none;
     } 
@@ -88,6 +80,6 @@
     margin-left: 30px;
     width: 300px;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 }

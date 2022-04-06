@@ -5,10 +5,18 @@
     height: 93px;
     align-items: center;
     justify-content: space-around;
+    border-radius: 10px;
+}
+.circulo{
+    background-color: white;
+    width: 50px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+
 }
 .linkContato{
-    background-color: white;
-    border-radius: 50px;
     color: black;
     width: 32px;
     height: 32px;    
@@ -16,7 +24,7 @@
 @media (max-width: 1020px){
     .fundoLinkContato{
         display: flex;
-        width: 220px;
+        width: 180px;
         height: 72px;
 
     }
