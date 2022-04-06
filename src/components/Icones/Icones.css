@@ -1,0 +1,45 @@
+svg {
+  height: 100%;
+  width: 100%;
+}
+
+.hover-verde-claro:hover svg path {
+  stroke: #69bf8e;
+}
+
+.hover-verde-claro:hover svg path {
+  fill: #69bf8e;
+}
+
+.hover-fundo-cinza:hover svg path {
+  fill: #c4c4c43a;
+}
+
+.container-icone-pinterest,
+.container-icone-instagram {
+  height: 24px;
+  width: 24px;
+}
+
+.container-icone-setaComCirculo {
+  height: 24.5px;
+  width: 24.5px;
+}
+
+@media (width <= 1024px) {
+  .container-icone-pinterest,
+  .container-icone-instagram,
+  .container-icone-setaVoltarSimples {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media (width <= 480px) {
+  .container-icone-pinterest,
+  .container-icone-instagram,
+  .container-icone-setaVoltarSimples {
+    height: 16px;
+    width: 16px;
+  }
+}
