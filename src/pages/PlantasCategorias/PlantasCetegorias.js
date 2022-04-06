@@ -109,8 +109,10 @@ function PlantasCategorias() {
 
   return (
     <div id="Container">
-      <div className="">{textoCategorias(params.categorias)}</div>
       <div className="container-titulo">
+        {textoCategorias(params.categorias)}
+      </div>
+      <div className="container-fotos">
         <Link to="/plantas">
           <img src={SetaVoltar} alt=""></img>
         </Link>

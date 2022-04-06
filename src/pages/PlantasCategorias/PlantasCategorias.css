@@ -1,10 +1,33 @@
-#container {
+.container-titulo {
+  margin-top: 50px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.container-titulo {
+.container-fotos {
   display: flex;
+  gap: 96px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+@media (width <= 1024px) {
+  .container-titulo {
+    font-size: 30px;
+  }
+  .container-fotos {
+    max-width: ;
+  }
+}
+
+@media (width <= 480px) {
+  .container-titulo {
+    font-size: 50px;
+  }
+  .container-fotos {
+    flex-direction: column;
+    grid-template-rows: max-content max-content auto;
+  }
 }
