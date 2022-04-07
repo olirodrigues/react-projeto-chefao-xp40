@@ -5,7 +5,7 @@
   justify-content: space-around;
   position: absolute;
   top: 20%;
-  left: 50%;
+  left: 42%;
 }
 
 .icone-loading {
@@ -17,7 +17,6 @@
 @media (width <= 1024px) {
   .container-loading {
     top: 15%;
-    left: 42%;
   }
 }
 
