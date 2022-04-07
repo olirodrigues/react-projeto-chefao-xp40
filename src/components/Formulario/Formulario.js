@@ -26,7 +26,7 @@ function Form() {
           <img src={IconeEmail} className="icones-contato" alt="" />
           <label>
             <Texto tipo="paragrafo" class="p-contato bold">
-              Mail
+              E-mail
             </Texto>
           </label>
         </div>
@@ -42,7 +42,7 @@ function Form() {
             </Texto>
           </label>
         </div>
-        <input placeholder="(xx)99999-9999" type="text" />
+        <input placeholder="(xx) 99999-9999" type="text" />
       </div>
 
       <div className="item-formulario">

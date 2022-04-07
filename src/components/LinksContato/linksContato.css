@@ -1,31 +1,23 @@
-.fundoLinkContato{
-    display: flex;
-    background-color: rgba(188, 190, 196, 0.3);
-    width: 284px;
-    height: 93px;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 10px;
+.container-links-contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 284px;
+  height: 93px;
+  gap: 56px;
+  background: linear-gradient(
+    141.81deg,
+    rgba(255, 255, 255, 0.102) 10.42%,
+    rgba(179, 179, 179, 0.294) 94.17%
+  );
+  box-shadow: 0px 4px 11px rgba(118, 118, 118, 0.25);
+  backdrop-filter: blur(25px);
+  border-radius: 16px;
 }
 
-
-.linkContato{
-    color: black;
-    width: 32px;
-    height: 32px;    
-}
-@media (max-width: 1020px){
-    .fundoLinkContato{
-        display: flex;
-        width: 180px;
-        height: 72px;
-
-    }
-    .linkContato{
-        background-color: white;
-        border-radius: 50px;
-        color: black;
-        width: 32px;
-        height: 32px;    
-    }
+.container-icones-social-contato {
+  height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
