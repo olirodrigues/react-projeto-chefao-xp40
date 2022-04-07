@@ -113,10 +113,10 @@ function PlantasCategorias() {
       <div className="container-titulo">
         {textoCategorias(params.categorias)}
       </div>
-      <div className="container-foto">
         <Link to="/plantas">
           <img className="seta" src={SetaVoltar} alt=""></img>
         </Link>
+      <div className="container-foto">
         {categorias.map((planta) => (
           <Categorias
             tipoFoto="borda"

@@ -11,7 +11,13 @@
   gap: 96px;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  margin-top: 32px;
+}
+
+.seta {
+  position: absolute;
+  top: 48%;
+  left: 10%;
 }
 
 @media (width <= 1024px) {
@@ -20,16 +26,16 @@
     flex-direction: column;
     gap: 96px;
   }
+  
+.seta {
+  display: none;
+}
+
+
 
   .container-foto {
     margin-left: -75px;
     gap: 64px;
-  }
-
-  .seta {
-    position: absolute;
-    top: 16%;
-    left: 10%;
   }
 
   .container-titulo {
@@ -42,7 +48,6 @@
     gap: 0px;
   }
 
-
   .seta {
     position: absolute;
     top: 13%;
@@ -51,7 +56,6 @@
   .container-titulo {
     align-items: center;
   }
-
 
   .container-foto {
     flex-direction: column;
