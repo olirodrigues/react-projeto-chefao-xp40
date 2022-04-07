@@ -13,3 +13,19 @@
   width: 2rem;
   height: 2rem;
 }
+
+@media (width <= 1024px) {
+  .container-loading {
+    top: 15%;
+    left: 42%;
+  }
+}
+
+@media (width <= 480px) {
+  .container-loading {
+    left: 35%;
+  }
+}
+
+@media (width <= 375px) {
+}
