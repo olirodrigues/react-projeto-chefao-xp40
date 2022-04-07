@@ -58,7 +58,7 @@ const Sobrenos = () => {
         <div
           className={`${
             params.id === "1" ? "grid-sobre__nos" : "grid-sobre__mee"
-          }} sobrenos-imagem`}
+          }`}
         >
           <GridPosts fotos={sobre.fotos} urlFotos={getFotosSobre} />
         </div>

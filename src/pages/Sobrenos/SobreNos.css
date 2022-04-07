@@ -81,6 +81,13 @@
       "imagem"
       "conteudo";
   }
+  .grid-sobre__nos {
+    animation: fade1 1s ease-out forwards;
+  }
+  .grid-sobre__mee {
+    animation: fade2 1s ease-out forwards;
+  }
+
 }
 
 @keyframes fade1 {
@@ -90,7 +97,7 @@
   10% {
     display: block;
   }
-  25% {
+  15% {
     opacity: 0;
   }
 
