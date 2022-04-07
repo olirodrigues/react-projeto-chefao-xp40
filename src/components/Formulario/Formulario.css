@@ -7,7 +7,7 @@
 .icone-label-formulario {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .icones-contato {
@@ -20,6 +20,13 @@
   justify-content: flex-end;
 }
 
+.container-formulario input[type="text"] {
+  font-family: "Hind", sans-serif;
+  font-size: 14px;
+  color: #555555;
+  line-height: 22.41px;
+}
+
 .container-formulario input {
   width: calc(100% - 30px);
   background-color: transparent;
@@ -27,6 +34,14 @@
   border-bottom: 1px solid #b9b9b9;
   padding: 3px;
   margin-left: 30px;
+}
+
+.container-formulario input:hover {
+  border-bottom: 2px solid #69bf8e;
+}
+
+.container-formulario input:focus {
+  border-bottom: 1px solid #69bf8e;
 }
 
 .item-formulario {

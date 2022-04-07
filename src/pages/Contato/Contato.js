@@ -2,8 +2,17 @@ import "./Contato.css";
 import Formulario from "../../components/Formulario/Formulario";
 import Texto from "../../components/Texto/Texto";
 import LinksContato from "../../components/LinksContato/LinksContato";
+import { useMediaQuery } from "react-responsive";
 
 function Contato() {
+  const desktop = useMediaQuery({
+    query: "(min-width:1025px)",
+  });
+
+  const tablet = useMediaQuery({
+    query: "(min-width:481px)",
+  });
+
   return (
     <div id="main-content">
       <div className="container-contato">
@@ -25,13 +34,37 @@ function Contato() {
             <Formulario />
           </div>
         </div>
-        <div className="container-social-imagem">
-          <LinksContato />
-          <img
-            src="https://gabezrodz.github.io/imagens-chefao-xp40/contato/CTH01.png"
-            alt=""
-          />
-        </div>
+        {desktop && (
+          <div className="container-social-imagem-desktop">
+            <LinksContato />
+            <img
+              src="https://gabezrodz.github.io/imagens-chefao-xp40/contato/CTH01.png"
+              alt=""
+            />
+          </div>
+        )}
+        {tablet && (
+          <div className="container-social-imagem-tablet">
+            <div className="componente-links-contato">
+              <LinksContato />
+            </div>
+            <img
+              src="https://gabezrodz.github.io/imagens-chefao-xp40/contato/CT01.png"
+              alt=""
+              className="imagem-tablet-contato-1"
+            />
+            <img
+              src="https://gabezrodz.github.io/imagens-chefao-xp40/contato/CT02.png"
+              alt=""
+              className="imagem-tablet-contato-2"
+            />
+            <img
+              src="https://gabezrodz.github.io/imagens-chefao-xp40/contato/CT03.png"
+              alt=""
+              className="imagem-tablet-contato-3"
+            />
+          </div>
+        )}
       </div>
     </div>
   );

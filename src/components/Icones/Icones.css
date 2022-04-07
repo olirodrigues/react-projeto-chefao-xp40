@@ -62,6 +62,11 @@
     height: 20px;
     width: 20px;
   }
+
+  .container-icones > .icone-contato-social {
+    height: 16px;
+    width: 16px;
+  }
 }
 
 @media (width <= 480px) {
