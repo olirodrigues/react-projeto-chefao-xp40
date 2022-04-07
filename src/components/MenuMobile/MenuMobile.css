@@ -11,12 +11,12 @@
 }
 
 .menu.menu__aberto {
+  position: absolute;
   width: 350px;
   height: 100vh;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 0 32px 32px 0;
-  position: absolute;
   top: 0%;
   left: 0%;
   z-index: 3;
@@ -109,7 +109,12 @@
     height: 45px;
   }
 }
-@media (width <= 480px) {
+@media (width <= 380px) {
+  .menu.menu__aberto,
+  .overlay {
+    height: 126vh;
+  }
+
   .icone-hamburger {
     top: 3%;
     left: 9%;
