@@ -1,3 +1,41 @@
-.containter-sobre {
-  padding-top: 50px;
+.containter-sobrenos {
+  display: grid;
+  margin-block: 32px;
+  row-gap: 16px;
+  column-gap: 60px;
+  grid-template-columns: auto max-content;
+  grid-template-rows: 50px auto;
+  grid-template-areas:
+    "titulo imagem"
+    "conteudo imagem";
+}
+
+.sobrenos-titulo {
+  grid-area: titulo;
+}
+
+.sobrenos-conteudo {
+  grid-area: conteudo;
+  max-width: 450px;
+}
+
+.sobrenos-imagem {
+  grid-area: imagem;
+}
+
+@media (width <= 1024px) {
+  .containter-sobrenos {
+    row-gap: 64px;
+  }
+}
+
+@media (width <= 480px) {
+  .containter-sobrenos {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+    grid-template-areas:
+      "titulo"
+      "imagem"
+      "conteudo";
+  }
 }
