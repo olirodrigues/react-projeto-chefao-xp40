@@ -3,12 +3,12 @@
   width: 100%;
 }
 
-.hover-verde-claro:hover svg path {
-  stroke: #69bf8e;
+.container-icone-pinterest:hover svg path {
+  fill: #69bf8e;
 }
 
-.hover-verde-claro:hover svg path {
-  fill: #69bf8e;
+.container-icone-instagram:hover svg path {
+  stroke: #69bf8e;
 }
 
 .hover-fundo-cinza:hover svg path {
