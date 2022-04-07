@@ -1,4 +1,5 @@
 import "./Formulario.css";
+import { useState } from "react";
 import Texto from "../Texto/Texto";
 import Botao from "../Botao/Botao";
 import IconeNome from "../../assets/svg/contato/contatoNome.svg";
@@ -8,13 +9,13 @@ import IconeMensagem from "../../assets/svg/contato/contatoMensagem.svg";
 import IconeAtencao from "../../assets/svg/contato/contatoAtencao.svg";
 import IconeCheck from "../../assets/svg/contato/contatoCheck.svg";
 
-import { useState } from "react";
+import IconeXBranco from "../../assets/svg/contato/contatoXBranco.svg";
+import IconeXPreto from "../../assets/svg/contato/contatoXPreto.svg";
 
 const campoVazio = (valor) => valor.trim().length === 0;
 
 function Form() {
   const [formulario, setFormulario] = useState(null);
-
   const [inputNome, setInputNome] = useState("");
   const [inputEmail, setInputEmail] = useState("");
   const [inputTelefone, setInputTelefone] = useState("");
@@ -45,7 +46,12 @@ function Form() {
   };
 
   return (
-    <form onSubmit={confirmaFormulario} className="container-formulario">
+    <form
+      onSubmit={confirmaFormulario}
+      className="container-formulario"
+      action="https://formsubmit.co/meeplantas@gmail.com"
+      method="POST"
+    >
       <div className="item-formulario">
         <div className="icone-label-formulario">
           <img src={IconeNome} className="icones-contato" alt="" />
@@ -116,22 +122,32 @@ function Form() {
 
       {formulario === true && (
         <div className="mensagem aviso-check">
-          <h2 onClick={() => setFormulario(null)}>X</h2>
           <img src={IconeCheck} alt="icone check" />
           <div className="aviso-textos">
             <h2>Enviada</h2>
             <p>Enviamos sua mensagem</p>
           </div>
+          <img
+            className="icone-x__aviso"
+            onClick={() => setFormulario(null)}
+            alt="icone de fechar"
+            src={IconeXBranco}
+          />
         </div>
       )}
       {formulario === false && (
         <div className="mensagem aviso-atencao">
-          <h2 onClick={() => setFormulario(null)}>X</h2>
           <img src={IconeAtencao} alt="icone atencao" />
           <div className="aviso-textos">
             <h2> Esqueceu algo?</h2>
             <p>Um espaço não foi preenchido corretamente</p>
           </div>
+          <img
+            className="icone-x__aviso"
+            onClick={() => setFormulario(null)}
+            alt="icone de fechar"
+            src={IconeXPreto}
+          />
         </div>
       )}
       {formulario === null && (
