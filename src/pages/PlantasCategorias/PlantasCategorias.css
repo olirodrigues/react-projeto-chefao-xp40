@@ -6,28 +6,34 @@
   justify-content: center;
 }
 
-.container-fotos {
+.container-foto {
   display: flex;
   gap: 96px;
   align-items: center;
   justify-content: center;
+  padding: 15px;
 }
 
 @media (width <= 1024px) {
+  .seta {
+    display: none;
+  }
   .container-titulo {
     font-size: 30px;
   }
-  .container-fotos {
-    max-width: ;
+  .container-foto {
+    display: flex;
+    gap: 0;
+    justify-content: space-evenly;
   }
 }
 
 @media (width <= 480px) {
   .container-titulo {
-    font-size: 50px;
+    align-items: center;
   }
-  .container-fotos {
+  .container-foto {
     flex-direction: column;
-    grid-template-rows: max-content max-content auto;
+    gap: 50px;
   }
 }
