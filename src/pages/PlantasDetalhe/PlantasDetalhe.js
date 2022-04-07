@@ -82,9 +82,15 @@ function PlantasDetalhe() {
         <div className="titulo-plantasdetalhes">
           <Link to={`/plantas/${params.categorias}`}>
             {!tablet ? (
-              <Icones icone="setaComCirculo" hover="hover-fundo-cinza" />
+              <Icones
+                icone="setaComCirculo"
+                className="hover-fundo-cinza seta-voltar-pagina"
+              />
             ) : (
-              <Icones icone="setaVoltarSimples" />
+              <Icones
+                icone="setaVoltarSimples"
+                className="seta-voltar-pagina"
+              />
             )}
           </Link>
           <Texto tipo="titulo1" class="verde-escuro">

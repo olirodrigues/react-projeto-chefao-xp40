@@ -10,7 +10,7 @@ import Plantas from "./pages/Plantas";
 import PlantasDetalhe from "./pages/PlantasDetalhe/PlantasDetalhe";
 import Blog from "./pages/Blog";
 import SobreNos from "./pages/Sobrenos/SobreNos";
-import Contato from "./pages/Contato";
+import Contato from "./pages/Contato/Contato";
 import Footer from "./components/Footer/Footer";
 import { useMediaQuery } from "react-responsive";
 import MenuMobile from "./components/MenuMobile/MenuMobile";

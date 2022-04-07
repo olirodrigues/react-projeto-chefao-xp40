@@ -1,0 +1,92 @@
+.container-contato {
+  /* margin-block: 32px; */
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: "formulario social";
+}
+.container-texto-formulario {
+  grid-area: formulario;
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  margin-block: 32px;
+}
+
+.texto-contato {
+  margin-block: 20px 47px;
+}
+
+.container-social-imagem-desktop {
+  grid-area: social;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-social-imagem-desktop img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 60%;
+  object-fit: fill;
+}
+
+@media (width <= 1024px) {
+  .container-contato {
+    margin-block: 109px;
+    grid-template-columns: auto 300px;
+    grid-template-areas: "formulario social";
+  }
+
+  .container-texto-formulario {
+    width: 370px;
+  }
+
+  .texto-contato {
+    margin-block: 40px 80px;
+  }
+
+  .container-social-imagem-tablet {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "imagem1"
+      "imagem2"
+      "imagem3";
+  }
+  .imagem-tablet-contato-1 {
+    grid-area: imagem1;
+    border-radius: 64px 0px 0px 0px;
+  }
+  .imagem-tablet-contato-2 {
+    grid-area: imagem2;
+  }
+  .imagem-tablet-contato-3 {
+    grid-area: imagem3;
+    border-radius: 0px 0px 64px 0px;
+  }
+  .componente-links-contato {
+    grid-area: imagem2;
+  }
+}
+
+@media (width <= 480px) {
+  .container-contato {
+    margin-block: 36px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "formulario";
+  }
+
+  .container-texto-formulario {
+    width: 100%;
+  }
+
+  .texto-contato {
+    margin-block: 16px 32px;
+  }
+}
