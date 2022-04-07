@@ -13,7 +13,7 @@ import { useState } from "react";
 const campoVazio = (valor) => valor.trim().length === 0;
 
 function Form() {
-  const [formulario, setFormulario] = useState();
+  const [formulario, setFormulario] = useState(null);
 
   const [inputNome, setInputNome] = useState("");
   const [inputEmail, setInputEmail] = useState("");
@@ -116,6 +116,7 @@ function Form() {
 
       {formulario === true && (
         <div className="mensagem aviso-check">
+          <h2 onClick={() => setFormulario(null)}>X</h2>
           <img src={IconeCheck} alt="icone check" />
           <div className="aviso-textos">
             <h2>Enviada</h2>
@@ -125,6 +126,7 @@ function Form() {
       )}
       {formulario === false && (
         <div className="mensagem aviso-atencao">
+          <h2 onClick={() => setFormulario(null)}>X</h2>
           <img src={IconeAtencao} alt="icone atencao" />
           <div className="aviso-textos">
             <h2> Esqueceu algo?</h2>
@@ -132,12 +134,13 @@ function Form() {
           </div>
         </div>
       )}
-
-      <div className="btn-enviar-contato">
-        <Botao class="btn-verde" color="branco semi-bold">
-          Enviar
-        </Botao>
-      </div>
+      {formulario === null && (
+        <div className="btn-enviar-contato">
+          <Botao class="btn-verde" color="branco semi-bold">
+            Enviar
+          </Botao>
+        </div>
+      )}
     </form>
   );
 }

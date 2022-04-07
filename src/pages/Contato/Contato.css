@@ -23,13 +23,16 @@
   justify-content: center;
 }
 
-.container-social-imagem-desktop img {
-  position: absolute;
+.backgroung-image-contato-desktop {
+  position: fixed;
   z-index: -1;
   top: 0;
   right: 0;
+  min-height: 100vh;
+  background-image: url(https://gabezrodz.github.io/imagens-chefao-xp40/contato/CTH01.png);
+  background-size: cover;
   width: 60%;
-  object-fit: fill;
+  background-attachment: inherit;
 }
 
 @media (width <= 1024px) {
