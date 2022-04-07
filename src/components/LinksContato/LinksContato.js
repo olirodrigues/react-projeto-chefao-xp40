@@ -6,17 +6,26 @@ function LinksContato() {
     <div className="container-links-contato">
       <a href="/#">
         <div className="container-icones-social-contato">
-          <Icones icone="instagram" className="icone-contato-social" />
+          <Icones
+            icone="instagram"
+            className="icone-contato-social hover-verde-claro"
+          />
         </div>
       </a>
       <a href="/#">
         <div className="container-icones-social-contato">
-          <Icones icone="pinterest" className="icone-contato-social" />
+          <Icones
+            icone="pinterest"
+            className="icone-contato-social hover-verde-claro"
+          />
         </div>
       </a>
       <a href="/#">
         <div className="container-icones-social-contato">
-          <Icones icone="email" className="icone-contato-social" />
+          <Icones
+            icone="email"
+            className="icone-contato-social hover-verde-claro"
+          />
         </div>
       </a>
     </div>

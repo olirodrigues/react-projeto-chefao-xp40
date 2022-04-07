@@ -1,44 +1,72 @@
-.container-icones svg {
+.container-icones > .icone-footer-social {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-icones > .icone-contato-social {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-icones > .seta-voltar-pagina {
+  height: 24.5px;
+  width: 24.5px;
+}
+
+.container-icones > .icone-contato-social > svg {
+  height: 20px;
+  width: 20px;
+}
+
+.container-icones > div > svg {
   height: 100%;
   width: 100%;
 }
 
-.container-icone-pinterest:hover svg path {
+.container-icone-pinterest:hover > .hover-verde-claro > svg > path,
+.container-icone-email:hover > .hover-verde-claro > svg > path {
   fill: #69bf8e;
 }
 
-.container-icone-instagram:hover svg path {
+.container-icone-instagram:hover > .hover-verde-claro > svg > path {
   stroke: #69bf8e;
+}
+
+.container-icone-pinterest > .icone-contato-social > svg > path,
+.container-icone-email > .icone-contato-social > svg > path {
+  fill: #555555;
+}
+
+.container-icone-instagram > .icone-contato-social > svg > path {
+  stroke: #555555;
+}
+
+.icone-contato-social {
+  height: 20px;
+  width: 20px;
 }
 
 .hover-fundo-cinza:hover svg path {
   fill: #c4c4c43a;
 }
 
-.container-icone-pinterest,
-.container-icone-instagram {
-  height: 24px;
-  width: 24px;
-}
-
-.container-icone-setaComCirculo {
-  height: 24.5px;
-  width: 24.5px;
-}
-
 @media (width <= 1024px) {
-  .container-icone-pinterest,
-  .container-icone-instagram,
-  .container-icone-setaVoltarSimples {
+  .container-icones > .icone-footer-social,
+  .container-icones > .seta-voltar-pagina {
     height: 20px;
     width: 20px;
   }
 }
 
 @media (width <= 480px) {
-  .container-icone-pinterest,
-  .container-icone-instagram,
-  .container-icone-setaVoltarSimples {
+  .container-icones > .icone-footer-social,
+  .container-icones > .seta-voltar-pagina {
     height: 16px;
     width: 16px;
   }
