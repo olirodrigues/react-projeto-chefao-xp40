@@ -25,7 +25,7 @@ const Categorias = (props) => {
               key={pic}
               src={pic}
               sizes={resolution}
-              className="circulo"
+              className={props.tipoFoto}
               maxDesktopSize="200px"
               maxTabletSize="150px"
               maxMobileSize="100px"

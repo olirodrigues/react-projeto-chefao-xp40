@@ -118,6 +118,7 @@ function PlantasCategorias() {
         </Link>
         {categorias.map((planta) => (
           <Categorias
+            tipoFoto="borda"
             key={planta.id}
             id={planta.id}
             fotos={planta.fotos}

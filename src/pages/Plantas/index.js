@@ -54,6 +54,7 @@ function Plantas() {
         <div className="container-fotos">
           {plantas.map((planta) => (
             <Categorias
+              tipoFoto="circulo"
               nome={planta.nome}
               fotos={planta.fotos}
               key={planta.nome}
