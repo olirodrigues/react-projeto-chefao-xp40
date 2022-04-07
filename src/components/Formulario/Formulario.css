@@ -15,7 +15,7 @@
   width: 20px;
 }
 
-.btn-enviar {
+.btn-enviar-contato {
   display: flex;
   justify-content: flex-end;
 }
@@ -48,4 +48,15 @@
   display: flex;
   flex-direction: column;
   gap: 3px;
+}
+
+@media (width <= 480px) {
+  .btn-enviar-contato {
+    margin-block: 24px 48px;
+    justify-content: center;
+  }
+
+  .btn-enviar-contato > button {
+    width: 150px;
+  }
 }

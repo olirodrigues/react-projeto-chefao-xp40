@@ -57,7 +57,7 @@ function Form() {
         <input placeholder="Escreva aqui sua mensagem" type="text" />
       </div>
 
-      <div className="btn-enviar">
+      <div className="btn-enviar-contato">
         <Botao class="btn-verde" color="branco semi-bold">
           Enviar
         </Botao>

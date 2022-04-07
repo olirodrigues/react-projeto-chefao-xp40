@@ -74,3 +74,19 @@
     grid-area: imagem2;
   }
 }
+
+@media (width <= 480px) {
+  .container-contato {
+    margin-block: 36px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "formulario";
+  }
+
+  .container-texto-formulario {
+    width: 100%;
+  }
+
+  .texto-contato {
+    margin-block: 16px 32px;
+  }
+}

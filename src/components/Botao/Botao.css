@@ -4,6 +4,8 @@ button {
   align-items: flex-start;
   padding: 10px 16px;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-verde {
