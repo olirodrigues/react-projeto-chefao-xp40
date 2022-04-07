@@ -10,7 +10,6 @@ const Categorias = (props) => {
     .reduce((picsWithResolutions, [pic, resolution]) => {
       if (!picsWithResolutions[pic]) {
         picsWithResolutions[pic] = [];
-        console.log(picsWithResolutions);
       }
       picsWithResolutions[pic].push(resolution);
 
@@ -26,7 +25,7 @@ const Categorias = (props) => {
               key={pic}
               src={pic}
               sizes={resolution}
-              className="circulo"
+              className={props.tipoFoto}
               maxDesktopSize="200px"
               maxTabletSize="150px"
               maxMobileSize="100px"

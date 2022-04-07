@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
   justify-content: space-evenly;
+  padding: 15px;
 }
 
 .container-fotos {
@@ -11,4 +11,31 @@
   gap: 96px;
   align-items: center;
   justify-content: center;
+}
+
+@media (width <= 1024px) {
+  .container-plantas {
+    gap: 190px;
+  }
+  .container-titulo {
+    font-size: 30px;
+  }
+  .container-fotos {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media (width <= 480px) {
+  .container-plantas {
+    gap: 48px;
+  }
+  .container-titulo {
+    align-items: center;
+  }
+  .container-fotos {
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
 }
