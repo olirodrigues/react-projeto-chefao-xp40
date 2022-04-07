@@ -1,14 +1,13 @@
-.footer {
-  padding-top: 16px;
+footer {
   display: flex;
-  border-top: 1px solid #8a8a8a;
-  color: #8a8a8a;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
+  justify-content: space-between;
+  border-top: 1px solid #8a8a8a;
+  padding-top: 16px;
+  margin-bottom: 16px;
 }
+
 .redes {
-  gap: 23.93px;
   display: flex;
-  align-items: flex-end;
+  gap: 23.93px;
 }

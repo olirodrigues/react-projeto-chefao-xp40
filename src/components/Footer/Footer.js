@@ -10,7 +10,7 @@ function Footer() {
 
   return (
     <footer>
-      <div className="footer">
+      <div className="footer-texto">
         {!mobile ? (
           <Texto tipo="paragrafo" class="cinza-claro">
             São Paulo, SP - 89251-000 | Mee Company, all rights reserved.
@@ -20,15 +20,20 @@ function Footer() {
             Mee Company, all rights reserved.
           </Texto>
         )}
-
-        <div className="redes">
-          <a href="#">
-            <Icones icone="pinterest" hover="hover-verde-claro" />
-          </a>
-          <a href="#">
-            <Icones icone="instagram" hover="hover-verde-claro" />
-          </a>
-        </div>
+      </div>
+      <div className="redes">
+        <a href="#">
+          <Icones
+            icone="pinterest"
+            className="hover-verde-claro icone-footer-social"
+          />
+        </a>
+        <a href="#">
+          <Icones
+            icone="instagram"
+            className="hover-verde-claro icone-footer-social"
+          />
+        </a>
       </div>
     </footer>
   );

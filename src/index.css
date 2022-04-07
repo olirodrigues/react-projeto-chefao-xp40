@@ -49,7 +49,6 @@ body,
 
 #body-content > footer {
   grid-area: footer;
-  margin-bottom: 16px;
 }
 
 #main-content {
