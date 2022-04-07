@@ -1,6 +1,5 @@
 .container-titulo {
   margin-top: 50px;
-  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,26 +15,48 @@
 }
 
 @media (width <= 1024px) {
-  .seta {
-    display: none;
+  #container-plantas__categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
   }
+
+  .container-foto {
+    margin-left: -75px;
+    gap: 64px;
+  }
+
+  .seta {
+    position: absolute;
+    top: 16%;
+    left: 10%;
+  }
+
   .container-titulo {
     font-size: 30px;
-  }
-  .container-foto {
-    display: flex;
-    gap: 0;
-    justify-content: space-evenly;
   }
 }
 
 @media (width <= 480px) {
+  #container-plantas__categorias {
+    gap: 0px;
+  }
+
+
+  .seta {
+    position: absolute;
+    top: 13%;
+    left: 10%;
+  }
   .container-titulo {
     align-items: center;
   }
+
+
   .container-foto {
     flex-direction: column;
     gap: 50px;
     margin-bottom: 50px;
+    margin-left: 0px;
   }
 }

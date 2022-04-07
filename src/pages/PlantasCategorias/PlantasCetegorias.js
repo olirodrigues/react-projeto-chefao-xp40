@@ -108,7 +108,7 @@ function PlantasCategorias() {
   };
 
   return (
-    <div id="Container">
+    <div id="container-plantas__categorias">
       <div className="container-titulo">
         {textoCategorias(params.categorias)}
       </div>

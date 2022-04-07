@@ -7,15 +7,8 @@
     justify-content: space-around;
     border-radius: 10px;
 }
-.circulo{
-    background-color: white;
-    width: 50px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 50px;
 
-}
+
 .linkContato{
     color: black;
     width: 32px;

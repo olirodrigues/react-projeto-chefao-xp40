@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 15px;
 }
 
 .container-fotos {
@@ -23,6 +22,7 @@
   .container-fotos {
     display: flex;
     justify-content: space-evenly;
+    gap: 64px;
   }
 }
 

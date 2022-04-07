@@ -17,29 +17,31 @@ const Categorias = (props) => {
     }, []);
 
   return (
-    <div className="container">
-      {Object.entries(fotosDasPlantas).map(([pic, resolution]) => {
-        return (
-          <div className="container-img-btn" key={props.id}>
-            <ImagemFolha
-              key={pic}
-              src={pic}
-              sizes={resolution}
-              className={props.tipoFoto}
-              maxDesktopSize="200px"
-              maxTabletSize="150px"
-              maxMobileSize="100px"
-              urlImagens={props.urlImagens}
-            />
-            <Link to={props.url}>
-              <Botao class="btn-verde" color="branco bold">
-                {props.nome}
-              </Botao>
-            </Link>
-          </div>
-        );
-      })}
-    </div>
+    <Link to={props.url}>
+      <div className="container">
+        {Object.entries(fotosDasPlantas).map(([pic, resolution]) => {
+          return (
+            <div className="container-img-btn" key={props.id}>
+              <ImagemFolha
+                key={pic}
+                src={pic}
+                sizes={resolution}
+                className={props.tipoFoto}
+                maxDesktopSize="200px"
+                maxTabletSize="150px"
+                maxMobileSize="100px"
+                urlImagens={props.urlImagens}
+              />
+              <Link to={props.url}>
+                <Botao class="btn-verde" color="branco bold">
+                  {props.nome}
+                </Botao>
+              </Link>
+            </div>
+          );
+        })}
+      </div>
+    </Link>
   );
 };
 

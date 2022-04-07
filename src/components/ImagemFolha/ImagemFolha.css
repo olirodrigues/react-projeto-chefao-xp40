@@ -23,7 +23,8 @@
   transition: 500ms;
 }
 
-.circulo:hover {
+.circulo:hover,
+.circulo:active {
   width: 200px;
 }
 
@@ -59,11 +60,16 @@
   }
 
   .container-circulo img {
+    max-width: 100px;
     max-height: 100px;
   }
 
   .container-sem-borda {
     min-height: 30px;
+  }
+
+  .borda{
+    width: 150px;
   }
 
   .sem-borda {
