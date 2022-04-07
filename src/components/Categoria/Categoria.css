@@ -4,3 +4,9 @@
   align-items: center;
   gap: 64px;
 }
+
+@media (width <= 480px) {
+  .container-img-btn {
+    gap: 32px;
+  }
+}

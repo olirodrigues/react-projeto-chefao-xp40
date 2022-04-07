@@ -23,6 +23,49 @@
   grid-area: imagem;
 }
 
+.grid-sobre__nos {
+  animation: slideLeft 1s ease-out forwards;
+}
+.grid-sobre__mee {
+  animation: slideRight 1s ease-out forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    display: none;
+  }
+  10% {
+    display: block;
+  }
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-2rem);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    display: none;
+    transform: translateX(-2rem);
+  }
+  10% {
+    display: block;
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+  25% {
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
 @media (width <= 1024px) {
   .containter-sobrenos {
     row-gap: 64px;
@@ -37,5 +80,36 @@
       "titulo"
       "imagem"
       "conteudo";
+  }
+}
+
+@keyframes fade1 {
+  0% {
+    display: none;
+  }
+  10% {
+    display: block;
+  }
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade2 {
+  0% {
+    display: none;
+  }
+  10% {
+    display: block;
+  }
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

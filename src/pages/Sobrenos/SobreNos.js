@@ -51,11 +51,9 @@ const Sobrenos = () => {
             Nossa Empresa
           </Texto>
         </div>
-
         <div className="sobrenos-conteudo">
           <ConteudoSobre id={params.id} />
         </div>
-
         <div
           className={`${
             params.id === "1" ? "grid-sobre__nos" : "grid-sobre__mee"
