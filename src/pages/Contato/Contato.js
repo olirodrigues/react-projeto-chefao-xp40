@@ -35,10 +35,8 @@ function Contato() {
         {desktop && (
           <div className="container-social-imagem-desktop">
             <LinksContato />
-            <img
-              src="https://gabezrodz.github.io/imagens-chefao-xp40/contato/CTH01.png"
-              alt=""
-            />
+
+            <div className="backgroung-image-contato-desktop" />
           </div>
         )}
         {tablet && (
