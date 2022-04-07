@@ -7,6 +7,7 @@ import Texto from "../../components/Texto/Texto.js";
 import GridPosts from "../../components/Grid/GridPosts/GridPosts";
 import Icones from "../../components/Icones/Icones";
 import { useMediaQuery } from "react-responsive";
+import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
 
 function BlogPost() {
   const { id } = useParams();
@@ -48,7 +49,7 @@ function BlogPost() {
   });
 
   if (post === null) {
-    return <h1>Carregando...</h1>;
+    return <AnimacaoLoading />;
   }
 
   return (

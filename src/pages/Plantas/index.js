@@ -2,7 +2,7 @@ import Categorias from "../../components/Categoria/Categoria";
 import Texto from "../../components/Texto/Texto";
 import { getPlantas } from "../../services/routes/plantas";
 import { useEffect, useState } from "react";
-
+import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
 import "./estiloPlantas.css";
 
 function Plantas() {
@@ -34,7 +34,7 @@ function Plantas() {
   }, []);
 
   if (plantas == null) {
-    return <div id="main-content"></div>;
+    return <AnimacaoLoading />;
   }
 
   return (

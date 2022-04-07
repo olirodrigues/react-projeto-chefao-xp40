@@ -1,0 +1,15 @@
+.container-loading {
+  width: 8rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+.icone-loading {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}

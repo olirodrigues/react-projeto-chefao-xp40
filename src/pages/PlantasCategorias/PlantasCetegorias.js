@@ -9,6 +9,7 @@ import CategoriaCactos from "../../assets/svg/categoriasPlantas/categoriaCactos.
 import CategoriaSuculentas from "../../assets/svg/categoriasPlantas/categoriaSuculentas.svg";
 import CategoriaHorticulas from "../../assets/svg/categoriasPlantas/categoriaHorticulas.svg";
 import SetaVoltar from "../../assets/svg/setas/setaVoltarSimples.svg";
+import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
 
 function PlantasCategorias() {
   const [categorias, setCategorias] = useState(null);
@@ -41,7 +42,7 @@ function PlantasCategorias() {
   console.log(categorias);
 
   if (categorias === null) {
-    return <h2>Carregando...</h2>;
+    return <AnimacaoLoading />;
   }
 
   const textoCategorias = (categoria) => {
