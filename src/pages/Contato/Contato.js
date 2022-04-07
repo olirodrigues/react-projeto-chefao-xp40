@@ -9,9 +9,7 @@ function Contato() {
     query: "(min-width:1025px)",
   });
 
-  const tablet = useMediaQuery({
-    query: "(min-width:481px)",
-  });
+  const tablet = useMediaQuery({ minWidth: 481, maxWidth: 1024 });
 
   return (
     <div id="main-content">
