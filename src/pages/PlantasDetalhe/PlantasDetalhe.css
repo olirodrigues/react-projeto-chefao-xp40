@@ -34,10 +34,6 @@
 }
 
 @media (width <= 1024px) {
-  #main-content {
-    margin-inline: 117px;
-  }
-
   .container-plantasdetalhes {
     grid-template-columns: 1fr;
     grid-template-rows: max-content max-content auto;

@@ -1,0 +1,64 @@
+.container-post_textos {
+  animation: fade 150ms ease-out forwards;
+}
+
+.container-post_textos {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.textos-titulo {
+  width: fit-content;
+  border-bottom: solid 3px #69bf8e;
+}
+
+@media (width <= 1024px) {
+  .container-post_grid {
+    margin-left: 95px;
+  }
+
+  .container-post_textos {
+    gap: 61px;
+  }
+}
+
+@media (width <= 480px) {
+  .container-post {
+    gap: 20px;
+    align-items: center;
+  }
+  .container-post_grid {
+    width: 100%;
+  }
+
+  .container-post_textos {
+    gap: 36px;
+  }
+  .container-post_grid {
+    margin: 0 auto;
+    order: 0;
+    animation: fade 1s ease-out forwards;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-1rem);
+  }
+}

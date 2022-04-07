@@ -1,4 +1,4 @@
-.containter-sobrenos {
+.container-post-blog {
   display: grid;
   margin-block: 32px;
   row-gap: 16px;
@@ -10,32 +10,47 @@
     "conteudo imagem";
 }
 
-.sobrenos-titulo {
+.blog-seta-titulo {
+  grid-area: titulo;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  left: -30px;
+}
+
+.blog-titulo {
   grid-area: titulo;
 }
 
-.sobrenos-conteudo {
+.blog-conteudo {
   grid-area: conteudo;
   max-width: 450px;
 }
 
-.sobrenos-imagem {
+.blog-imagem {
   grid-area: imagem;
 }
 
 @media (width <= 1024px) {
-  .containter-sobrenos {
+  .container-post-blog {
     row-gap: 64px;
   }
 }
 
 @media (width <= 480px) {
-  .containter-sobrenos {
+  .container-post-blog {
     grid-template-columns: 1fr;
     row-gap: 32px;
     grid-template-areas:
       "titulo"
       "imagem"
       "conteudo";
+  }
+
+  .blog-seta-titulo {
+    gap: 12px;
+    position: relative;
+    left: 0px;
   }
 }

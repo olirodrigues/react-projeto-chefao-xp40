@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import BlogPost from "../../components/Blog/BlogPost";
+import BlogListaPosts from "../../components/Blog/ListaDePosts/BlogListaPosts";
 import { getBlogPost } from "../../services/routes/blog";
 import "./estiloBlog.css";
 import Texto from "../../components/Texto/Texto";
-
 
 function Blog() {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -28,7 +27,7 @@ function Blog() {
         <div className="container-posts">
           {blogPosts.map((post) => {
             return (
-              <BlogPost
+              <BlogListaPosts
                 key={Math.random()}
                 titulo={post.post_titulo}
                 resumo={post.post_resumo}

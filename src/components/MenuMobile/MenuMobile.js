@@ -21,7 +21,10 @@ const MenuMobile = (props) => {
         alt="Logo da empresa com nome MEE"
       />
       <div>
-        <div className={ativo ? "overlay" : ""}  onClick={alternaExibicaoModal}/>
+        <div
+          className={ativo ? "overlay" : ""}
+          onClick={alternaExibicaoModal}
+        />
         <div
           className={
             ativo
@@ -40,28 +43,44 @@ const MenuMobile = (props) => {
           <div className="list">
             <ul className="listItems">
               <li>
-              <NavLink className={({isActive}) => (isActive ? "link_ativo" : "") } onClick={alternaExibicaoModal} to="/plantas">
+                <NavLink
+                  className={({ isActive }) => (isActive ? "link_ativo" : "")}
+                  onClick={alternaExibicaoModal}
+                  to="/plantas"
+                >
                   <Texto tipo="paragrafo" class="cinza mobile-menu">
                     Plantas
                   </Texto>
                 </NavLink>
               </li>
               <li>
-                <NavLink className={({isActive}) => (isActive ? "link_ativo" : "") } onClick={alternaExibicaoModal} to="/sobrenos/1">
+                <NavLink
+                  className={({ isActive }) => (isActive ? "link_ativo" : "")}
+                  onClick={alternaExibicaoModal}
+                  to={`/sobrenos`}
+                >
                   <Texto tipo="paragrafo" class="cinza mobile-menu">
                     Sobre Nós
                   </Texto>
                 </NavLink>
               </li>
               <li>
-                <NavLink className={({isActive}) => (isActive ? "link_ativo" : "") } onClick={alternaExibicaoModal} to="/blog">
+                <NavLink
+                  className={({ isActive }) => (isActive ? "link_ativo" : "")}
+                  onClick={alternaExibicaoModal}
+                  to="/blog"
+                >
                   <Texto tipo="paragrafo" class="cinza mobile-menu">
                     Blog
                   </Texto>
                 </NavLink>
               </li>
               <li>
-                <NavLink className={({isActive}) => (isActive ? "link_ativo" : "") } onClick={alternaExibicaoModal} to="/contato">
+                <NavLink
+                  className={({ isActive }) => (isActive ? "link_ativo" : "")}
+                  onClick={alternaExibicaoModal}
+                  to="/contato"
+                >
                   <Texto tipo="paragrafo" class="cinza mobile-menu">
                     Contato
                   </Texto>

@@ -1,19 +1,13 @@
-.container-conteudo {
+.container-conteudo-sobrenos {
   display: flex;
-  gap: 250px;
-  margin-top: 32px;
+  flex-direction: column;
+  gap: 22px;
 }
 .container-abas__sobre {
   width: 200px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
   border-bottom: solid 1px #d3d3d3;
-  margin: 22px 0;
-}
-
-.container-abas__sobre h2 {
-  font-size: 18px;
 }
 
 .aba-ativa {
@@ -21,7 +15,6 @@
 }
 
 .aba-ativa::after {
-  position: relative;
   content: "";
   position: absolute;
   width: 100%;
@@ -42,55 +35,14 @@
 }
 
 @media (width <= 1024px) {
-  .container-abas__sobre {
-    width: 265px;
-    margin: 95px 0 40px;
-  }
-  .container-abas__sobre h2 {
-    font-size: 24px;
+  .container-conteudo-sobrenos {
+    gap: 40px;
   }
 }
 
 @media (width <= 480px) {
-  .container-conteudo {
-    flex-direction: column;
-    gap: 70px;
-    margin-bottom: 48px;
-  }
-  .container-abas__sobre {
-    margin-top: 18px;
-  }
-
-  .container-abas__sobre h2 {
-    font-size: 28px;
-  }
-
-  .container-textos {
-    order: 1;
-  }
-  .container-textos p {
-    font-size: 18px;
-    line-height: 25px;
-  }
-
-  .grid-sobre__nos {
-    animation: fade1 1s ease-out forwards;
-    margin-top: 10px;
-  }
-
-  .grid-sobre__mee {
-    animation: fade2 1s ease-out forwards;
-    margin-top: 10px;
-  }
-}
-
-@media (width <= 480px) {
-  .container-conteudo {
-    gap: 30px;
-  }
-
-  .container-abas__sobre h2 {
-    font-size: 24px;
+  .container-conteudo-sobrenos {
+    gap: 32px;
   }
 }
 

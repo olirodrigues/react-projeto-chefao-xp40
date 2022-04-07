@@ -18,4 +18,4 @@ export const getBlogPostId = async (postId) => {
   }
 };
 
-export const getFotosBlogId = "https://gabezrodz.github.io/imagens-chefao-xp40/blog/"
+export const getFotosBlogPostId = "https://gabezrodz.github.io/imagens-chefao-xp40/blog/"

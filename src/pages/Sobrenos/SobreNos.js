@@ -1,8 +1,9 @@
 import "./SobreNos.css";
-import { getSobrePostId } from "../../services/routes/sobre";
+import { getSobrePostId, getFotosSobre } from "../../services/routes/sobre";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ConteudoSobre from "../../components/Sobre/ConteudoSobre/ConteudoSobre";
+import GridPosts from "../../components/Grid/GridPosts/GridPosts";
 import Texto from "../../components/Texto/Texto";
 
 const Sobrenos = () => {
@@ -44,12 +45,25 @@ const Sobrenos = () => {
 
   return (
     <div id="main-content">
-      <section className="containter-sobre">
-        <Texto tipo="titulo1" class="verde-escuro ">
-          Nossa Empresa
-        </Texto>
-        <ConteudoSobre id={params.id} fotos={sobre.fotos} />
-      </section>
+      <div className="containter-sobrenos">
+        <div className="sobrenos-titulo">
+          <Texto tipo="titulo1" class="verde-escuro ">
+            Nossa Empresa
+          </Texto>
+        </div>
+
+        <div className="sobrenos-conteudo">
+          <ConteudoSobre id={params.id} />
+        </div>
+
+        <div
+          className={`${
+            params.id === "1" ? "grid-sobre__nos" : "grid-sobre__mee"
+          }} sobrenos-imagem`}
+        >
+          <GridPosts fotos={sobre.fotos} urlFotos={getFotosSobre} />
+        </div>
+      </div>
     </div>
   );
 };
