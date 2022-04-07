@@ -8,6 +8,7 @@ import { useMediaQuery } from "react-responsive";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getPlantasId } from "../../services/routes/plantas";
+import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
 
 function PlantasDetalhe() {
   const [plantas, setPlantas] = useState(null);
@@ -38,7 +39,7 @@ function PlantasDetalhe() {
   });
 
   if (plantas == null) {
-    return <div id="main-content">Errou</div>;
+    return <AnimacaoLoading />;
   }
 
   const abaSobre = (

@@ -21,7 +21,9 @@ function Header() {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "link_ativo-desktop headerLink" : " link_inativo headerLink "
+            isActive
+              ? "link_ativo-desktop headerLink"
+              : " link_inativo headerLink "
           }
           to="/plantas"
         >
@@ -31,17 +33,21 @@ function Header() {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "link_ativo-desktop headerLink" : " link_inativo headerLink"
+            isActive
+              ? "link_ativo-desktop headerLink"
+              : " link_inativo headerLink"
           }
           to="/sobrenos"
         >
           <Texto tipo="paragrafo" class="desktop-menu">
-            Sobrenos
+            Sobre Nós
           </Texto>
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "link_ativo-desktop headerLink" : " link_inativo headerLink"
+            isActive
+              ? "link_ativo-desktop headerLink"
+              : " link_inativo headerLink"
           }
           to="/blog"
         >
@@ -51,7 +57,9 @@ function Header() {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "link_ativo-desktop headerLink" : " link_inativo headerLink"
+            isActive
+              ? "link_ativo-desktop headerLink"
+              : " link_inativo headerLink"
           }
           to="/contato"
         >

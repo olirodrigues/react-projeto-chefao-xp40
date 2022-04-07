@@ -3,9 +3,10 @@ import BlogListaPosts from "../../components/Blog/ListaDePosts/BlogListaPosts";
 import { getBlogPost } from "../../services/routes/blog";
 import "./estiloBlog.css";
 import Texto from "../../components/Texto/Texto";
+import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
 
 function Blog() {
-  const [blogPosts, setBlogPosts] = useState([]);
+  const [blogPosts, setBlogPosts] = useState(null);
 
   const getPosts = async () => {
     const response = await getBlogPost();
@@ -15,6 +16,10 @@ function Blog() {
   useEffect(() => {
     getPosts();
   }, []);
+
+  if (blogPosts === null) {
+    return <AnimacaoLoading />;
+  }
 
   return (
     <div id="main-content">

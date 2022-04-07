@@ -1,10 +1,11 @@
 import "./SobreNos.css";
 import { getSobrePostId, getFotosSobre } from "../../services/routes/sobre";
-import { useEffect, useState } from "react";
+import  { useEffect, useState, Lazy  } from "react";
 import { useParams } from "react-router-dom";
 import ConteudoSobre from "../../components/Sobre/ConteudoSobre/ConteudoSobre";
 import GridPosts from "../../components/Grid/GridPosts/GridPosts";
 import Texto from "../../components/Texto/Texto";
+import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
 
 const Sobrenos = () => {
   const [sobre, setSobre] = useState(null);
@@ -40,7 +41,7 @@ const Sobrenos = () => {
   }, [params.id]);
 
   if (sobre === null) {
-    return <h1>Carregando...</h1>;
+    return <AnimacaoLoading />;
   }
 
   return (

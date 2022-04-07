@@ -3,6 +3,7 @@ import Botao from "../../components/Botao/Botao";
 import "./estiloHome.css";
 import { Link } from "react-router-dom";
 
+
 function Home() {
   return (
     <div id="main-content-full" className="sem-margin-right">
@@ -10,6 +11,7 @@ function Home() {
         <div className="texto">
           <div>
             <div>
+             
               <Texto tipo="titulo1" class="h1-hind cinza-escuro bold">
                 Olá,
               </Texto>
