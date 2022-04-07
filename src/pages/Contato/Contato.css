@@ -1,0 +1,12 @@
+.container-contato {
+  margin-block: 32px;
+}
+.container-texto-formulario {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+}
+
+.texto-contato {
+  margin-block: 20px 47px;
+}
