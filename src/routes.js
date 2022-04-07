@@ -26,15 +26,21 @@ const Rotas = () => {
       {!tablet ? <Header /> : <MenuMobile />}
       <main>
         <Routes>
-          <Route exact path="/" element={<Home />}></Route>
-          <Route exact path="/plantas" element={<Plantas />}></Route>
-          <Route path="/plantas/:categorias" element={<PlantasCategorias />}
+          <Route path="/*" element={<Home />}></Route>
+          <Route path="/plantas" element={<Plantas />}></Route>
+          <Route
+            path="/plantas/:categorias"
+            element={<PlantasCategorias />}
           ></Route>
-          <Route path="/plantas/:categorias/:id" element={<PlantasDetalhe />}
+          <Route
+            path="/plantas/:categorias/:id"
+            element={<PlantasDetalhe />}
           ></Route>
-          <Route exact path="/blog" element={<Blog />}></Route>
-          <Route exact path="/blog/:id" element={<BlogPost />}></Route>
-          <Route path="/sobrenos" element={<Navigate to="/sobrenos/1" replace />}
+          <Route path="/blog" element={<Blog />}></Route>
+          <Route path="/blog/:id" element={<BlogPost />}></Route>
+          <Route
+            path="/sobrenos"
+            element={<Navigate to="/sobrenos/1" replace />}
           ></Route>
           <Route path="/sobrenos/:id" element={<SobreNos />}></Route>
           <Route path="/contato" element={<Contato />}></Route>
