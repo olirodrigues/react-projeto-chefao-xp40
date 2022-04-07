@@ -4,8 +4,9 @@ import { useState, useEffect } from "react";
 import { getBlogPostId, getFotosBlogPostId } from "../../services/routes/blog";
 import ConteudoBlog from "../../components/Blog/BlogPost/ConteudoPost/ConteudoPost";
 import Texto from "../../components/Texto/Texto.js";
-import SetaVoltar from "../../assets/svg/setas/setaVoltarSimples.svg";
 import GridPosts from "../../components/Grid/GridPosts/GridPosts";
+import Icones from "../../components/Icones/Icones";
+import { useMediaQuery } from "react-responsive";
 
 function BlogPost() {
   const { id } = useParams();
@@ -42,6 +43,10 @@ function BlogPost() {
     getDadosDoPost(id);
   }, [id]);
 
+  const tablet = useMediaQuery({
+    query: "(max-width:1024px)",
+  });
+
   if (post === null) {
     return <h1>Carregando...</h1>;
   }
@@ -49,16 +54,25 @@ function BlogPost() {
   return (
     <div id="main-content">
       <div className="container-post-blog">
-        <div className="blog-seta blog-titulo">
+        <div className="blog-seta-titulo">
           <Link to="/blog">
-            <img src={SetaVoltar} alt="seta para voltar" />
+            {!tablet ? (
+              <Icones icone="setaComCirculo" hover="hover-fundo-cinza" />
+            ) : (
+              <Icones icone="setaVoltarSimples" />
+            )}
           </Link>
           <Texto tipo="titulo1" class="verde-escuro ">
             Blog
           </Texto>
         </div>
-        <div className='blog-conteudo'>
-          <ConteudoBlog id={id} titulo={post.titulo} fotos={post.fotos} urlFotos={getFotosBlogPostId} />
+        <div className="blog-conteudo">
+          <ConteudoBlog
+            id={id}
+            titulo={post.titulo}
+            fotos={post.fotos}
+            urlFotos={getFotosBlogPostId}
+          />
         </div>
         <div className=" blog-imagem">
           <GridPosts fotos={post.fotos} urlFotos={getFotosBlogPostId} />

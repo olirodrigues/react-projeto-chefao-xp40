@@ -1,73 +1,56 @@
 .container-post-blog {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  margin-block: 32px;
+  row-gap: 16px;
+  column-gap: 60px;
+  grid-template-columns: auto max-content;
   grid-template-rows: 50px auto;
   grid-template-areas:
     "titulo imagem"
     "conteudo imagem";
 }
 
+.blog-seta-titulo {
+  grid-area: titulo;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  left: -30px;
+}
+
 .blog-titulo {
-grid-area: titulo;
+  grid-area: titulo;
 }
 
 .blog-conteudo {
   grid-area: conteudo;
+  max-width: 450px;
 }
 
 .blog-imagem {
   grid-area: imagem;
 }
 
-/* teste */
-/* .blog-seta {
-  display: flex;
-  align-items: center;
-  margin-top: 32px;
-  position: relative;
-  left: -45px;
-  gap: 15px;
-}
-
-.blog-seta a img {
-  width: 22px;
-}
-
 @media (width <= 1024px) {
-  .blog-seta {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-  }
-
-  .blog-seta a img {
-    width: 22px;
+  .container-post-blog {
+    row-gap: 64px;
   }
 }
 
 @media (width <= 480px) {
-  .blog-seta {
-    align-items: baseline;
-    gap: 8px;
-    left: 0px;
-    margin-top: 42px;
+  .container-post-blog {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+    grid-template-areas:
+      "titulo"
+      "imagem"
+      "conteudo";
   }
-  .blog-seta a img {
-    width: 22px;
+
+  .blog-seta-titulo {
+    gap: 12px;
+    position: relative;
+    left: 0px;
   }
 }
-
-@media (width <= 375px) {
-  .container-post {
-    gap: 100px;
-  }
-  .textos-titulo {
-    width: 315px;
-    margin: 0;
-  }
-
-  .textos-paragrafo {
-    width: 311px;
-    margin: 30px 0;
-  }
-} */

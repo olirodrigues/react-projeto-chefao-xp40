@@ -1,13 +1,11 @@
 import "./ConteudoPost.css";
 import Texto from "../../../Texto/Texto";
 import TextosBlog from "../TextosPost/TextosPost";
-import GridPosts from "../../../Grid/GridPosts/GridPosts";
 
-const ConteudoBlog = ({ id, fotos, titulo, urlFotos }) => {
+const ConteudoBlog = ({ id, titulo }) => {
   return (
     <div className="container-post">
       <div className="container-post_textos">
-        
         <div className="textos-titulo">
           <Texto tipo="titulo2" class="h2-blog preto">
             {titulo}
@@ -17,9 +15,6 @@ const ConteudoBlog = ({ id, fotos, titulo, urlFotos }) => {
           <TextosBlog id={id} />
         </div>
       </div>
-      {/* <div className="container-post_grid">
-        <GridPosts fotos={fotos} urlFotos={urlFotos} />
-      </div> */}
     </div>
   );
 };
