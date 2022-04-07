@@ -1,7 +1,11 @@
 .container-contato {
   margin-block: 32px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: "formulario social";
 }
 .container-texto-formulario {
+  grid-area: formulario;
   display: flex;
   flex-direction: column;
   width: 310px;
@@ -9,4 +13,21 @@
 
 .texto-contato {
   margin-block: 20px 47px;
+}
+
+.container-social-imagem {
+  grid-area: social;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-social-imagem img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  height: 100%;
+  right: 0;
+  width: 60%;
+  object-fit: fill;
 }

@@ -1,7 +1,7 @@
 import "./Contato.css";
 import Formulario from "../../components/Formulario/Formulario";
 import Texto from "../../components/Texto/Texto";
-import LinksContato from "../../components/LinksContato";
+import LinksContato from "../../components/LinksContato/LinksContato";
 
 function Contato() {
   return (
@@ -24,6 +24,13 @@ function Contato() {
           <div>
             <Formulario />
           </div>
+        </div>
+        <div className="container-social-imagem">
+          <LinksContato />
+          <img
+            src="https://gabezrodz.github.io/imagens-chefao-xp40/contato/CTH01.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
