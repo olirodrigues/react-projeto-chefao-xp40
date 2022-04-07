@@ -46,7 +46,12 @@ function Form() {
   };
 
   return (
-    <form onSubmit={confirmaFormulario} className="container-formulario">
+    <form
+      onSubmit={confirmaFormulario}
+      className="container-formulario"
+      action="https://formsubmit.co/meeplantas@gmail.com"
+      method="POST"
+    >
       <div className="item-formulario">
         <div className="icone-label-formulario">
           <img src={IconeNome} className="icones-contato" alt="" />
@@ -137,7 +142,7 @@ function Form() {
             <h2> Esqueceu algo?</h2>
             <p>Um espaço não foi preenchido corretamente</p>
           </div>
-         <img
+          <img
             className="icone-x__aviso"
             onClick={() => setFormulario(null)}
             alt="icone de fechar"
