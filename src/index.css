@@ -67,8 +67,9 @@ body,
 
 @media (width <= 1024px) {
   #body-content > header,
+  #body-content > footer,
   #main-content {
-    margin-inline: 88px;
+    margin-inline: 72px;
   }
 }
 

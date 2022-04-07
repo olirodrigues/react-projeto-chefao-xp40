@@ -6,7 +6,7 @@ const GridPosts = (props) => {
     query: "(max-width:1024px)",
   });
   const celular = useMediaQuery({
-    query: "(max-width:380px)",
+    query: "(max-width:480px)",
   });
 
   if (celular) {
