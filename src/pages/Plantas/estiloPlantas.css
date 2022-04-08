@@ -5,6 +5,7 @@
   justify-content: space-evenly;
   gap: 32px;
   margin-top: 52px;
+  animation: fade 500ms ease-out forwards;
 }
 
 .container-fotos {
@@ -41,5 +42,14 @@
     flex-direction: column;
     gap: 50px;
     margin-bottom: 50px;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
