@@ -1,7 +1,6 @@
 import "./BlogListaPosts.css";
 import Botao from "../../Botao/Botao";
 import Texto from "../../Texto/Texto";
-
 import { Link } from "react-router-dom";
 
 const BlogListaPosts = (props) => {

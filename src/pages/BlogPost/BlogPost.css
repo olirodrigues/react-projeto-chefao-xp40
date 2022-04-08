@@ -54,12 +54,10 @@
     position: relative;
     left: 0px;
   }
-  .blog-imagem{
+  .blog-imagem {
     animation: fade 1s ease-out forwards;
   }
 }
-
-
 
 @keyframes fade {
   0% {

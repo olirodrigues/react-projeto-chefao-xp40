@@ -1,7 +1,7 @@
 import "./ConteudoSobre.css";
 import Texto from "../../Texto/Texto";
-import { NavLink } from "react-router-dom";
 import TextosSobre from "../TextosSobre/TextosSobre";
+import { NavLink } from "react-router-dom";
 
 const ConteudoSobre = ({ id }) => {
   return (

@@ -22,13 +22,21 @@ function Footer() {
         )}
       </div>
       <div className="redes">
-        <a target="_blank" rel="noreferrer" href="https://br.pinterest.com/meeplantas/">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://br.pinterest.com/meeplantas/"
+        >
           <Icones
             icone="pinterest"
             className="hover-verde-claro icone-footer-social"
           />
         </a>
-        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/meeplantas/">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.instagram.com/meeplantas/"
+        >
           <Icones
             icone="instagram"
             className="hover-verde-claro icone-footer-social"

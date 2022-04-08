@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import BlogListaPosts from "../../components/Blog/ListaDePosts/BlogListaPosts";
-import { getBlogPost } from "../../services/routes/blog";
 import "./estiloBlog.css";
+import BlogListaPosts from "../../components/Blog/ListaDePosts/BlogListaPosts";
 import Texto from "../../components/Texto/Texto";
 import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
+import { getBlogPost } from "../../services/routes/blog";
+import { useEffect, useState } from "react";
 
 function Blog() {
   const [blogPosts, setBlogPosts] = useState(null);

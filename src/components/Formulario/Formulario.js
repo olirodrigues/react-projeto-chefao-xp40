@@ -1,5 +1,4 @@
 import "./Formulario.css";
-import { useState } from "react";
 import Texto from "../Texto/Texto";
 import Botao from "../Botao/Botao";
 import IconeNome from "../../assets/svg/contato/contatoNome.svg";
@@ -8,9 +7,9 @@ import IconeTelefone from "../../assets/svg/contato/contatoTelefone.svg";
 import IconeMensagem from "../../assets/svg/contato/contatoMensagem.svg";
 import IconeAtencao from "../../assets/svg/contato/contatoAtencao.svg";
 import IconeCheck from "../../assets/svg/contato/contatoCheck.svg";
-
 import IconeXBranco from "../../assets/svg/contato/contatoXBranco.svg";
 import IconeXPreto from "../../assets/svg/contato/contatoXPreto.svg";
+import { useState } from "react";
 
 const campoVazio = (valor) => valor.trim().length === 0;
 

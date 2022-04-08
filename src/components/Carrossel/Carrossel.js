@@ -1,8 +1,8 @@
-import { useState } from "react";
 import "./Carrossel.css";
 import ImagemFolha from "../ImagemFolha/ImagemFolha";
 import SetaDireita from "../../assets/svg/setas/setaDireita.svg";
 import SetaEsquerda from "../../assets/svg/setas/setaEsquerda.svg";
+import { useState } from "react";
 
 function Carrossel(props) {
   const fotosSizes = Object.values(props.fotos)

@@ -4,11 +4,11 @@ import Carrossel from "../../components/Carrossel/Carrossel";
 import Texto from "../../components/Texto/Texto";
 import Cuidados from "../../components/Cuidados/Cuidados";
 import Icones from "../../components/Icones/Icones";
+import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
 import { useMediaQuery } from "react-responsive";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getPlantasId } from "../../services/routes/plantas";
-import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
 
 function PlantasDetalhe() {
   const [plantas, setPlantas] = useState(null);

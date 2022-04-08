@@ -1,9 +1,9 @@
+import "./estiloPlantas.css";
 import Categorias from "../../components/Categoria/Categoria";
 import Texto from "../../components/Texto/Texto";
-import { getPlantas } from "../../services/routes/plantas";
-import { useEffect, useState } from "react";
 import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
-import "./estiloPlantas.css";
+import { useEffect, useState } from "react";
+import { getPlantas } from "../../services/routes/plantas";
 
 function Plantas() {
   const [plantas, setPlantas] = useState(null);
@@ -39,7 +39,6 @@ function Plantas() {
 
   return (
     <div id="main-content">
-      {console.log(plantas[2])}
       <div className="container-plantas">
         <div className="container-titulo">
           <Texto tipo="titulo1" class="h1-hind">

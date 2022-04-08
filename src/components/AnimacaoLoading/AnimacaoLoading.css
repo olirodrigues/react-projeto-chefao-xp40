@@ -17,7 +17,7 @@
 @media (width <= 1024px) {
   .container-loading {
     top: 15%;
-   }
+  }
 }
 
 @media (width <= 480px) {
@@ -25,8 +25,3 @@
     left: 35%;
   }
 }
-
-
-
-
-

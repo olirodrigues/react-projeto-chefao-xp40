@@ -1,5 +1,5 @@
-import IconeLoading from "../../assets/svg/folhaLoading/folhaLoading.svg";
 import "./AnimacaoLoading.css";
+import IconeLoading from "../../assets/svg/folhaLoading/folhaLoading.svg";
 import { motion } from "framer-motion";
 
 const conatainerLoadingVariants = {
