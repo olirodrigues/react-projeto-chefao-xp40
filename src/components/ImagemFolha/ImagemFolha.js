@@ -15,7 +15,7 @@ function ImagemFolha({
     .join(", ");
 
   return (
-    <div onClick={onClick} className={"container-" + className}>
+    <div onClick={onClick} className={`container-${className}`}>
       <img
         className={className}
         srcSet={imagemUrl}
