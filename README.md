@@ -16,16 +16,18 @@
 
 ## 💻 Projeto
 
+<div align="center">
 <img  width="720px" heigth="420px" src="https://gabezrodz.github.io/imagens-chefao-xp40/home/home-readme.png" alt="Imagem Home-page" />
+</div>
 <p>
 Após uma investigação do cenário atual sobre o consumo de conteúdo sobre plantas, decidimos explorar quais são as principais necessidades e razões desta pesquisa pelo público. Chegamos a uma conclusão de projetar uma vitrine de plantas fácies de cuidar e de importância decorativa.
 </p>
 
 ### Você visualizar o projeto <a href="https://mee-xp40.vercel.app/">clicando aqui!</a>
 
-### Você pode acessar o repositório da API <a href="https://mee-xp40.vercel.app/">clicando aqui!</a>
+### Você pode acessar o repositório da API <a href="https://github.com/olirodrigues/api-projeto-chefao-xp40">clicando aqui!</a>
 
-### Você pode acessar o prototipo do Figma <a href="https://mee-xp40.vercel.app/">clicando aqui!</a>
+### Você pode acessar o prototipo do Figma <a href="https://www.figma.com/file/cM2C7bF174277en96u15jG/Desafio-Chefao---Plantas?node-id=2%3A2">clicando aqui!</a>
 
 ## 👩‍💻 Tecnologias
 
