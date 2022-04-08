@@ -1,66 +1,51 @@
-.container-titulo {
-  margin-top: 50px;
+#container-plantas__categorias {
   display: flex;
+  flex-direction: column;
+  margin-block: 58px;
+  gap: 64px;
+}
+
+.container-seta-imagem-planta-categoria {
+  display: flex;
+  gap: 68.6px;
   align-items: center;
   justify-content: center;
+  position: relative;
+  left: -50px;
+}
+.container-titulo {
   text-align: center;
 }
 
 .container-foto {
   display: flex;
   gap: 96px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 32px;
-}
-
-.seta {
-  position: absolute;
-  top: 48%;
-  left: 10%;
 }
 
 @media (width <= 1024px) {
   #container-plantas__categorias {
-    display: flex;
-    flex-direction: column;
-    gap: 96px;
+    gap: 190px;
+    margin-block: 115px;
   }
-  
-.seta {
-  display: none;
-}
 
-
+  .container-seta-imagem-planta-categoria {
+    left: 0px;
+    gap: 0px;
+  }
 
   .container-foto {
-    margin-left: -75px;
     gap: 64px;
-  }
-
-  .container-titulo {
-    font-size: 30px;
   }
 }
 
 @media (width <= 480px) {
   #container-plantas__categorias {
-    gap: 0px;
-  }
-
-  .seta {
-    position: absolute;
-    top: 13%;
-    left: 10%;
-  }
-  .container-titulo {
-    align-items: center;
+    margin-block: 40px;
+    gap: 48px;
   }
 
   .container-foto {
     flex-direction: column;
-    gap: 50px;
-    margin-bottom: 50px;
-    margin-left: 0px;
+    gap: 56px;
   }
 }

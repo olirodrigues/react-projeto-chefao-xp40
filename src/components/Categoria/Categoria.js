@@ -21,7 +21,7 @@ const Categorias = (props) => {
       <div className="container">
         {Object.entries(fotosDasPlantas).map(([pic, resolution]) => {
           return (
-            <div className="container-img-btn" key={props.id}>
+            <div className="container-img-btn-categoria" key={props.id}>
               <ImagemFolha
                 key={pic}
                 src={pic}
@@ -46,19 +46,3 @@ const Categorias = (props) => {
 };
 
 export default Categorias;
-
-//   console.log(fotinhasPlantas);
-
-// const obj = Object.values(plantas[0].fotos)
-//   .filter((pic) => typeof pic === "string")
-//   .map((pic) => pic.split("x"))
-//   .reduce((picsWithResolutions, [pic, resolution]) => {
-//     if (!picsWithResolutions[pic]) {
-//       picsWithResolutions[pic] = [];
-//     }
-//     picsWithResolutions[pic].push(resolution);
-
-//     return picsWithResolutions;
-//   }, {});
-
-// console.log(obj);

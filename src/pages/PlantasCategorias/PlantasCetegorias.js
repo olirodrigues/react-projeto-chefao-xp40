@@ -8,8 +8,9 @@ import { Link } from "react-router-dom";
 import CategoriaCactos from "../../assets/svg/categoriasPlantas/categoriaCactos.svg";
 import CategoriaSuculentas from "../../assets/svg/categoriasPlantas/categoriaSuculentas.svg";
 import CategoriaHorticulas from "../../assets/svg/categoriasPlantas/categoriaHorticulas.svg";
-import SetaVoltar from "../../assets/svg/setas/setaVoltarSimples.svg";
 import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
+import Icones from "../../components/Icones/Icones";
+import { useMediaQuery } from "react-responsive";
 
 function PlantasCategorias() {
   const [categorias, setCategorias] = useState(null);
@@ -40,6 +41,10 @@ function PlantasCategorias() {
   }, [params.categorias]);
 
   console.log(categorias);
+
+  const tablet = useMediaQuery({
+    query: "(max-width:1024px)",
+  });
 
   if (categorias === null) {
     return <AnimacaoLoading />;
@@ -109,25 +114,36 @@ function PlantasCategorias() {
   };
 
   return (
-    <div id="container-plantas__categorias">
-      <div className="container-titulo">
-        {textoCategorias(params.categorias)}
-      </div>
-        <Link to="/plantas">
-          <img className="seta" src={SetaVoltar} alt=""></img>
-        </Link>
-      <div className="container-foto">
-        {categorias.map((planta) => (
-          <Categorias
-            tipoFoto="borda"
-            key={planta.id}
-            id={planta.id}
-            fotos={planta.fotos}
-            nome={planta.nome}
-            urlImagens={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${planta.categoria}`}
-            url={`/plantas/${planta.categoria}/${planta.id}`}
-          />
-        ))}
+    <div id="main-content">
+      <div id="container-plantas__categorias">
+        <div className="container-titulo">
+          {textoCategorias(params.categorias)}
+        </div>
+        <div className="container-seta-imagem-planta-categoria">
+          <div className="seta-voltar-planta-categoria">
+            <Link to="/plantas">
+              {!tablet && (
+                <Icones
+                  icone="setaComCirculo"
+                  className="hover-fundo-cinza seta-voltar-pagina seta-voltar-size-maior"
+                />
+              )}
+            </Link>
+          </div>
+          <div className="container-foto">
+            {categorias.map((planta) => (
+              <Categorias
+                tipoFoto="borda"
+                key={planta.id}
+                id={planta.id}
+                fotos={planta.fotos}
+                nome={planta.nome}
+                urlImagens={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${planta.categoria}`}
+                url={`/plantas/${planta.categoria}/${planta.id}`}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
