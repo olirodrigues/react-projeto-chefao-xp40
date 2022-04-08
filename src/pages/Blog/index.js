@@ -1,7 +1,7 @@
 import "./estiloBlog.css";
-import BlogListaPosts from "../../components/Blog/ListaDePosts/BlogListaPosts";
-import Texto from "../../components/Texto/Texto";
-import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
+import BlogListaPosts from "../../components/layout/Blog/ListaDePosts/BlogListaPosts";
+import Texto from "../../components/shared/Texto/Texto";
+import AnimacaoLoading from "../../components/layout/AnimacaoLoading/AnimacaoLoading";
 import { getBlogPost } from "../../services/routes/blog";
 import { useEffect, useState } from "react";
 

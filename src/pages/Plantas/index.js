@@ -1,7 +1,7 @@
 import "./estiloPlantas.css";
-import Categorias from "../../components/Categoria/Categoria";
-import Texto from "../../components/Texto/Texto";
-import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
+import Categorias from "../../components/shared/Categoria/Categoria";
+import Texto from "../../components/shared/Texto/Texto";
+import AnimacaoLoading from "../../components/layout/AnimacaoLoading/AnimacaoLoading";
 import { useEffect, useState } from "react";
 import { getPlantas } from "../../services/routes/plantas";
 

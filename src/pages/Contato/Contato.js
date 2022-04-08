@@ -1,7 +1,7 @@
 import "./Contato.css";
-import Formulario from "../../components/Formulario/Formulario";
-import Texto from "../../components/Texto/Texto";
-import LinksContato from "../../components/LinksContato/LinksContato";
+import Formulario from "../../components/actions/Formulario/Formulario";
+import Texto from "../../components/shared/Texto/Texto";
+import LinksContato from "../../components/actions/LinksContato/LinksContato";
 import { useMediaQuery } from "react-responsive";
 
 function Contato() {

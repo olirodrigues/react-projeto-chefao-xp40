@@ -1,6 +1,6 @@
 import "./estiloHome.css";
-import Texto from "../../components/Texto/Texto";
-import Botao from "../../components/Botao/Botao";
+import Texto from "../../components/shared/Texto/Texto";
+import Botao from "../../components/actions/Botao/Botao";
 import { Link } from "react-router-dom";
 
 function Home() {
