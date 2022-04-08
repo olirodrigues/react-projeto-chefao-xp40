@@ -125,12 +125,12 @@
   }
 
   .mensagem {
-    margin-left: 10px;
+    margin-left: 5px;
    width: 100%;
   }
 
   .icone-x__aviso {
-    left: 18%;
+    left: 15%;
   }
   .aviso-textos p {
     font-size: 14px;
@@ -142,5 +142,9 @@
 @media (width <= 380px) {
   .icone-x__aviso {
     left: 2%;
+  }
+  .mensagem {
+    margin-left:0px;
+   width: 95%;
   }
 }
