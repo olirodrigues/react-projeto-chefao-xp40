@@ -5,6 +5,7 @@
   justify-content: space-evenly;
   gap: 32px;
   margin-top: 52px;
+  animation: fade 500ms ease-out forwards;
 }
 
 .container-fotos {
@@ -17,6 +18,7 @@
 @media (width <= 1024px) {
   .container-plantas {
     gap: 190px;
+    margin-top: 115px;
   }
   .container-titulo {
     font-size: 30px;
@@ -31,6 +33,7 @@
 @media (width <= 480px) {
   .container-plantas {
     gap: 48px;
+    margin-top: 40px;
   }
   .container-titulo {
     align-items: center;
@@ -39,5 +42,14 @@
     flex-direction: column;
     gap: 50px;
     margin-bottom: 50px;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

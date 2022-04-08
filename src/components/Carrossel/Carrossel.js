@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./Carrossel.css";
 import ImagemFolha from "../ImagemFolha/ImagemFolha";
+import SetaDireita from "../../assets/svg/setas/setaDireita.svg";
+import SetaEsquerda from "../../assets/svg/setas/setaEsquerda.svg";
 
 function Carrossel(props) {
   const fotosSizes = Object.values(props.fotos)
@@ -79,21 +81,27 @@ function Carrossel(props) {
       <div className="container-grid">
         {Object.entries(fotosSizes).map(([fotos, sizes], index) => {
           return (
-            <ImagemFolha
-              key={fotos}
-              src={fotos}
-              sizes={sizes}
-              className={`sem-borda ${animacaoCarrossel(index)} ${
-                fotoCarrossel === index
-                  ? "foto-carrossel-com-foco"
-                  : "foto-carrossel-sem-foco"
-              }`}
-              maxMobileSize="30px"
-              maxTabletSize="80px"
-              maxDesktopSize="80px"
-              onClick={() => setFotoCarrossel(index)}
-              urlImagens={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${props.categoria}`}
-            />
+            <>
+              <ImagemFolha
+                key={fotos}
+                src={fotos}
+                sizes={sizes}
+                className={`sem-borda ${animacaoCarrossel(index)} ${
+                  fotoCarrossel === index
+                    ? "foto-carrossel-com-foco"
+                    : "foto-carrossel-sem-foco"
+                }`}
+                maxMobileSize="30px"
+                maxTabletSize="80px"
+                maxDesktopSize="80px"
+                onClick={() => setFotoCarrossel(index)}
+                urlImagens={`https://gabezrodz.github.io/imagens-chefao-xp40/plantas/categorias/${props.categoria}`}
+              />
+              <div className="containter-setas__carrosel">
+                <img src={SetaEsquerda} alt="seta direita"  />
+                <img src={SetaDireita} alt="seta direita"  />
+              </div>
+            </>
           );
         })}
       </div>
