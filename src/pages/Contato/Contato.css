@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-template-areas: "formulario social";
+  gap: 32px;
 }
 .container-texto-formulario {
   grid-area: formulario;

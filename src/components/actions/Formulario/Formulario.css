@@ -52,7 +52,7 @@
 }
 
 .mensagem {
-  width: 320px;
+  width: 100%;
   height: 65px;
   box-shadow: 0px 2px 26px rgba(215, 0, 0, 0.1);
   border-radius: 6px;
@@ -61,6 +61,7 @@
   gap: 8px;
   padding: 15px 12px;
   animation: fade 400ms ease-out forwards;
+  justify-content: space-around;
 }
 
 .aviso-check {
@@ -88,7 +89,6 @@
 .aviso-textos {
   display: flex;
   flex-direction: column;
-  width: 250px;
 }
 
 .aviso-textos h2 {
@@ -108,12 +108,6 @@
   cursor: pointer;
 }
 
-@media (width <= 1024px) {
-  .mensagem {
-    margin-left: 56px;
-  }
-}
-
 @media (width <= 480px) {
   .btn-enviar-contato {
     margin-block: 24px 48px;
@@ -124,26 +118,8 @@
     width: 150px;
   }
 
-  .mensagem {
-    margin-left: 5px;
-    width: 100%;
-  }
-
-  .icone-x__aviso {
-    left: 15%;
-  }
   .aviso-textos p {
     font-size: 14px;
     font-weight: 600;
-  }
-}
-
-@media (width <= 380px) {
-  .icone-x__aviso {
-    left: 2%;
-  }
-  .mensagem {
-    margin-left: 0px;
-    width: 95%;
   }
 }
