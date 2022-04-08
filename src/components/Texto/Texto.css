@@ -83,7 +83,7 @@ p {
   color: #215044;
 }
 
-.desktop-menu{
+.desktop-menu {
   font-size: 16px;
 }
 
@@ -117,8 +117,6 @@ p {
     color: #69bf8e;
   }
 }
-
-
 
 @media (width <= 480px) {
   h1 {
@@ -158,5 +156,11 @@ p {
 
   .mobile-menu {
     font-size: 16px;
+  }
+}
+
+@media (width <= 480px) {
+  .h2-blog {
+    font-size: 17px;
   }
 }

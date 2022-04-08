@@ -1,6 +1,6 @@
+import "./Categoria.css";
 import Botao from "../Botao/Botao";
 import ImagemFolha from "../ImagemFolha/ImagemFolha";
-import "./Categoria.css";
 import { Link } from "react-router-dom";
 
 const Categorias = (props) => {

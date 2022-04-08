@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
 import "./estiloheader.css";
 import LogoMee from "../../assets/svg/logoMee/logoMee.svg";
 import Texto from "../Texto/Texto";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (

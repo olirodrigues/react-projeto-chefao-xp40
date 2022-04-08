@@ -12,15 +12,36 @@
 
 .foto-carrossel-sem-foco {
   opacity: 40%;
+  cursor: pointer;
 }
 
-.foto-carrossel-com-foco,
-.img-carrossel {
+.foto-carrossel-com-foco {
   animation: opacity-out 1s;
   transition: 1s;
 }
 
-/* Animação carrossel */
+.container-carrossel-setas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+}
+
+.containter-setas__carrosel {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.containter-setas__carrosel > img {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.containter-setas__carrosel > img:hover {
+  background-color: #e0e0e0;
+  border-radius: 50%;
+}
 
 .container-carrossel {
   height: 500px;
@@ -29,8 +50,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  /* gabriel mexeu aqui ↓ */
-  padding-bottom: 25px;
 }
 
 .container-carrossel > .slide {
@@ -74,15 +93,6 @@
 .container-carrossel img {
   width: 100%;
 }
-/* Aqui ele tb mexeu ó ↓ */
-.containter-setas__carrosel{
-  position: absolute;
-  display: flex;
-  gap: 12px;
-  top:88%;
-  left: 59%;
-}
-/*  Dps ele n mexeu mais, tá ? */
 
 @media (width <= 1024px) {
   .container-carrossel-grid {
@@ -111,6 +121,18 @@
   .container-carrossel {
     height: 250px;
     width: 310px;
+  }
+
+  .containter-setas__carrosel {
+    position: absolute;
+    top: 435px;
+    gap: 263px;
+    align-items: center;
+  }
+
+  .containter-setas__carrosel > img {
+    padding: 5px;
+    cursor: pointer;
   }
 
   .container-carrossel > .select {

@@ -1,12 +1,12 @@
-import { useState } from "react";
 import "./MenuMobile.css";
 import HamburgerSvg from "../../assets/svg/hamburger/hamburger.svg";
 import SetaVoltar from "../../assets/svg/setas/setaComCirculo.svg";
 import Texto from "../Texto/Texto";
-import { NavLink } from "react-router-dom";
 import LogoMee from "../../assets/svg/logoMee/logoMee.svg";
+import { NavLink, Link } from "react-router-dom";
+import { useState } from "react";
 
-const MenuMobile = (props) => {
+const MenuMobile = () => {
   const [ativo, setAtivo] = useState(false);
 
   const alternaExibicaoModal = () => {
@@ -15,11 +15,13 @@ const MenuMobile = (props) => {
 
   return (
     <div className="container-menu-mobile">
-      <img
-        className="logoMee"
-        src={LogoMee}
-        alt="Logo da empresa com nome MEE"
-      />
+      <Link to="/home">
+        <img
+          className="logoMee"
+          src={LogoMee}
+          alt="Logo da empresa com nome MEE"
+        />
+      </Link>
       <div>
         <div
           className={ativo ? "overlay" : ""}

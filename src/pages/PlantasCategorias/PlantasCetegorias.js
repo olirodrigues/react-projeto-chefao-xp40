@@ -1,15 +1,15 @@
+import "./PlantasCategorias.css";
 import Categorias from "../../components/Categoria/Categoria";
 import Texto from "../../components/Texto/Texto";
-import "./PlantasCategorias.css";
-import { useState, useEffect } from "react";
-import { getPlantasCategorias } from "../../services/routes/plantas";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
 import CategoriaCactos from "../../assets/svg/categoriasPlantas/categoriaCactos.svg";
 import CategoriaSuculentas from "../../assets/svg/categoriasPlantas/categoriaSuculentas.svg";
 import CategoriaHorticulas from "../../assets/svg/categoriasPlantas/categoriaHorticulas.svg";
 import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
 import Icones from "../../components/Icones/Icones";
+import { useState, useEffect } from "react";
+import { getPlantasCategorias } from "../../services/routes/plantas";
+import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
 function PlantasCategorias() {
@@ -39,8 +39,6 @@ function PlantasCategorias() {
   useEffect(() => {
     getCategorias(params.categorias);
   }, [params.categorias]);
-
-  console.log(categorias);
 
   const tablet = useMediaQuery({
     query: "(max-width:1024px)",

@@ -4,12 +4,11 @@ import Carrossel from "../../components/Carrossel/Carrossel";
 import Texto from "../../components/Texto/Texto";
 import Cuidados from "../../components/Cuidados/Cuidados";
 import Icones from "../../components/Icones/Icones";
+import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
 import { useMediaQuery } from "react-responsive";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getPlantasId } from "../../services/routes/plantas";
-import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
-
 
 function PlantasDetalhe() {
   const [plantas, setPlantas] = useState(null);
@@ -24,6 +23,7 @@ function PlantasDetalhe() {
       nome_cientifico: response.informaco.nome_cientifico,
       categoria_descricao: response.informaco.categoria_descricao,
       altura: response.informaco.altura,
+      luminosidade: response.informaco.luminosidade,
       cuidados_iluminacao: response.cuidados_iluminacao,
       cuidados_agua: response.cuidados_agua,
       cuidados_pet: response.cuidados_pet,
@@ -74,6 +74,12 @@ function PlantasDetalhe() {
           Altura:{" "}
         </Texto>
         <Texto tipo="paragrafo">{plantas.altura}</Texto>
+      </div>
+      <div>
+        <Texto tipo="paragrafo" class="bold">
+          Luminosidade:{" "}
+        </Texto>
+        <Texto tipo="paragrafo">{plantas.luminosidade}</Texto>
       </div>
     </div>
   );

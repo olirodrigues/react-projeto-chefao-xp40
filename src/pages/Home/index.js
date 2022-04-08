@@ -1,17 +1,15 @@
+import "./estiloHome.css";
 import Texto from "../../components/Texto/Texto";
 import Botao from "../../components/Botao/Botao";
-import "./estiloHome.css";
 import { Link } from "react-router-dom";
-
 
 function Home() {
   return (
     <div id="main-content-full" className="sem-margin-right">
       <div className="container-home">
-        <div className="texto">
+        <div className="texto-botao-home">
           <div>
             <div>
-             
               <Texto tipo="titulo1" class="h1-hind cinza-escuro bold">
                 Olá,
               </Texto>
@@ -33,7 +31,7 @@ function Home() {
               </Texto>
             </div>
           </div>
-          <div className="botao">
+          <div className="botao-home">
             <Link to="/plantas">
               <Botao class="btn-verde" color="branco semi-bold">
                 Quero aprender

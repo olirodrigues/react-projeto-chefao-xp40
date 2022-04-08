@@ -5,8 +5,6 @@ import { useState } from "react";
 function Abas({ nomeAbas, conteudoAbas }) {
   const [tabFoco, setTabFocus] = useState(0);
 
-  console.log(tabFoco);
-  // {tabFoco === index ? "v" : "x"}
   return (
     <div className="container-abas">
       <nav>

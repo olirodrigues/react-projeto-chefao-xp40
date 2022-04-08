@@ -1,13 +1,13 @@
 import "./BlogPost.css";
-import { Link, useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { getBlogPostId, getFotosBlogPostId } from "../../services/routes/blog";
 import ConteudoBlog from "../../components/Blog/BlogPost/ConteudoPost/ConteudoPost";
 import Texto from "../../components/Texto/Texto.js";
 import GridPosts from "../../components/Grid/GridPosts/GridPosts";
 import Icones from "../../components/Icones/Icones";
-import { useMediaQuery } from "react-responsive";
 import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
+import { useMediaQuery } from "react-responsive";
+import { Link, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { getBlogPostId, getFotosBlogPostId } from "../../services/routes/blog";
 
 function BlogPost() {
   const { id } = useParams();

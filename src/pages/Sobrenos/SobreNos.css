@@ -87,7 +87,6 @@
   .grid-sobre__mee {
     animation: fade2 1s ease-out forwards;
   }
-
 }
 
 @keyframes fade1 {
