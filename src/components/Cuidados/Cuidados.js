@@ -9,18 +9,26 @@ function Cuidados({ iluminacao, agua, pet }) {
   return (
     <div className="container-cuidados">
       <div className="texto-cuidados">
-        <img src={IconeSol} alt="" />
+        <div className="icones-cuidados">
+          <img src={IconeSol} alt="" />
+        </div>
         <Texto tipo="paragrafo">{iluminacao}</Texto>
       </div>
       <div className="texto-cuidados">
-        <img src={IconeAgua} alt="" />
+        <div className="icones-cuidados">
+          <img src={IconeAgua} alt="" />
+        </div>
         <Texto tipo="paragrafo">{agua}</Texto>
       </div>
       <div className="texto-cuidados">
         {pet === "Atenção: tóxico!" ? (
-          <img src={IconePetToxico} alt="" />
+          <div className="icones-cuidados">
+            <img src={IconePetToxico} alt="" />
+          </div>
         ) : (
-          <img src={IconePet} alt="" />
+          <div className="icones-cuidados">
+            <img src={IconePet} alt="" />{" "}
+          </div>
         )}
         <Texto tipo="paragrafo">{pet}</Texto>
       </div>
