@@ -35,6 +35,12 @@
   left: 0%;
 }
 
+.seta-voltar-planta-categoria {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+}
+
 @media (width <= 1024px) {
   #container-plantas__categorias {
     gap: 190px;
