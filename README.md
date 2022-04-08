@@ -38,7 +38,7 @@ Após uma investigação do cenário atual sobre o consumo de conteúdo sobre pl
 
 ## 📱 Dispositivos
 
-A aplicação foi desenvolvivda no formato PWA, operando nas seguintes dimensões de telas:
+A aplicação foi desenvolvida no formato PWA, operando nas seguintes dimensões de telas:
 
 - [x] Desktop: 1270x720px
 - [x] Tablet: 1024x1366px
@@ -78,7 +78,9 @@ Você pode executar o projeto localmente através dos seguintes passo:
 - **Contato:** Página para entrar em contato com a empresa via redes sociais ou email;
 
 ## 🤝 Desenvolvedores
+
 ### Front-end Devs:
+
 <table>
   <tr>
    	<td align="center">
@@ -109,6 +111,7 @@ Você pode executar o projeto localmente através dos seguintes passo:
 </table>
 
 ### Back-end Devs:
+
 <table>
   <tr>
     <td align="center">
@@ -137,4 +140,3 @@ Você pode executar o projeto localmente através dos seguintes passo:
     </td>
   </tr>
 </table>
-
