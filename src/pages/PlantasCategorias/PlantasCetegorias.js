@@ -55,7 +55,7 @@ function PlantasCategorias() {
           <div>
             <img src={CategoriaCactos} alt=""></img>
             <Texto tipo="titulo1" class="h1-hind  verde-claro bold">
-              {` `}Cactos!{` `}
+              &nbsp;Cactos!&nbsp;
             </Texto>
             <Texto tipo="titulo1" class="h1-hind">
               Nós temos três muito especiais.

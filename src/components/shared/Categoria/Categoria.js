@@ -17,13 +17,12 @@ const Categorias = (props) => {
     }, []);
 
   return (
-    <Link to={props.url}>
-      <div className="container">
-        {Object.entries(fotosDasPlantas).map(([pic, resolution]) => {
-          return (
-            <div className="container-img-btn-categoria" key={props.id}>
+    <div className="container">
+      {Object.entries(fotosDasPlantas).map(([pic, resolution]) => {
+        return (
+          <div className="container-img-btn-categoria" key={pic}>
+            <Link to={props.url}>
               <ImagemFolha
-                key={pic}
                 src={pic}
                 sizes={resolution}
                 className={props.tipoFoto}
@@ -32,16 +31,16 @@ const Categorias = (props) => {
                 maxMobileSize="100px"
                 urlImagens={props.urlImagens}
               />
-              <Link to={props.url}>
-                <Botao class="btn-verde" color="branco bold">
-                  {props.nome}
-                </Botao>
-              </Link>
-            </div>
-          );
-        })}
-      </div>
-    </Link>
+            </Link>
+            <Link to={props.url}>
+              <Botao class="btn-verde" color="branco bold">
+                {props.nome}
+              </Botao>
+            </Link>
+          </div>
+        );
+      })}
+    </div>
   );
 };
 
