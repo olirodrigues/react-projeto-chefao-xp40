@@ -11,7 +11,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  
 }
 .container-titulo {
   text-align: center;
@@ -28,6 +27,12 @@
 }
 
 
+
+.seta-voltar-planta-categoria {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+}
 
 @media (width <= 1024px) {
   #container-plantas__categorias {

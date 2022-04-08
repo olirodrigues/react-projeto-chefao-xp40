@@ -12,7 +12,7 @@ function LinksContato() {
           />
         </div>
       </a>
-      <a target="_blank" rel="noreferrer"  href="https://br.pinterest.com/meeplantas/">
+      <a target="_blank" rel="noreferrer" href="https://br.pinterest.com/meeplantas/">
         <div className="container-icones-social-contato">
           <Icones
             icone="pinterest"
@@ -20,7 +20,7 @@ function LinksContato() {
           />
         </div>
       </a>
-      <a href="mailto:meeplantas@gmail.com" >
+      <a target="_blank" rel="noreferrer" href="mailto:meeplantas@gmail.com">
         <div className="container-icones-social-contato">
           <Icones
             icone="email"
