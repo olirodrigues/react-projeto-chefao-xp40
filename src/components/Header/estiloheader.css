@@ -26,7 +26,7 @@ nav {
   top: 25px;
   bottom: 0;
   background-color: #69bf8e;
-  animation: aba-ativa 500ms;
+  animation: aba-ativa_header 500ms;
 }
 
 .link_inativo {
@@ -47,7 +47,7 @@ nav {
 
 .link_inativo:hover:after {
   background-color: #69bf8e;
-  animation: aba-ativa 500ms;
+  animation: aba-ativa_header 500ms;
 }
 
 .link_ativo--logo {
@@ -64,7 +64,7 @@ nav {
   top: 30px;
   bottom: 0;
   background-color: #69bf8e;
-  animation: aba-ativa 500ms;
+  animation: aba-ativa_header 500ms;
 }
 
 .link_inativo--logo {
@@ -85,11 +85,20 @@ nav {
 
 .link_inativo--logo:hover:after {
   background-color: #69bf8e;
-  animation: aba-ativa 500ms;
+  animation: aba-ativa_header 500ms;
 }
 
 .imgLogo {
   vertical-align: bottom;
   width: 57px;
   height: 42px;
+}
+
+@keyframes aba-ativa_header {
+  0% {
+    transform: scale(0, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }

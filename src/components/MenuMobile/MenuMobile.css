@@ -110,8 +110,12 @@
   }
 }
 @media (width <= 380px) {
-  .menu.menu__aberto,
+  .menu.menu__aberto {
+    height: 126vh;
+  }
+
   .overlay {
+    width: 110%;
     height: 126vh;
   }
 

@@ -1,6 +1,6 @@
 import "./SobreNos.css";
 import { getSobrePostId, getFotosSobre } from "../../services/routes/sobre";
-import  { useEffect, useState, Lazy  } from "react";
+import  { useEffect, useState} from "react";
 import { useParams } from "react-router-dom";
 import ConteudoSobre from "../../components/Sobre/ConteudoSobre/ConteudoSobre";
 import GridPosts from "../../components/Grid/GridPosts/GridPosts";
@@ -58,7 +58,7 @@ const Sobrenos = () => {
         <div
           className={`${
             params.id === "1" ? "grid-sobre__nos" : "grid-sobre__mee"
-          }} sobrenos-imagem`}
+          }`}
         >
           <GridPosts fotos={sobre.fotos} urlFotos={getFotosSobre} />
         </div>

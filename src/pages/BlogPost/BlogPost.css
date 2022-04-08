@@ -30,6 +30,7 @@
 
 .blog-imagem {
   grid-area: imagem;
+  animation: slideLeft 1s ease-out forwards;
 }
 
 @media (width <= 1024px) {
@@ -52,5 +53,31 @@
     gap: 12px;
     position: relative;
     left: 0px;
+  }
+  .blog-imagem{
+    animation: fade 1s ease-out forwards;
+  }
+}
+
+
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-1rem);
   }
 }

@@ -65,7 +65,7 @@
   }
 }
 
-@media (width <=420px) {
+@media (width <=480px) {
   .textos-platasdetalhes {
     flex-direction: column;
     gap: 36px;
