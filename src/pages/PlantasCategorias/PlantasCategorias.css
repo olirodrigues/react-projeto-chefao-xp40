@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-block: 58px;
   gap: 64px;
+  animation: fade 500ms ease-out forwards;
 }
 
 .container-seta-imagem-planta-categoria {
@@ -52,5 +53,16 @@
   .container-foto {
     flex-direction: column;
     gap: 56px;
+  }
+}
+
+
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
