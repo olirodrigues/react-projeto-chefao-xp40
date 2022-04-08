@@ -33,6 +33,12 @@
   margin: auto;
 }
 
+.container-informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 @media (width <= 1024px) {
   .container-plantasdetalhes {
     grid-template-columns: 1fr;
