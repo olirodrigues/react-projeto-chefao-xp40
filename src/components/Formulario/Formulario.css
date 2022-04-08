@@ -126,6 +126,21 @@
 
   .mensagem {
     margin-left: 10px;
-    width: 100%;
+   width: 100%;
+  }
+
+  .icone-x__aviso {
+    left: 18%;
+  }
+  .aviso-textos p {
+    font-size: 14px;
+    font-weight: 600;
+   
+  }
+}
+
+@media (width <= 380px) {
+  .icone-x__aviso {
+    left: 2%;
   }
 }
