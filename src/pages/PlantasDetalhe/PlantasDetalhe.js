@@ -1,10 +1,10 @@
 import "./PlantasDetalhe.css";
-import Abas from "../../components/Abas/Abas";
-import Carrossel from "../../components/Carrossel/Carrossel";
-import Texto from "../../components/Texto/Texto";
-import Cuidados from "../../components/Cuidados/Cuidados";
-import Icones from "../../components/Icones/Icones";
-import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
+import Abas from "../../components/layout/Abas/Abas";
+import Carrossel from "../../components/actions/Carrossel/Carrossel";
+import Texto from "../../components/shared/Texto/Texto";
+import Cuidados from "../../components/layout/Cuidados/Cuidados";
+import Icones from "../../components/shared/Icones/Icones";
+import AnimacaoLoading from "../../components/layout/AnimacaoLoading/AnimacaoLoading";
 import { useMediaQuery } from "react-responsive";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";

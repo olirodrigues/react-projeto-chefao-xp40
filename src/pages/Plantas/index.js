@@ -1,7 +1,7 @@
 import "./estiloPlantas.css";
-import Categorias from "../../components/Categoria/Categoria";
-import Texto from "../../components/Texto/Texto";
-import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
+import Categorias from "../../components/shared/Categoria/Categoria";
+import Texto from "../../components/shared/Texto/Texto";
+import AnimacaoLoading from "../../components/layout/AnimacaoLoading/AnimacaoLoading";
 import { useEffect, useState } from "react";
 import { getPlantas } from "../../services/routes/plantas";
 
@@ -42,11 +42,9 @@ function Plantas() {
       <div className="container-plantas">
         <div className="container-titulo">
           <Texto tipo="titulo1" class="h1-hind">
-            Cada plantinha da{" "}
-            <Texto tipo="titulo1" class="verde-claro bold h1-hind">
-              Mee
-            </Texto>{" "}
-            é um universo único. <br />
+            Cada plantinha da&nbsp;
+            <span className="verde-claro bold h1-hind">Mee</span>&nbsp;é um
+            universo único. <br />
             Qual categoria você gostaria de consultar?
           </Texto>
         </div>

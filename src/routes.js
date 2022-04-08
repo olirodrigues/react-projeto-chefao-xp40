@@ -5,15 +5,15 @@ import {
   Navigate,
 } from "react-router-dom";
 import Home from "./pages/Home";
-import Header from "./components/Header";
+import Header from "./components/layout/Header";
 import Plantas from "./pages/Plantas";
 import PlantasDetalhe from "./pages/PlantasDetalhe/PlantasDetalhe";
 import Blog from "./pages/Blog";
 import SobreNos from "./pages/Sobrenos/SobreNos";
 import Contato from "./pages/Contato/Contato";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/layout/Footer/Footer";
 import { useMediaQuery } from "react-responsive";
-import MenuMobile from "./components/MenuMobile/MenuMobile";
+import MenuMobile from "./components/layout/MenuMobile/MenuMobile";
 import BlogPost from "./pages/BlogPost/index";
 import PlantasCategorias from "./pages/PlantasCategorias/PlantasCetegorias";
 

@@ -1,9 +1,9 @@
 import "./BlogPost.css";
-import ConteudoBlog from "../../components/Blog/BlogPost/ConteudoPost/ConteudoPost";
-import Texto from "../../components/Texto/Texto.js";
-import GridPosts from "../../components/Grid/GridPosts/GridPosts";
-import Icones from "../../components/Icones/Icones";
-import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
+import ConteudoBlog from "../../components/layout/Blog/BlogPost/ConteudoPost/ConteudoPost";
+import Texto from "../../components/shared/Texto/Texto";
+import GridPosts from "../../components/shared/Grid/GridPosts/GridPosts";
+import Icones from "../../components/shared/Icones/Icones";
+import AnimacaoLoading from "../../components/layout/AnimacaoLoading/AnimacaoLoading";
 import { useMediaQuery } from "react-responsive";
 import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";

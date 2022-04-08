@@ -1,11 +1,11 @@
 import "./PlantasCategorias.css";
-import Categorias from "../../components/Categoria/Categoria";
-import Texto from "../../components/Texto/Texto";
+import Categorias from "../../components/shared/Categoria/Categoria";
+import Texto from "../../components/shared/Texto/Texto";
 import CategoriaCactos from "../../assets/svg/categoriasPlantas/categoriaCactos.svg";
 import CategoriaSuculentas from "../../assets/svg/categoriasPlantas/categoriaSuculentas.svg";
 import CategoriaHorticulas from "../../assets/svg/categoriasPlantas/categoriaHorticulas.svg";
-import AnimacaoLoading from "../../components/AnimacaoLoading/AnimacaoLoading";
-import Icones from "../../components/Icones/Icones";
+import AnimacaoLoading from "../../components/layout/AnimacaoLoading/AnimacaoLoading";
+import Icones from "../../components/shared/Icones/Icones";
 import { useState, useEffect } from "react";
 import { getPlantasCategorias } from "../../services/routes/plantas";
 import { useParams } from "react-router-dom";
@@ -55,7 +55,7 @@ function PlantasCategorias() {
           <div>
             <img src={CategoriaCactos} alt=""></img>
             <Texto tipo="titulo1" class="h1-hind  verde-claro bold">
-              {` `}Cactos!{` `}
+              &nbsp;Cactos!&nbsp;
             </Texto>
             <Texto tipo="titulo1" class="h1-hind">
               Nós temos três muito especiais.

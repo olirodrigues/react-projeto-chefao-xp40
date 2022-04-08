@@ -4,9 +4,9 @@
     </div>
     <div style="display: flex; gap: 25px; justify-content: center; font-size: 15px ">
         <a href="#-projeto"> 💻 Projeto</a>
-        <a href="#-tecnologias-e-execução"> 👩‍💻 Tecnologias</a>
+        <a href="#-tecnologias"> 👩‍💻 Tecnologias</a>
         <a href="#-dispositivos"> 📱 Dispositivos</a>
-        <a href="#-instalacao"> 🚀 Instalação e Execução </a>
+        <a href="#-instalaçãoo-e-execução"> 🚀 Instalação e Execução </a>
         <a href="#-seções"> 📌 Seções</a>
         <a href="#-desenvolvedores"> 🤝 Desenvolvedores</a>
     </div>
@@ -21,24 +21,24 @@
 Após uma investigação do cenário atual sobre o consumo de conteúdo sobre plantas, decidimos explorar quais são as principais necessidades e razões desta pesquisa pelo público. Chegamos a uma conclusão de projetar uma vitrine de plantas fácies de cuidar e de importância decorativa.
 </p>
 
-## Você visualizar o projeto <a href="https://mee-xp40.vercel.app/">clicando aqui!</a>
+### Você visualizar o projeto <a href="https://mee-xp40.vercel.app/">clicando aqui!</a>
 
-## Você pode acessar o repositório da API <a href="https://mee-xp40.vercel.app/">clicando aqui!</a>
+### Você pode acessar o repositório da API <a href="https://mee-xp40.vercel.app/">clicando aqui!</a>
 
-## Você pode acessar o design do Figma <a href="https://mee-xp40.vercel.app/">clicando aqui!</a>
+### Você pode acessar o prototipo do Figma <a href="https://mee-xp40.vercel.app/">clicando aqui!</a>
 
 ## 👩‍💻 Tecnologias
 
-- ReactJS
-- React Router
-- CSS3
-- React-Responsive
-- Framer Motion
-- Axios
+- React.JS - Desenvolvimento do macro da aplicação;
+- CSS3 - Estilizações e animações dos componentes;
+- React Router - Implementações des rotas no projeto;
+- React Responsive - Renderização condicional conforme os dispositivos homologados;
+- Framer Motion - Animação do componente de loading;
+- Axios - Integração da API Rest.
 
 ## 📱 Dispositivos
 
-A aplicação foi desenvolvivda no formato PWA, operando nas seguintes dimensões de telas:
+A aplicação foi desenvolvida no formato PWA, operando nas seguintes dimensões de telas:
 
 - [x] Desktop: 1270x720px
 - [x] Tablet: 1024x1366px
@@ -71,14 +71,16 @@ Você pode executar o projeto localmente através dos seguintes passo:
 
 ## 📌 Seções
 
-- **Página inicial** Página incial do site;
-- **Plantas** Página com diferentes tipos e espécies de plantas para explorar;
-- **Sobre Nós:** Página descrevendo mais detalhes sobre a empresa e a persona que originou o nome da marca;
+- **Página inicial:** Página incial do site;
+- **Plantas:** Página com diferentes tipos e espécies de plantas para explorar;
+- **Sobre Nós:** Página descrevendo mais detalhes sobre a empresa e a pessoa que originou o a marca;
 - **Blog:** Página com diferentes posts e conteúdos para serem lidos e explorados;
 - **Contato:** Página para entrar em contato com a empresa via redes sociais ou email;
 
 ## 🤝 Desenvolvedores
-### Front-end Dev
+
+### Front-end Devs:
+
 <table>
   <tr>
    	<td align="center">
@@ -108,7 +110,8 @@ Você pode executar o projeto localmente através dos seguintes passo:
   </tr>
 </table>
 
-### Back-end Dev
+### Back-end Devs:
+
 <table>
   <tr>
     <td align="center">
@@ -137,4 +140,3 @@ Você pode executar o projeto localmente através dos seguintes passo:
     </td>
   </tr>
 </table>
-

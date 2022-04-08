@@ -1,6 +1,6 @@
 import "./estiloHome.css";
-import Texto from "../../components/Texto/Texto";
-import Botao from "../../components/Botao/Botao";
+import Texto from "../../components/shared/Texto/Texto";
+import Botao from "../../components/actions/Botao/Botao";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -18,10 +18,9 @@ function Home() {
             <div>
               <Texto tipo="titulo1" class="h1-hind cinza-escuro">
                 Nossas plantinhas
-                <Texto tipo="titulo1" class="verde-claro bold h1-hind">
-                  {" "}
-                  Mee{" "}
-                </Texto>
+                <span className="verde-claro bold h1-hind">
+                  &nbsp;Mee&nbsp;
+                </span>
                 precisam de cuidados muito especiais.
               </Texto>
             </div>
