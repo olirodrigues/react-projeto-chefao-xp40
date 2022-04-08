@@ -4,7 +4,7 @@ import Icones from "../Icones/Icones";
 function LinksContato() {
   return (
     <div className="container-links-contato">
-      <a href="/#">
+      <a target="_blank" rel="noreferrer" href="https://www.instagram.com/meeplantas/">
         <div className="container-icones-social-contato">
           <Icones
             icone="instagram"
@@ -12,7 +12,7 @@ function LinksContato() {
           />
         </div>
       </a>
-      <a href="/#">
+      <a target="_blank" rel="noreferrer" href="https://br.pinterest.com/meeplantas/">
         <div className="container-icones-social-contato">
           <Icones
             icone="pinterest"
@@ -20,7 +20,7 @@ function LinksContato() {
           />
         </div>
       </a>
-      <a href="/#">
+      <a target="_blank" rel="noreferrer" href="mailto:meeplantas@gmail.com">
         <div className="container-icones-social-contato">
           <Icones
             icone="email"

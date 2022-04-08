@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-evenly;
   gap: 32px;
+  margin-top: 52px;
 }
 
 .container-fotos {
@@ -16,6 +17,7 @@
 @media (width <= 1024px) {
   .container-plantas {
     gap: 190px;
+    margin-top: 115px;
   }
   .container-titulo {
     font-size: 30px;
@@ -30,6 +32,7 @@
 @media (width <= 480px) {
   .container-plantas {
     gap: 48px;
+    margin-top: 40px;
   }
   .container-titulo {
     align-items: center;
