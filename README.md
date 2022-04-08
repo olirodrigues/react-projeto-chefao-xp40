@@ -25,7 +25,7 @@ Após uma investigação do cenário atual sobre o consumo de conteúdo sobre pl
 
 ### Você pode acessar o repositório da API <a href="https://mee-xp40.vercel.app/">clicando aqui!</a>
 
-### Você pode acessar o design do Figma <a href="https://mee-xp40.vercel.app/">clicando aqui!</a>
+### Você pode acessar o prototipo do Figma <a href="https://mee-xp40.vercel.app/">clicando aqui!</a>
 
 ## 👩‍💻 Tecnologias
 
